@@ -1,0 +1,72 @@
+[ AutoCAD - Thu Apr 06 18:49:57 2023  ]----------------------------------------
+No duplicate nodes or insulation nodalization warnings found
+
+Calculating SINDA/FLUINT data
+Calculating Thermal Analyzer Input took 0.32 sec
+
+Outputting SINDA/FLUINT data
+Outputting data for submodel COMPONENT_1...
+Outputting data for submodel GLOBAL...
+Outputting data for submodel MAIN...
+Outputting data for submodel MRW...
+Outputting data for submodel PCB1...
+Outputting data for submodel SPACE...
+Outputting data for submodel STRUCTURE...
+Outputting data for submodel XNEG...
+Outputting data for submodel XPOS...
+Outputting data for submodel YNEG...
+Outputting data for submodel YPOS...
+Outputting data for submodel ZNEG...
+Outputting data for submodel ZPOS...
+    Number of nodes:      153
+    Number of conductors: 317
+    
+Total Nodal Mass = 2.255796 kg
+
+
+*** RADCAD RAYTRACE HEATING RATES RUN START for database EXTERNAL_HR-Survivability_Test-OpticalDataCustom.rch
+Database already exists, checking to see if the model has changed...
+TimeStamp test not ok = Fri Feb 17 18:13:07 2023
+Outputting SINDA/FLUINT heating rate data to files:
+    C1A0.hra for arrays and C1A0.hrl for logic...
+Restart was successful. No calculations were performed.
+
+
+*** RADCAD RAYTRACE RADK RUN START for database EXTERNAL_RDK-OpticalDataCustom.rck
+Database already exists, checking to see if the model has changed...
+TimeStamp test not ok = Fri Feb 17 18:13:08 2023
+Outputting SINDA data to C1A1.k
+Restart was successful. No calculations were performed.
+    150 calculation nodes
+    150 radks were output, 0 radks were filtered out
+    0 nodes(0%) have bij sum + bij inactive < .9
+    5000 average number of rays per node shot
+     
+    No overlapping surfaces greater than 10.0% found in EXTERNAL_RDK
+
+
+*** RADCAD RAYTRACE RADK RUN START for database INTERNAL_RDK-OpticalDataCustom.rck
+Database already exists, checking to see if the model has changed...
+COMPONENT_1 != PCB1
+Deleting old database named INTERNAL_RDK-OpticalDataCustom.rck
+Creating new database named INTERNAL_RDK-OpticalDataCustom.rck
+Fixed RadCAD
+Fixed license found.
+Running with 8 calculation threads
+Time to calculate radk = 0.52 sec
+Outputting SINDA/FLUINT radks to file C1A2.k...
+Total elapsed time for calculations and output = 1.12 sec
+    152 calculation nodes
+    6748 radks were output, 1229 radks were filtered out
+    0 nodes(0%) have bij sum + bij inactive < .9
+    5000 average number of rays per node shot
+     
+    No overlapping surfaces greater than 10.0% found in INTERNAL_RDK
+
+*** Running SINDA model named C:\Users\rpkar\Documents\Working CubeSat Model\case1.inp
+Successful completion of processor
+From C:\Users\rpkar\Documents\Working CubeSat Model\messages_case1.log
+     TIMEN  =    10800.00      The ASTAP execution time is:    3.23822349999955       seconds
+Time to run SINDA = 37.89 sec
+
+Case Set Solved::Elapsed time = 43.22 sec
