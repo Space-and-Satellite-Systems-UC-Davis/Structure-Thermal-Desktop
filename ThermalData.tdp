@@ -3,7 +3,7 @@
 [TYPE]
 0
 [NAME]
-Li-ion Battery
+Liion Battery
 [CONDUCT]
 0.23000000417233
 [CONDUCTY]
@@ -25,7 +25,7 @@ Li-ion Battery
 [USEANISO]
 0
 [COMMENT_MULTILINE]
-Thermalphysical Properties of 18650 Li-ion Batteries
+Thermophysical Propertiues of 18650 Liion Batteries
 [ENDCOMMENT]
 [AGGREGATE]
 [WEIGHTTYPE]
