@@ -1,0 +1,140 @@
+[ AutoCAD - Fri Mar 03 17:33:51 2023  ]----------------------------------------
+No duplicate nodes or insulation nodalization warnings found
+
+Calculating SINDA/FLUINT data
+Calculating Thermal Analyzer Input took 0.21 sec
+
+Outputting SINDA/FLUINT data
+Outputting data for submodel COMPONENT_1...
+Outputting data for submodel GLOBAL...
+Outputting data for submodel MAIN...
+Outputting data for submodel MRW...
+Outputting data for submodel SPACE...
+Outputting data for submodel STRUCTURE...
+Outputting data for submodel XNEG...
+Outputting data for submodel XPOS...
+Outputting data for submodel YNEG...
+Outputting data for submodel YPOS...
+Outputting data for submodel ZNEG...
+Outputting data for submodel ZPOS...
+    Number of nodes:      153
+    Number of conductors: 317
+    
+Total Nodal Mass = 2.255796 kg
+
+
+*** RADCAD RAYTRACE HEATING RATES RUN START for database EXTERNAL_HR-Survivability_Test-OpticalDataCustom.rch
+Database already exists, checking to see if the model has changed...
+Outputting SINDA/FLUINT heating rate data to files:
+    C2A0.hra for arrays and C2A0.hrl for logic...
+Restart was successful. No calculations were performed.
+
+
+*** RADCAD RAYTRACE RADK RUN START for database EXTERNAL_RDK-OpticalDataCustom.rck
+Database already exists, checking to see if the model has changed...
+File C2A1.k not found, will regenerate
+Outputting SINDA data to C2A1.k
+Restart was successful. No calculations were performed.
+    150 calculation nodes
+    150 radks were output, 0 radks were filtered out
+    0 nodes(0%) have bij sum + bij inactive < .9
+    5000 average number of rays per node shot
+     
+    No overlapping surfaces greater than 10.0% found in EXTERNAL_RDK
+
+
+*** RADCAD RAYTRACE RADK RUN START for database INTERNAL_RDK-OpticalDataCustom.rck
+Database already exists, checking to see if the model has changed...
+File C2A2.k not found, will regenerate
+Outputting SINDA data to C2A2.k
+Restart was successful. No calculations were performed.
+    152 calculation nodes
+    6788 radks were output, 1221 radks were filtered out
+    0 nodes(0%) have bij sum + bij inactive < .9
+    5000 average number of rays per node shot
+     
+    No overlapping surfaces greater than 10.0% found in INTERNAL_RDK
+
+*** Running SINDA model named C:\Users\rpkar\Documents\Working CubeSat Model\case2.inp
+Processor failed - see processor output file and messages_case2.txt in your input file subdirectory
+From C:\Users\rpkar\Documents\Working CubeSat Model\messages_case2.txt
+    Current Patch Level = 12
+    Version = 6.3 Intel Fortran
+    
+    Microsoft (R) Incremental Linker Version 14.28.29913.0
+    Copyright (C) Microsoft Corporation.  All rights reserved.
+    
+    -out:astap.exe 
+    -subsystem:console 
+    -incremental:no 
+    -defaultlib:libiomp5md.lib 
+    -nodefaultlib:vcomp.lib 
+    -nodefaultlib:vcompd.lib 
+    "/LIBPATH:C:\Program Files\Cullimore and Ring\SindaFluint\lib" 
+    FMI_Client.lib 
+    SFUtils.lib 
+    procesCur16.lib 
+    ProcessModulesDll_16.lib 
+    ProcessorCGlobals_16.lib 
+    utilityCur_16.lib 
+    amg_16.lib 
+    "amg_16_interface.lib " 
+    tdsubproc.lib 
+    statwin.lib 
+    sfmatlab.lib 
+    LVCompartment.lib 
+    SaveSetWriter.lib 
+    multicalc16.lib 
+    sindaprepro.lib 
+    /STACK:100000000 
+    /MAP 
+    /MANIFEST 
+    "/LIBPATH:C:\Program Files\Cullimore and Ring\SindaFluint\lib" 
+    FMI_Client.lib 
+    SFUtils.lib 
+    procesCur16.lib 
+    ProcessModulesDll_16.lib 
+    ProcessorCGlobals_16.lib 
+    utilityCur_16.lib 
+    amg_16.lib 
+    "amg_16_interface.lib " 
+    tdsubproc.lib 
+    statwin.lib 
+    sfmatlab.lib 
+    LVCompartment.lib 
+    SaveSetWriter.lib 
+    multicalc16.lib 
+    sindaprepro.lib 
+    /STACK:100000000 
+    /MAP 
+    /MANIFEST 
+    "/LIBPATH:C:\Program Files\Cullimore and Ring\SindaFluint\lib" 
+    FMI_Client.lib 
+    SFUtils.lib 
+    procesCur16.lib 
+    ProcessModulesDll_16.lib 
+    ProcessorCGlobals_16.lib 
+    utilityCur_16.lib 
+    amg_16.lib 
+    "amg_16_interface.lib " 
+    tdsubproc.lib 
+    statwin.lib 
+    sfmatlab.lib 
+    LVCompartment.lib 
+    SaveSetWriter.lib 
+    multicalc16.lib 
+    sindaprepro.lib 
+    /STACK:100000000 
+    /MAP 
+    /MANIFEST 
+    astap.obj 
+    userLogic.obj 
+       Creating library astap.lib and object astap.exp
+    ifort userLogic.for /warn:declarations /warn:truncated_source /Qopenmp /fpe:0 /real-size:64 /integer-size:64 /names:lowercase /iface:cref "/I:C:\Program Files\Cullimore and Ring\SindaFluint\mod\Current" /MD /iface:mixed_str_len_arg "/include:C:\Program Files\Cullimore and Ring\SindaFluint\lib" /assume:byterecl /extend-source:132 /O3 /traceback /INCREMENTAL:NO
+    
+    Intel(R) Fortran Intel(R) 64 Compiler Classic for applications running on Intel(R) 64, Version 2021.7.0 Build 20220726_000000
+    Copyright (C) 1985-2022 Intel Corporation.  All rights reserved.
+    
+    No messages in file C:\Users\rpkar\Documents\Working CubeSat Model\messages_case2.log to report
+SINDA failed
+Case Set Solved::Elapsed time 87.33 sec
