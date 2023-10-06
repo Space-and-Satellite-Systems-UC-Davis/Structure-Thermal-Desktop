@@ -1,0 +1,8 @@
+AAAA
+        50% Alum 6061-T6
+BBBB
+        aluminum alloy 7079
+CCCC
+        magnesium
+DDDD
+        Stainless Steel, AISI 301

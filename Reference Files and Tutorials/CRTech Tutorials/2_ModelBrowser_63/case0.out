@@ -1,0 +1,362 @@
+
+
+                       S I N D A / F L U I N T 
+
+
+
+    ____          _______
+  //    \|   __    \|   \\ 
+ ||      |  /  \   ||    ||    C&R Technologies, Inc.
+ ||         \__/   ||    ||    Boulder Colorado, USA
+ ||         /  \   ||___//     Phone 303.971.0292, FAX 303.971.0035
+ ||         |  |/  ||   \\     www.crtech.com, support@crtech.com
+ ||      |  \__/\  ||    \\    
+  \\____/|         ||     \\   Hot engineering ... Cool software (R)
+
+
+
+               P R O C E S S O R  E X E C U T I O N
+
+               VERSION .............. CR6.3N    
+               MODIFICATION DATE .... 07NOV2022 
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     1
+ DATE = 10/06/2023 START TIME = 14:37:58
+ MODEL = SINDA                                                              ModelBrowser.dwg - Case Set 0
+ 
+
+
+  BUILDING CONFIGURATION DEFAULT                          WITH THERMAL SUBMODEL(S) - 
+          AAAA                            , BBBB                            , CCCC                            , DDDD                            , 
+MAIN                            , TDPROPS                         , 
+ PCS data being dumped to file ..\case0.savPCS
+
+  SUBMODEL NAME = AAAA                            
+
+
+   ARLXCA =  1.000000E-03 ARLXCC =   1.00100        ATMPCA =  1.000000E+30    ATMPCC =   0.00000        BACKUP =   0.00000    
+   CSGFAC =   1.00000     CSGMAX =   0.00000        CSGMIN =   0.00000        DRLXCA =  1.000000E-03    DRLXCC =   1.00100    
+   DTIMEH =  1.000000E+30 DTIMEI =   0.00000        DTIMEL =   0.00000        DTIMEU =   0.00000        DTMPCA =   50.0000    
+   DTMPCC =   0.00000     EBALNA =   0.00000        EBALNC =   0.00000        EBALSA =  1.000000E-02    EBALSC =  1.000000E+30
+   ESUMIS =   0.00000     ESUMOS =   0.00000        EXTLIM =  0.500000        ITHOLD =          0       NARLXN =          0
+   NATMPN =          0    NCGMAN =          0       NCSGMN =          0       NDRLXN =          0       NDTMPN =          0
+   NEBALN =          0    NLOOPT =        100       ITEROT =          0       ITERXT =          3       OPEITR =          0
+   NVARB1 =          0    NSOLOR =          2       OUTPUT =   0.00000    
+   MATMET =          2    METAMG =          0       AMGERR =  1.000000E-10
+   FBEBALA=  0.100000     FBEBALC=   0.00000        SPARSEG=  1.000000E-02
+
+  SUBMODEL NAME = BBBB                            
+
+
+   ARLXCA =  1.000000E-03 ARLXCC =   1.00100        ATMPCA =  1.000000E+30    ATMPCC =   0.00000        BACKUP =   0.00000    
+   CSGFAC =   1.00000     CSGMAX =   0.00000        CSGMIN =   0.00000        DRLXCA =  1.000000E-03    DRLXCC =   1.00100    
+   DTIMEH =  1.000000E+30 DTIMEI =   0.00000        DTIMEL =   0.00000        DTIMEU =   0.00000        DTMPCA =   50.0000    
+   DTMPCC =   0.00000     EBALNA =   0.00000        EBALNC =   0.00000        EBALSA =  1.000000E-02    EBALSC =  1.000000E+30
+   ESUMIS =   0.00000     ESUMOS =   0.00000        EXTLIM =  0.500000        ITHOLD =          0       NARLXN =          0
+   NATMPN =          0    NCGMAN =          0       NCSGMN =          0       NDRLXN =          0       NDTMPN =          0
+   NEBALN =          0    NLOOPT =        100       ITEROT =          0       ITERXT =          3       OPEITR =          0
+   NVARB1 =          0    NSOLOR =          2       OUTPUT =   0.00000    
+   MATMET =          2    METAMG =          0       AMGERR =  1.000000E-10
+   FBEBALA=  0.100000     FBEBALC=   0.00000        SPARSEG=  1.000000E-02
+
+  SUBMODEL NAME = CCCC                            
+
+
+   ARLXCA =  1.000000E-03 ARLXCC =   1.00100        ATMPCA =  1.000000E+30    ATMPCC =   0.00000        BACKUP =   0.00000    
+   CSGFAC =   1.00000     CSGMAX =   0.00000        CSGMIN =   0.00000        DRLXCA =  1.000000E-03    DRLXCC =   1.00100    
+   DTIMEH =  1.000000E+30 DTIMEI =   0.00000        DTIMEL =   0.00000        DTIMEU =   0.00000        DTMPCA =   50.0000    
+   DTMPCC =   0.00000     EBALNA =   0.00000        EBALNC =   0.00000        EBALSA =  1.000000E-02    EBALSC =  1.000000E+30
+   ESUMIS =   0.00000     ESUMOS =   0.00000        EXTLIM =  0.500000        ITHOLD =          0       NARLXN =          0
+   NATMPN =          0    NCGMAN =          0       NCSGMN =          0       NDRLXN =          0       NDTMPN =          0
+   NEBALN =          0    NLOOPT =        100       ITEROT =          0       ITERXT =          3       OPEITR =          0
+   NVARB1 =          0    NSOLOR =          2       OUTPUT =   0.00000    
+   MATMET =          2    METAMG =          0       AMGERR =  1.000000E-10
+   FBEBALA=  0.100000     FBEBALC=   0.00000        SPARSEG=  1.000000E-02
+
+  SUBMODEL NAME = DDDD                            
+
+
+   ARLXCA =  1.000000E-03 ARLXCC =   1.00100        ATMPCA =  1.000000E+30    ATMPCC =   0.00000        BACKUP =   0.00000    
+   CSGFAC =   1.00000     CSGMAX =   0.00000        CSGMIN =   0.00000        DRLXCA =  1.000000E-03    DRLXCC =   1.00100    
+   DTIMEH =  1.000000E+30 DTIMEI =   0.00000        DTIMEL =   0.00000        DTIMEU =   0.00000        DTMPCA =   50.0000    
+   DTMPCC =   0.00000     EBALNA =   0.00000        EBALNC =   0.00000        EBALSA =  1.000000E-02    EBALSC =  1.000000E+30
+   ESUMIS =   0.00000     ESUMOS =   0.00000        EXTLIM =  0.500000        ITHOLD =          0       NARLXN =          0
+   NATMPN =          0    NCGMAN =          0       NCSGMN =          0       NDRLXN =          0       NDTMPN =          0
+   NEBALN =          0    NLOOPT =        100       ITEROT =          0       ITERXT =          3       OPEITR =          0
+   NVARB1 =          0    NSOLOR =          2       OUTPUT =   0.00000    
+   MATMET =          2    METAMG =          0       AMGERR =  1.000000E-10
+   FBEBALA=  0.100000     FBEBALC=   0.00000        SPARSEG=  1.000000E-02
+
+  SUBMODEL NAME = MAIN                            
+
+
+   ARLXCA =  1.000000E-03 ARLXCC =   1.00100        ATMPCA =  1.000000E+30    ATMPCC =   0.00000        BACKUP =   0.00000    
+   CSGFAC =   1.00000     CSGMAX =   0.00000        CSGMIN =   0.00000        DRLXCA =  1.000000E-03    DRLXCC =   1.00100    
+   DTIMEH =  1.000000E+30 DTIMEI =   0.00000        DTIMEL =   0.00000        DTIMEU =   0.00000        DTMPCA =   50.0000    
+   DTMPCC =   0.00000     EBALNA =   0.00000        EBALNC =   0.00000        EBALSA =  1.000000E-02    EBALSC =  1.000000E+30
+   ESUMIS =   0.00000     ESUMOS =   0.00000        EXTLIM =  0.500000        ITHOLD =          0       NARLXN =          0
+   NATMPN =          0    NCGMAN =          0       NCSGMN =          0       NDRLXN =          0       NDTMPN =          0
+   NEBALN =          0    NLOOPT =        100       ITEROT =          0       ITERXT =          3       OPEITR =          0
+   NVARB1 =          0    NSOLOR =          2       OUTPUT =   0.00000    
+   MATMET =          0    METAMG =          0       AMGERR =  1.000000E-10
+   FBEBALA=  0.100000     FBEBALC=   0.00000        SPARSEG=  1.000000E-02
+
+  SUBMODEL NAME = TDPROPS                         
+
+
+   ARLXCA =  1.000000E-03 ARLXCC =   1.00100        ATMPCA =  1.000000E+30    ATMPCC =   0.00000        BACKUP =   0.00000    
+   CSGFAC =   1.00000     CSGMAX =   0.00000        CSGMIN =   0.00000        DRLXCA =  1.000000E-03    DRLXCC =   1.00100    
+   DTIMEH =  1.000000E+30 DTIMEI =   0.00000        DTIMEL =   0.00000        DTIMEU =   0.00000        DTMPCA =   50.0000    
+   DTMPCC =   0.00000     EBALNA =   0.00000        EBALNC =   0.00000        EBALSA =  1.000000E-02    EBALSC =  1.000000E+30
+   ESUMIS =   0.00000     ESUMOS =   0.00000        EXTLIM =  0.500000        ITHOLD =          0       NARLXN =          0
+   NATMPN =          0    NCGMAN =          0       NCSGMN =          0       NDRLXN =          0       NDTMPN =          0
+   NEBALN =          0    NLOOPT =        100       ITEROT =          0       ITERXT =          3       OPEITR =          0
+   NVARB1 =          0    NSOLOR =          2       OUTPUT =   0.00000    
+   MATMET =          0    METAMG =          0       AMGERR =  1.000000E-10
+   FBEBALA=  0.100000     FBEBALC=   0.00000        SPARSEG=  1.000000E-02
+
+  GLOBAL CONTROL CONSTANTS
+
+
+   ABSZRO =   0.00000     SIGMA  =  5.670400E-08    TIMEM  =   0.00000        TIMEN  =   0.00000        TIMEND =   0.00000    
+   TIMEO  =   0.00000    
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     2
+
+ MODEL = SINDA                                                              ModelBrowser.dwg - Case Set 0                                                   
+   STEADY
+
+
+  SUBMODEL NAME = AAAA                            
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(                   0)=  1.00100     VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                   0)=  1.00100     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE =  0.00000     VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  0.00000         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(                   0)=  0.00000     VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =           0      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND=  0.00000    
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       2=  293.15     T       3=  293.15    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+   T       1=  293.15    
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     3
+
+ MODEL = SINDA                                                              ModelBrowser.dwg - Case Set 0                                                   
+   STEADY
+
+
+  SUBMODEL NAME = BBBB                            
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(                   0)=  1.00100     VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                   0)=  1.00100     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE =  0.00000     VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  0.00000         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(                   0)=  0.00000     VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =           0      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND=  0.00000    
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       1=  293.15     T       2=  293.15     T       3=  293.15    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     4
+
+ MODEL = SINDA                                                              ModelBrowser.dwg - Case Set 0                                                   
+   STEADY
+
+
+  SUBMODEL NAME = CCCC                            
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(                   0)=  1.00100     VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                   0)=  1.00100     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE =  0.00000     VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  0.00000         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(                   0)=  0.00000     VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =           0      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND=  0.00000    
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       1=  293.15     T       2=  293.15     T       3=  293.15    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     5
+
+ MODEL = SINDA                                                              ModelBrowser.dwg - Case Set 0                                                   
+   STEADY
+
+
+  SUBMODEL NAME = DDDD                            
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(                   0)=  1.00100     VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                   0)=  1.00100     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE =  0.00000     VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  0.00000         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(                   0)=  0.00000     VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =           0      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND=  0.00000    
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       1=  293.15     T       2=  293.15     T       3=  293.15    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     6
+
+ MODEL = SINDA                                                              ModelBrowser.dwg - Case Set 0                                                   
+   STEADY
+
+
+  SUBMODEL NAME = AAAA                            
+
+         CONVERGENCE STATUS: SUBMODEL CONVERGED                                                                                  
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(AAAA               3)= 2.158894E-07 VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                   0)=  0.00000     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE =  0.00000     VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  0.00000         ESUMOS=  3.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(AAAA               2)= 5.684342E-14 VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =           4      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND=  0.00000    
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       2=  299.71     T       3=  306.23    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+   T       1=  293.15    
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     7
+
+ MODEL = SINDA                                                              ModelBrowser.dwg - Case Set 0                                                   
+   STEADY
+
+
+  SUBMODEL NAME = BBBB                            
+
+         CONVERGENCE STATUS: SUBMODEL CONVERGED                                                                                  
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(BBBB               3)=-1.450175E-06 VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                   0)=  0.00000     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE =  0.00000     VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  0.00000         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(BBBB               3)=  0.00000     VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =           4      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND=  0.00000    
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       1=  307.23     T       2=  315.48     T       3=  323.72    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     8
+
+ MODEL = SINDA                                                              ModelBrowser.dwg - Case Set 0                                                   
+   STEADY
+
+
+  SUBMODEL NAME = CCCC                            
+
+         CONVERGENCE STATUS: SUBMODEL CONVERGED                                                                                  
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(CCCC               3)=-1.450175E-06 VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                   0)=  0.00000     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE =  0.00000     VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  3.00000         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(CCCC               3)= 2.273737E-13 VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =           4      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND=  0.00000    
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       1=  331.36     T       2=  331.36     T       3=  324.72    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     9
+
+ MODEL = SINDA                                                              ModelBrowser.dwg - Case Set 0                                                   
+   STEADY
+
+
+  SUBMODEL NAME = DDDD                            
+
+         CONVERGENCE STATUS: SUBMODEL CONVERGED                                                                                  
+
+                                       CALCULATED                               ALLOWED
+         MAX DIFF DELTA T PER ITER     DRLXCC(DDDD               3)=-1.450175E-06 VS. DRLXCA= 1.000000E-03
+         MAX ARITH DELTA T PER ITER    ARLXCC(                   0)=  0.00000     VS. ARLXCA= 1.000000E-03
+         FRACTIONAL SYSTEM LEVEL ENERGY IMBALANCE =  0.00000     VS. EBALSA= 1.000000E-02
+         ENERGY INTO AND OUT OF SUB    ESUMIS                  =  0.00000         ESUMOS=  0.00000    
+         MAX NODAL ENERGY BALANCE      EBALNC(DDDD               3)= 2.273737E-13 VS. EBALNA=  0.00000    
+         NUMBER OF ITERATIONS          LOOPCT                  =           4      VS. NLOOPS=        1000
+         PROBLEM TIME                  TIMEN                   =  0.00000     VS. TIMEND=  0.00000    
+
+                                     DIFFUSION NODES IN INPUT NODE NUMBER ORDER
+   T       1=  331.36     T       2=  331.36     T       3=  331.36    
+                                     ARITHMETIC NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+                                     BOUNDARY NODES IN INPUT NODE NUMBER ORDER
+                                                        ++NONE++
+ 
+     SAVE WRITTEN AT TIMEN =   0.00000    , LOOPCT/O/R =          4/         0/         0, STARTING RECORD =         76
+ 
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    10
+
+ MODEL = SINDA                                                              ModelBrowser.dwg - Case Set 0                                                   
+ 
+
+
+         MODEL SIZE TABULATION:    6 THERMAL AND    0 FLUID SUBMODELS. 
+                                 284 ARRAY CELLS, 
+                                   0 REGISTERS.
+                                  12 NODES IN T ARRAY 
+                                  11 CONDUCTORS IN G ARRAY. 
+                                   0 DYNAMIC CONDUCTORS FROM TD 
+
+ THERMAL SUBMODELS ------ 
+
+       NAME                                NODES    DIFF    ARIT   BD,HT       CONDS     LIN     RAD
+
+       AAAA                                    3       2       0       1           0       0       0
+       BBBB                                    3       3       0       0           0       0       0
+       CCCC                                    3       3       0       0           0       0       0
+       DDDD                                    3       3       0       0           0       0       0
+       MAIN                                    0       0       0       0          11      11       0
+       TDPROPS                                 0       0       0       0           0       0       0
+ 
+                               TOTAL          12      11       0       1          11      11       0
+
+                    Note: Active conductors are attributed to the thermal submodel of an endpoint node.
+                          The tally in each submodel may differ from CONDUCTOR DATA inputs.
+
+
+ FLUID SUBMODELS -------- 
+
+       NAME                                LUMPS   TANKS    JUNC    PLEN       PATHS   TUBES    CONN        TIES   FTIES  IFACES
+
+       (NONE)
+ LOOPCT =               4  The ASTAP execution time is:   0.726023400000031       seconds

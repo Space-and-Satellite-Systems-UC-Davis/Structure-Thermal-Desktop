@@ -1,0 +1,69 @@
+[ AutoCAD - Fri Apr 14 17:23:47 2023  ]----------------------------------------
+No duplicate nodes or insulation nodalization warnings found
+
+Calculating SINDA/FLUINT data
+Calculating Thermal Analyzer Input took 0.20 sec
+
+Outputting SINDA/FLUINT data
+Outputting data for submodel COMPONENT_1...
+Outputting data for submodel GLOBAL...
+Outputting data for submodel MAIN...
+Outputting data for submodel MOTOR...
+Outputting data for submodel MRW...
+Outputting data for submodel SPACE...
+Outputting data for submodel STRUCTURE...
+Outputting data for submodel XNEG...
+Outputting data for submodel XPOS...
+Outputting data for submodel YNEG...
+Outputting data for submodel YPOS...
+Outputting data for submodel ZNEG...
+Outputting data for submodel ZPOS...
+    Number of nodes:      153
+    Number of conductors: 317
+    
+Total Nodal Mass = 2.255796 kg
+
+
+*** RADCAD RAYTRACE HEATING RATES RUN START for database EXTERNAL_HR-Cold_Cases-rcoptics_open_v1.3 (2).rch
+Creating new database named EXTERNAL_HR-Cold_Cases-rcoptics_open_v1.3 (2).rch
+Fixed RadCAD
+Fixed license found.
+Running with 8 calculation threads
+Start and End position calc already done
+Total Elapsed time for heating rate calculations = 1.66 sec
+Outputting SINDA/FLUINT heating rate data to files:
+    C7A0.hra for arrays and C7A0.hrl for logic...
+Total Elapsed time for heating rate calculations and output = 2.07 sec
+
+
+*** RADCAD RAYTRACE RADK RUN START for database EXTERNAL_RDK-rcoptics_open_v1.3 (2).rck
+Database already exists, checking to see if the model has changed...
+File C7A1.k not found, will regenerate
+Outputting SINDA data to C7A1.k
+Restart was successful. No calculations were performed.
+    150 calculation nodes
+    150 radks were output, 0 radks were filtered out
+    0 nodes(0%) have bij sum + bij inactive < .9
+    5000 average number of rays per node shot
+     
+    No overlapping surfaces greater than 10.0% found in EXTERNAL_RDK
+
+
+*** RADCAD RAYTRACE RADK RUN START for database INTERNAL_RDK-rcoptics_open_v1.3 (2).rck
+Database already exists, checking to see if the model has changed...
+Outputting SINDA data to C7A2.k
+Restart was successful. No calculations were performed.
+    152 calculation nodes
+    7919 radks were output, 3557 radks were filtered out
+    0 nodes(0%) have bij sum + bij inactive < .9
+    5000 average number of rays per node shot
+     
+    No overlapping surfaces greater than 10.0% found in INTERNAL_RDK
+
+*** Running SINDA model named C:\Users\rpkar\Documents\Working CubeSat Model\CC7Orb.inp
+Successful completion of processor
+From C:\Users\rpkar\Documents\Working CubeSat Model\messages_CC7Orb.log
+     TIMEN  =    37800.00      The ASTAP execution time is:    4.63285129999986       seconds
+Time to run SINDA = 14.37 sec
+
+Case Set Solved::Elapsed time = 18.03 sec
