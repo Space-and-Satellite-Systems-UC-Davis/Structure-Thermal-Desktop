@@ -1,0 +1,8 @@
+Submodel, Substrate, Insulation Mass, kg
+  AAAA  0.90421 0.
+  BBBB  2.74000 0.
+  CCCC  1.74000 0.
+  DDDD  7.91641 0.
+Total: 13.30062 0.
+
+Total Mass = 13.300617 kg

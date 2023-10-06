@@ -1,0 +1,29 @@
+C    DWG name:      CubeSat.dwg
+C    Thermophysical Property Database: ThermalData.tdp
+C    Optical Property Database:        OpticalDataCustom.rco
+C    Computer name: RYANLAPTOP
+C    User name:     rpkar
+C    Symbol Names, Evaluated values, Input Strings, Comments
+C    hrBetaAngle          51.64         51.64
+C    hrEccen              0.00029567    0.00029567
+C    hrIllum              0.            0
+C    hrMeanAnom           0.            0
+C    hrPeriod             5578.17       5578.17              Always in current user units. If programming, use hrPeri...
+C    hrPeriodSec          5578.17       5578.17
+C    hrPos                0.            0
+C    hrShadowEntry        123.9306      1.239305657959e+02  
+C    hrShadowExit         236.0694      2.360694342042e+02  
+C    hrSubSolarMeanAnom   7.038290e-12  7.03829e-12          -180 to 180
+C    hrSubSolarTrueAnom   7.042450e-12  7.04245e-12          -180 to 180
+C    hrTime               0.            0                    Always in current user units. If programming, use hrTime...
+C    hrTimeSec            0.            0
+C    hrTimeShadowEntry    1919.86       1919.86
+C    hrTimeShadowEntrySec 1919.86       1919.86
+C    hrTimeShadowExit     3658.314      3.658314108841e+03  
+C    hrTimeShadowExitSec  3658.314      3.658314108841e+03  
+C    hrTrueAnom           0.            0
+C
+C Optical Properties Used:
+C PROPERTY NAME    EMISS ALPHA IR TRANS SOL TRANS IR TSPEC SOL TSPEC IR REFL SPEC SOL REFL SPEC
+C Aluminum 6061-T6 1     1                                                        
+C

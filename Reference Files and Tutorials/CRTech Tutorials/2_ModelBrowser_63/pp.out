@@ -1,0 +1,432 @@
+
+
+                       S I N D A / F L U I N T 
+
+
+
+    ____          _______
+  //    \|   __    \|   \\ 
+ ||      |  /  \   ||    ||    C&R Technologies, Inc.
+ ||         \__/   ||    ||    Boulder Colorado, USA
+ ||         /  \   ||___//     Phone 303.971.0292, FAX 303.971.0035
+ ||         |  |/  ||   \\     www.crtech.com, support@crtech.com
+ ||      |  \__/\  ||    \\    
+  \\____/|         ||     \\   Hot engineering ... Cool software (R)
+
+
+
+             P R E P R O C E S S O R  E X E C U T I O N
+
+             VERSION ................... CR6.3N    
+             MODIFICATION DATE ......... 07NOV2022 
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     1
+
+ MODEL = SINDA          
+ OPTIONS DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER OPTIONS                                                                       ROOT                            
+   INPUT               OUTPUT = case1.out                                                               ROOT                            
+   INPUT               SAVE = case1.sav                                                                 ROOT                            
+   INPUT               MLINE = 100000 $ Limits headers output                                           ROOT                            
+   INPUT               MIXARRAY                                                                         ROOT                            
+   INPUT           TITLE ModelBrowser.dwg - Case Set 1                                                  ROOT                            
+   INPUT           C    SINDA Data generated with Thermal Desktop 6.3 Patch 13                          ROOT                            
+   INPUT           C    Generated on Fri Oct  6 14:49:08 2023                                           ROOT                            
+   INPUT           C    From file: ModelBrowser.dwg                                                     ROOT                            
+   INPUT           C    Case Set: Case Set 1                                                            ROOT                            
+   INPUT           C    TDUNITS,   Energy     = J                                                       ROOT                            
+   INPUT           C    TDUNITS,   Time       = s                                                       ROOT                            
+   INPUT           C    TDUNITS,   Temp       = K                                                       ROOT                            
+   INPUT           C    TDUNITS,   Mass       = kg                                                      ROOT                            
+   INPUT           C    TDUNITS,   Length     = m                                                       ROOT                            
+   INPUT           C    TDUNITS,   Orbit      = km                                                      ROOT                            
+   INPUT           C    TDUNITS,   Pressure   = Pa                                                      ROOT                            
+   INPUT           C    TDUNITS,   Force      = N                                                       ROOT                            
+   INPUT           C    TDUNITS,   Angle      = Degrees                                                 ROOT                            
+   INPUT           C    TDUNITS,   Volt       = volt                                                    ROOT                            
+   INPUT           C    TDUNITS,   Current    = amp                                                     ROOT                            
+   INPUT           C    DWG name:      ModelBrowser.dwg                                                 ROOT                            
+   INPUT           C    Thermophysical Property Database: TdThermo.tdp                                  ROOT                            
+   INPUT           C    Optical Property Database:        RcOptics.rco                                  ROOT                            
+   INPUT           C    Computer name: RYANLAPTOP                                                       ROOT                            
+   INPUT           C    User name:     rpkar                                                            ROOT                            
+   INPUT           C    Symbol Names, Evaluated values, Input Strings, Comments                         ROOT                            
+   INPUT           C    hrIllum    2.      2                                                            ROOT                            
+   INPUT           C    hrMeanAnom 248.015 248.015                                                      ROOT                            
+   INPUT           C    hrPos      10.     10                                                           ROOT                            
+   INPUT           C    hrTime     3911.05 3911.05 Always in current user units. If programming, us     ROOT                            
+   INPUT           C    hrTimeSec  3911.05 3911.05                                                      ROOT                            
+   INPUT           C    hrTrueAnom 248.015 248.015                                                      ROOT                            
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     2
+
+ MODEL = SINDA                                                              ModelBrowser.dwg - Case Set 1
+ MODEL NAME CHECK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+
+  LIST OF HEADER CARDS IN NODE DATA - CHECKING MODEL NAMES AGAINST BUILD CARDS
+
+HEADER NODE DATA, AAAA
+HEADER NODE DATA, BBBB
+HEADER NODE DATA, CCCC
+HEADER NODE DATA, DDDD
+HEADER NODE DATA, MAIN
+HEADER NODE DATA, TDPROPS
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     3
+
+ MODEL = SINDA                                                              ModelBrowser.dwg - Case Set 1
+ CONSTANTS DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER CONTROL DATA, GLOBAL                                                          GLOBAL                          
+   INPUT               ABSZRO = 0.                                                                      GLOBAL                          
+   INPUT               SIGMA  = 5.670400E-08                                                            GLOBAL                          
+   INPUT               NLOOPS  = 1000                                                                   GLOBAL                          
+   INPUT               NLOOPT  = 100                                                                    GLOBAL                          
+   INPUT               TIMEO  = 0.                                                                      GLOBAL                          
+   INPUT               TIMEND  = 10000.                                                                 GLOBAL                          
+   INPUT               DTIMES  = 0.                                                                     GLOBAL                          
+   INPUT               PATMOS  = 0.                                                                     GLOBAL                          
+   INPUT               ARLXCA  = 0.001                                                                  GLOBAL                          
+   INPUT               DRLXCA  = 0.001                                                                  GLOBAL                          
+   INPUT               EXTLIM  = 0.5                                                                    GLOBAL                          
+   INPUT               MATMET = 2 $ AUTODETERMINE SINGLE MATRIX                                         GLOBAL                          
+   INPUT               ITERXT = 3                                                                       GLOBAL                          
+   INPUT               EBALSA  = 0.01                                                                   GLOBAL                          
+   INPUT               EBALNA  = 0.                                                                     GLOBAL                          
+   INPUT               ITEROT  = 0                                                                      GLOBAL                          
+   INPUT               ITHOLD  = 0                                                                      GLOBAL                          
+   INPUT               OUTPUT  = 0.                                                                     GLOBAL                          
+   INPUT               ATMPCA  = 1.000000E+30                                                           GLOBAL                          
+   INPUT               DTMPCA  = 50.                                                                    GLOBAL                          
+   INPUT               DTIMEI  = 0.                                                                     GLOBAL                          
+   INPUT               DTIMEL  = 0.                                                                     GLOBAL                          
+   INPUT               DTIMEH  = 1.000000E+30                                                           GLOBAL                          
+   INPUT               CSGFAC  = 1.                                                                     GLOBAL                          
+   INPUT               OPEITR  = 0                                                                      GLOBAL                          
+   INPUT               DTSIZF  = 0.1                                                                    GLOBAL                          
+   INPUT               DTTUBF  = 0.1                                                                    GLOBAL                          
+   INPUT               DTMAXF  = 1.000000E+30                                                           GLOBAL                          
+   INPUT               DTMINF  = 0.                                                                     GLOBAL                          
+   INPUT               OUTPTF = 0.                                                                      GLOBAL                          
+   INPUT               OPITRF  = 0                                                                      GLOBAL                          
+   INPUT               RERRF  = 0.01                                                                    GLOBAL                          
+   INPUT               REBALF  = 0.01                                                                   GLOBAL                          
+   INPUT               ITHLDF  = 0                                                                      GLOBAL                          
+   INPUT               ITROTF  = 0                                                                      GLOBAL                          
+   INPUT               RSSIZF  = 0.5                                                                    GLOBAL                          
+   INPUT               RSTUBF  = 0.5                                                                    GLOBAL                          
+   INPUT               RSMAXF  = 3600.                                                                  GLOBAL                          
+   INPUT               FBEBALA  = 0.1                                                                   GLOBAL                          
+   INPUT               SPARSEG  = 0.01                                                                  GLOBAL                          
+   INPUT               FRAVER  = 0.                                                                     GLOBAL                          
+   INPUT               RMSPLT  = 0.1                                                                    GLOBAL                          
+   INPUT               RMFRAC  = 0.5                                                                    GLOBAL                          
+   INPUT               RMRATE  = 0.1                                                                    GLOBAL                          
+   INPUT               UID =    SI                                                                      GLOBAL                          
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     4
+
+ MODEL = SINDA                                                              ModelBrowser.dwg - Case Set 1
+ ARRAY DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER ARRAY DATA, TDPROPS                                                           TDPROPS                         
+   INPUT           C     50% Alum 6061-T6_k:                                                            TDPROPS                         
+   INPUT                       2 =                                                                      TDPROPS                         
+   INPUT                       33.15,  44.9993                                                          TDPROPS                         
+   INPUT                       44.261,  55.3837                                                         TDPROPS                         
+   INPUT                       55.372,  65.7682                                                         TDPROPS                         
+   INPUT                       66.483,  76.1526                                                         TDPROPS                         
+   INPUT                       77.594,  83.0756                                                         TDPROPS                         
+   INPUT                       88.706,  91.7293                                                         TDPROPS                         
+   INPUT                       99.817,  96.9215                                                         TDPROPS                         
+   INPUT                       110.928,  103.844                                                        TDPROPS                         
+   INPUT                       122.039,  107.306                                                        TDPROPS                         
+   INPUT                       133.15,  112.498                                                         TDPROPS                         
+   INPUT                       144.261,  117.69                                                         TDPROPS                         
+   INPUT                       155.372,  121.152                                                        TDPROPS                         
+   INPUT                       166.483,  124.613                                                        TDPROPS                         
+   INPUT                       177.594,  128.075                                                        TDPROPS                         
+   INPUT                       188.706,  131.536                                                        TDPROPS                         
+   INPUT                       199.817,  133.267                                                        TDPROPS                         
+   INPUT                       210.928,  136.729                                                        TDPROPS                         
+   INPUT                       222.039,  138.459                                                        TDPROPS                         
+   INPUT                       233.15,  141.921                                                         TDPROPS                         
+   INPUT                       244.261,  143.652                                                        TDPROPS                         
+   INPUT                       255.372,  145.382                                                        TDPROPS                         
+   INPUT                       266.483,  147.978                                                        TDPROPS                         
+   INPUT                       277.594,  149.709                                                        TDPROPS                         
+   INPUT                       288.706,  151.44                                                         TDPROPS                         
+   INPUT                       299.817,  152.824                                                        TDPROPS                         
+   INPUT                       310.928,  154.555                                                        TDPROPS                         
+   INPUT                       322.039,  155.94                                                         TDPROPS                         
+   INPUT                       333.15,  157.497                                                         TDPROPS                         
+   INPUT                       344.261,  159.228                                                        TDPROPS                         
+   INPUT                       355.372,  160.959                                                        TDPROPS                         
+   INPUT                       366.483,  161.824                                                        TDPROPS                         
+   INPUT                       377.594,  162.69                                                         TDPROPS                         
+   INPUT                       388.706,  164.42                                                         TDPROPS                         
+   INPUT                       399.817,  166.151                                                        TDPROPS                         
+   INPUT                       410.928,  167.017                                                        TDPROPS                         
+   INPUT                       422.039,  167.882                                                        TDPROPS                         
+   INPUT                       433.15,  168.747                                                         TDPROPS                         
+   INPUT                       444.261,  170.478                                                        TDPROPS                         
+   INPUT                       455.372,  171.343                                                        TDPROPS                         
+   INPUT                       466.483,  172.209                                                        TDPROPS                         
+   INPUT                       477.594,  173.074                                                        TDPROPS                         
+   INPUT           C     50% Alum 6061-T6_rhocp:                                                        TDPROPS                         
+   INPUT                       1 =                                                                      TDPROPS                         
+   INPUT                       33.15,  73822.46                                                         TDPROPS                         
+   INPUT                       44.2611,  130609.                                                        TDPROPS                         
+   INPUT                       55.3722,  215788.9                                                       TDPROPS                         
+   INPUT                       66.4833,  318004.5                                                       TDPROPS                         
+   INPUT                       77.5944,  425899.                                                        TDPROPS                         
+   INPUT                       88.7056,  511078.                                                        TDPROPS                         
+   INPUT                       99.8167,  584900.5                                                       TDPROPS                         
+   INPUT                       110.928,  653044.3                                                       TDPROPS                         
+   INPUT                       122.039,  709831.6                                                       TDPROPS                         
+   INPUT                       133.15,  766617.6                                                        TDPROPS                         
+   INPUT                       144.261,  812047.2                                                       TDPROPS                         
+   INPUT                       155.372,  851797.9                                                       TDPROPS                         
+   INPUT                       166.483,  891548.7                                                       TDPROPS                         
+   INPUT                       177.594,  931298.1                                                       TDPROPS                         
+   INPUT                       188.706,  965371.3                                                       TDPROPS                         
+   INPUT                       199.817,  993764.3                                                       TDPROPS                         
+   INPUT                       210.928,  1022157.                                                       TDPROPS                         
+   INPUT                       222.039,  1056229.                                                       TDPROPS                         
+   INPUT                       233.15,  1078943.                                                        TDPROPS                         
+   INPUT                       244.261,  1101659.                                                       TDPROPS                         
+   INPUT                       255.372,  1124373.                                                       TDPROPS                         
+   INPUT                       266.483,  1147087.                                                       TDPROPS                         
+   INPUT                       277.594,  1158445.                                                       TDPROPS                         
+   INPUT                       288.706,  1175481.                                                       TDPROPS                         
+   INPUT                       299.817,  1192517.                                                       TDPROPS                         
+   INPUT                       310.928,  1209553.                                                       TDPROPS                         
+   INPUT                       322.039,  1226588.                                                       TDPROPS                         
+   INPUT                       333.15,  1237946.                                                        TDPROPS                         
+   INPUT                       344.261,  1243625.                                                       TDPROPS                         
+   INPUT                       355.372,  1254981.                                                       TDPROPS                         
+   INPUT                       366.483,  1266339.                                                       TDPROPS                         
+   INPUT                       377.594,  1277697.                                                       TDPROPS                         
+   INPUT                       388.706,  1283374.                                                       TDPROPS                         
+   INPUT                       399.817,  1294732.                                                       TDPROPS                         
+   INPUT                       410.928,  1300411.                                                       TDPROPS                         
+   INPUT                       422.039,  1311769.                                                       TDPROPS                         
+   INPUT                       433.15,  1323125.                                                        TDPROPS                         
+   INPUT                       444.261,  1328804.                                                       TDPROPS                         
+   INPUT                       455.372,  1334483.                                                       TDPROPS                         
+   INPUT                       466.483,  1340162.                                                       TDPROPS                         
+   INPUT                       477.594,  1345841.                                                       TDPROPS                         
+   INPUT           C     Stainless Steel, AISI 301_k:                                                   TDPROPS                         
+   INPUT                       4 =                                                                      TDPROPS                         
+   INPUT                       144.261,  10.3844                                                        TDPROPS                         
+   INPUT                       155.372,  11.0767                                                        TDPROPS                         
+   INPUT                       166.483,  11.596                                                         TDPROPS                         
+   INPUT                       177.594,  12.1152                                                        TDPROPS                         
+   INPUT                       188.706,  12.6344                                                        TDPROPS                         
+   INPUT                       199.817,  12.9806                                                        TDPROPS                         
+   INPUT                       210.928,  13.3267                                                        TDPROPS                         
+   INPUT                       222.039,  13.6729                                                        TDPROPS                         
+   INPUT                       233.15,  14.019                                                          TDPROPS                         
+   INPUT                       244.261,  14.3652                                                        TDPROPS                         
+   INPUT                       255.372,  14.7113                                                        TDPROPS                         
+   INPUT                       266.483,  14.8844                                                        TDPROPS                         
+   INPUT                       277.594,  15.0575                                                        TDPROPS                         
+   INPUT                       288.706,  15.4036                                                        TDPROPS                         
+   INPUT                       299.817,  15.5767                                                        TDPROPS                         
+   INPUT                       310.928,  15.9228                                                        TDPROPS                         
+   INPUT                       322.039,  16.1824                                                        TDPROPS                         
+   INPUT                       333.15,  16.3555                                                         TDPROPS                         
+   INPUT                       344.261,  16.5286                                                        TDPROPS                         
+   INPUT                       355.372,  16.7017                                                        TDPROPS                         
+   INPUT                       366.483,  16.7882                                                        TDPROPS                         
+   INPUT                       377.594,  16.9613                                                        TDPROPS                         
+   INPUT                       388.706,  17.1343                                                        TDPROPS                         
+   INPUT                       399.817,  17.2555                                                        TDPROPS                         
+   INPUT                       410.928,  17.394                                                         TDPROPS                         
+   INPUT                       422.039,  17.4805                                                        TDPROPS                         
+   INPUT           C     Stainless Steel, AISI 301_rhocp:                                               TDPROPS                         
+   INPUT                       3 =                                                                      TDPROPS                         
+   INPUT                       77.5944,  2320134.                                                       TDPROPS                         
+   INPUT                       88.7056,  2402995.                                                       TDPROPS                         
+   INPUT                       99.8167,  2485856.                                                       TDPROPS                         
+   INPUT                       110.928,  2552148.                                                       TDPROPS                         
+   INPUT                       122.039,  2618432.                                                       TDPROPS                         
+   INPUT                       133.15,  2717870.                                                        TDPROPS                         
+   INPUT                       144.261,  2784154.                                                       TDPROPS                         
+   INPUT                       155.372,  2850446.                                                       TDPROPS                         
+   INPUT                       166.483,  2949884.                                                       TDPROPS                         
+   INPUT                       177.594,  3016168.                                                       TDPROPS                         
+   INPUT                       188.706,  3082460.                                                       TDPROPS                         
+   INPUT                       199.817,  3148752.                                                       TDPROPS                         
+   INPUT                       210.928,  3198467.                                                       TDPROPS                         
+   INPUT                       222.039,  3248182.                                                       TDPROPS                         
+   INPUT                       233.15,  3314474.                                                        TDPROPS                         
+   INPUT                       244.261,  3380766.                                                       TDPROPS                         
+   INPUT                       255.372,  3447050.                                                       TDPROPS                         
+   INPUT                       266.483,  3496765.                                                       TDPROPS                         
+   INPUT                       277.594,  3529911.                                                       TDPROPS                         
+   INPUT                       288.706,  3579634.                                                       TDPROPS                         
+   INPUT                       299.817,  3645918.                                                       TDPROPS                         
+   INPUT                       310.928,  3679064.                                                       TDPROPS                         
+   INPUT                       322.039,  3728780.                                                       TDPROPS                         
+   INPUT                       333.15,  3778502.                                                        TDPROPS                         
+   INPUT                       344.261,  3811641.                                                       TDPROPS                         
+   INPUT                       355.372,  3844787.                                                       TDPROPS                         
+   INPUT                       366.483,  3877933.                                                       TDPROPS                         
+   INPUT                       377.594,  3911079.                                                       TDPROPS                         
+   INPUT                       388.706,  3944225.                                                       TDPROPS                         
+   INPUT                       399.817,  3977371.                                                       TDPROPS                         
+   INPUT                       410.928,  4010509.                                                       TDPROPS                         
+   INPUT                       422.039,  4043655.                                                       TDPROPS                         
+   INPUT           HEADER SOLVER                                                                        GLOBAL                          
+   INPUT               ADERO  = 0.0001                                                                  GLOBAL                          
+   INPUT               RDERO  = 0.02                                                                    GLOBAL                          
+   INPUT               AERRO  = 0.0001                                                                  GLOBAL                          
+   INPUT               RERRO  = 0.01                                                                    GLOBAL                          
+   INPUT               PUSHO  = 1.                                                                      GLOBAL                          
+   INPUT               RCACTO  = 0.1                                                                    GLOBAL                          
+   INPUT               RCERRO  = 0.003                                                                  GLOBAL                          
+   INPUT               ACHGO  = 0.1                                                                     GLOBAL                          
+   INPUT               RCHGO  = 0.9                                                                     GLOBAL                          
+   INPUT               RCVIO  = 0.2                                                                     GLOBAL                          
+   INPUT               METHO  = 2                                                                       GLOBAL                          
+   INPUT               NLOOPO  = 100                                                                    GLOBAL                          
+   INPUT               MDERO  = 0                                                                       GLOBAL                          
+   INPUT               NCONVO  = 2                                                                      GLOBAL                          
+   INPUT               NERVUS  = 0                                                                      GLOBAL                          
+   INPUT               NEWPRO  = 0                                                                      GLOBAL                          
+   INPUT               NLOOPR  = 100                                                                    GLOBAL                          
+   INPUT               ADERR  = 0.01                                                                    GLOBAL                          
+   INPUT               RERRR  = 0.001                                                                   GLOBAL                          
+   INPUT               AERRR  = 1.000000E-05                                                            GLOBAL                          
+   INPUT               RDERR  = 0.02                                                                    GLOBAL                          
+   INPUT           C INSERT case1.cc                                                                    GLOBAL                          
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     5
+
+ MODEL = SINDA                                                              ModelBrowser.dwg - Case Set 1
+ NODE DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER NODE DATA, AAAA                                                               AAAA                            
+   INPUT                       -1,    293.15,    -1.0                                                   AAAA                            
+   INPUT                       SIV 2,    293.15,    TDPROPS.A1,    0.0003333333                         AAAA                            
+   INPUT                       SIV 3,    293.15,    TDPROPS.A1,    0.0003333333                         AAAA                            
+   INPUT           HEADER NODE DATA, BBBB                                                               BBBB                            
+   INPUT                       1,    293.15,    726.1                                                   BBBB                            
+   INPUT                       2,    293.15,    726.1                                                   BBBB                            
+   INPUT                       3,    293.15,    726.1                                                   BBBB                            
+   INPUT           HEADER NODE DATA, CCCC                                                               CCCC                            
+   INPUT                       1,    293.15,    582.32                                                  CCCC                            
+   INPUT                       2,    293.15,    582.32                                                  CCCC                            
+   INPUT                       3,    293.15,    582.32                                                  CCCC                            
+   INPUT           HEADER NODE DATA, DDDD                                                               DDDD                            
+   INPUT                       SIV 1,    293.15,    TDPROPS.A3,    0.0003333333                         DDDD                            
+   INPUT                       SIV 2,    293.15,    TDPROPS.A3,    0.0003333333                         DDDD                            
+   INPUT                       SIV 3,    293.15,    TDPROPS.A3,    0.0003333333                         DDDD                            
+   INPUT           HEADER NODE DATA, MAIN                                                               MAIN                            
+   INPUT           HEADER NODE DATA, TDPROPS                                                            TDPROPS                         
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     6
+
+ MODEL = SINDA                                                              ModelBrowser.dwg - Case Set 1
+ CONDUCTOR DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER CONDUCTOR DATA, MAIN                                                          MAIN                            
+   INPUT                       SIV 1,    AAAA.1,    AAAA.2,    TDPROPS.A2,    0.003                     MAIN                            
+   INPUT                       SIV 2,    AAAA.2,    AAAA.3,    TDPROPS.A2,    0.003                     MAIN                            
+   INPUT                       3,    AAAA.3,    BBBB.1,    3.                                           MAIN                            
+   INPUT                       4,    BBBB.1,    BBBB.2,    0.36402                                      MAIN                            
+   INPUT                       5,    BBBB.2,    BBBB.3,    0.36402                                      MAIN                            
+   INPUT                       6,    BBBB.3,    CCCC.3,    3.                                           MAIN                            
+   INPUT                       7,    CCCC.1,    CCCC.2,    0.45186                                      MAIN                            
+   INPUT                       8,    CCCC.1,    DDDD.3,    6.                                           MAIN                            
+   INPUT                       9,    CCCC.2,    CCCC.3,    0.45186                                      MAIN                            
+   INPUT                       SIV 10,    DDDD.1,    DDDD.2,    TDPROPS.A4,    0.003                    MAIN                            
+   INPUT                       SIV 11,    DDDD.2,    DDDD.3,    TDPROPS.A4,    0.003                    MAIN                            
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     7
+
+ MODEL = SINDA                                                              ModelBrowser.dwg - Case Set 1
+ VARIABLES DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER VARIABLES0, MAIN                                                              MAIN                            
+   INPUT                 CCCC.Q2 = CCCC.Q2 + 3.                                                         MAIN                            
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     8
+
+ MODEL = SINDA                                                              ModelBrowser.dwg - Case Set 1
+ OPERATIONS BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER OPERATIONS                                                                    GLOBAL                          
+   INPUT                 CALL TDPREBL   $ PLACE BEFORE BUILD, CODE IN SUBROUTINE DATA                   GLOBAL                          
+   INPUT           BUILD DEFAULT,AAAA,BBBB,CCCC,DDDD,MAIN,TDPROPS                                       GLOBAL                          
+   INPUT                 CALL TDPOSTBL   $ PLACE AFTER BUILD, CODE IN SUBROUTINE DATA                   GLOBAL                          
+   INPUT                 CALL TRANSIENT                                                                 GLOBAL                          
+   INPUT                 CALL TDHTOT $ OUTPUT HEATER SUMMARY                                            GLOBAL                          
+   INPUT                 CALL TDPOSTSL $ LOGIC IN SUBROUTINE DATA                                       GLOBAL                          
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     9
+
+ MODEL = SINDA                                                              ModelBrowser.dwg - Case Set 1
+ OUTPUT DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER OUTPUT CALLS, GLOBAL                                                          GLOBAL                          
+   INPUT                 CALL TPRINT('ALL')                                                             GLOBAL                          
+   INPUT                 IF(NSOL  .GT.  1  .OR.  LOOPCT  .GT.  0 ) CALL SAVE('ALL',0)                   GLOBAL                          
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    10
+
+ MODEL = SINDA                                                              ModelBrowser.dwg - Case Set 1
+ SUBROUTINE DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER SUBROUTINES                                                                   GLOBAL                          
+   INPUT                 SUBROUTINE TDHTR                                                               GLOBAL                          
+   INPUT                 RETURN                                                                         GLOBAL                          
+   INPUT                 END                                                                            GLOBAL                          
+   INPUT                 SUBROUTINE TDREL                                                               GLOBAL                          
+   INPUT           F     RETURN                                                                         GLOBAL                          
+   INPUT           F     END                                                                            GLOBAL                          
+   INPUT           F     SUBROUTINE TDHTOT                                                              GLOBAL                          
+   INPUT           F     RETURN                                                                         GLOBAL                          
+   INPUT           F     END                                                                            GLOBAL                          
+   INPUT           F     SUBROUTINE TDHTRST                                                             GLOBAL                          
+   INPUT           F     RETURN                                                                         GLOBAL                          
+   INPUT           F     END                                                                            GLOBAL                          
+   INPUT           F     SUBROUTINE TDPREBL                                                             GLOBAL                          
+   INPUT                 CALL COMMON                                                                    GLOBAL                          
+   INPUT           F     RETURN                                                                         GLOBAL                          
+   INPUT           F     END                                                                            GLOBAL                          
+   INPUT           F     SUBROUTINE TDPOSTBL                                                            GLOBAL                          
+   INPUT                 CALL COMMON                                                                    GLOBAL                          
+   INPUT           F     RETURN                                                                         GLOBAL                          
+   INPUT           F     END                                                                            GLOBAL                          
+   INPUT           F     SUBROUTINE TDPOSTSL                                                            GLOBAL                          
+   INPUT                 CALL COMMON                                                                    GLOBAL                          
+   INPUT           F     RETURN                                                                         GLOBAL                          
+   INPUT           F     END                                                                            GLOBAL                          
+   INPUT           F     SUBROUTINE BASEPLOT                                                            GLOBAL                          
+   INPUT                 CALL COMMON                                                                    GLOBAL                          
+   INPUT           F     RETURN                                                                         GLOBAL                          
+   INPUT           F     END                                                                            GLOBAL                          

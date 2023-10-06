@@ -1,0 +1,31 @@
+[ AutoCAD - Fri Oct 06 14:49:08 2023  ]----------------------------------------
+No duplicate nodes or insulation nodalization warnings found
+
+Calculating SINDA/FLUINT data
+Calculating Thermal Analyzer Input took 0.09 sec
+
+Outputting SINDA/FLUINT data
+Outputting data for submodel AAAA...
+Outputting data for submodel BBBB...
+Outputting data for submodel CCCC...
+Outputting data for submodel DDDD...
+Outputting data for submodel GLOBAL...
+Outputting data for submodel MAIN...
+Outputting data for submodel TDPROPS...
+    Number of nodes:      12
+    Number of conductors: 11
+    
+Total Nodal Mass = 13.300617 kg
+
+Warning: User has specified MIXARRAY in Header Options
+         It is recommended to only be turned on when using arrays
+         that mix integer and real values.
+         Note that bivariate input arrays work correctly with MIXARRAY=0
+
+*** Running SINDA model named C:\Users\rpkar\Documents\GitHub\Structure-Thermal-Desktop\Reference Files and Tutorials\CRTech Tutorials\2_ModelBrowser_63\case1.inp
+Successful completion of processor
+From C:\Users\rpkar\Documents\GitHub\Structure-Thermal-Desktop\Reference Files and Tutorials\CRTech Tutorials\2_ModelBrowser_63\messages_case1.log
+     TIMEN  =    10000.00      The ASTAP execution time is:    1.40374909999991       seconds
+Time to run SINDA = 6.05 sec
+
+Case Set Solved::Elapsed time = 6.78 sec
