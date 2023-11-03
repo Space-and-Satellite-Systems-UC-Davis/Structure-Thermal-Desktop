@@ -1,4 +1,4 @@
-[ AutoCAD - Fri Apr 14 18:30:46 2023  ]----------------------------------------
+[ AutoCAD - Fri Oct 20 15:44:50 2023  ]----------------------------------------
 No duplicate nodes or insulation nodalization warnings found
 
 Calculating SINDA/FLUINT data
@@ -49,15 +49,11 @@ Restart was successful. No calculations were performed.
     5000 average number of rays per node shot
      
     No overlapping surfaces greater than 10.0% found in INTERNAL_RDK
-Error[13] deleting C:\Users\rpkar\Documents\Working CubeSat Model\HC7Orb.sav
-This problem can be caused by network or disk failures
-A program other than Thermal Desktop may be locking up this
-file, possibly anti-virus or backup software.
 
-*** Running SINDA model named C:\Users\rpkar\Documents\Working CubeSat Model\HC7Orb.inp
+*** Running SINDA model named C:\Users\rpkar\Documents\GitHub\Structure-Thermal-Desktop\Working CubeSat Model\HC7Orb.inp
 Successful completion of processor
-From C:\Users\rpkar\Documents\Working CubeSat Model\messages_HC7Orb.log
-     TIMEN  =    37800.00      The ASTAP execution time is:    5.01626470000156       seconds
-Time to run SINDA = 12.99 sec
+From C:\Users\rpkar\Documents\GitHub\Structure-Thermal-Desktop\Working CubeSat Model\messages_HC7Orb.log
+     TIMEN  =    37800.00      The ASTAP execution time is:    5.19603449999886       seconds
+Time to run SINDA = 13.24 sec
 
-Case Set Solved::Elapsed time = 14.02 sec
+Case Set Solved::Elapsed time = 14.43 sec

@@ -1,6 +1,6 @@
 HEADER OPTIONS
 C    SINDA Data generated with Thermal Desktop 6.3 Patch 13
-C    Generated on Fri Apr 14 18:30:46 2023
+C    Generated on Fri Oct 20 15:44:51 2023
 C    From file: CubeSat.dwg
 C    Case Set: 7 Orbit
 C    Radiation Groups: External HR, External RDK, Internal RDK
@@ -25,31 +25,31 @@ C    Symbol Names, Evaluated values, Input Strings, Comments
 C    hrBetaAngle          51.64         51.64
 C    hrEccen              0.00029567    0.00029567
 C    hrIllum              0.            0
-C    hrMeanAnom           330.017       330.017
+C    hrMeanAnom           0.            0
 C    hrPeriod             5578.17       5578.17              Always in current user units. If programming, use hrPeri...
 C    hrPeriodSec          5578.17       5578.17
-C    hrPlanetX            -5.551120e-17 -5.55112e-17
+C    hrPlanetX            6.310890e-30  6.31089e-30
 C    hrPlanetY            0.            0
 C    hrPlanetZ            1.            1
-C    hrPos                13.           13
+C    hrPos                0.            0
 C    hrShadowEntry        123.9306      1.239305657959e+02  
 C    hrShadowExit         236.0694      2.360694342042e+02  
-C    hrSpeed              7.65926       7.65926
+C    hrSpeed              7.65956       7.65956
 C    hrSubSolarMeanAnom   7.038290e-12  7.03829e-12          -180 to 180
 C    hrSubSolarTrueAnom   7.042450e-12  7.04245e-12          -180 to 180
-C    hrSunX               0.3103        0.3103
+C    hrSunX               7.628050e-14  7.62805e-14
 C    hrSunY               -0.784127     -0.784127
-C    hrSunZ               -0.537456     -0.537456
-C    hrTime               5113.59       5113.59              Always in current user units. If programming, use hrTime...
-C    hrTimeSec            5113.59       5113.59
+C    hrSunZ               -0.620601     -0.620601
+C    hrTime               0.            0                    Always in current user units. If programming, use hrTime...
+C    hrTimeSec            0.            0
 C    hrTimeShadowEntry    1919.86       1919.86
 C    hrTimeShadowEntrySec 1919.86       1919.86
 C    hrTimeShadowExit     3658.314      3.658314108841e+03  
 C    hrTimeShadowExitSec  3658.314      3.658314108841e+03  
-C    hrTrueAnom           330.          330
+C    hrTrueAnom           0.            0
 C    hrVelocityX          1.            1
-C    hrVelocityY          2.775560e-17  2.77556e-17
-C    hrVelocityZ          0.0001477972  1.477971712353e-04  
+C    hrVelocityY          -6.310890e-30 -6.31089e-30
+C    hrVelocityZ          -1.262180e-29 -1.26218e-29
 HEADER NODE DATA, COMPONENT_1
 HEADER VARIABLES 0, COMPONENT_1
 C Heat Load-MOTOR_HEAT[COMPONENT_1]::384
