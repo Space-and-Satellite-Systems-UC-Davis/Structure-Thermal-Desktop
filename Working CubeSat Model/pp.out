@@ -33,7 +33,7 @@
    INPUT               MLINE = 100000 $ Limits headers output                                           ROOT                            
    INPUT           TITLE CubeSat.dwg - 7 Orbit                                                          ROOT                            
    INPUT           C    SINDA Data generated with Thermal Desktop 6.3 Patch 13                          ROOT                            
-   INPUT           C    Generated on Fri Apr 14 18:30:46 2023                                           ROOT                            
+   INPUT           C    Generated on Fri Oct 20 15:44:51 2023                                           ROOT                            
    INPUT           C    From file: CubeSat.dwg                                                          ROOT                            
    INPUT           C    Case Set: 7 Orbit                                                               ROOT                            
    INPUT           C    Radiation Groups: External HR, External RDK, Internal RDK                       ROOT                            
@@ -58,31 +58,31 @@
    INPUT           C    hrBetaAngle          51.64         51.64                                        ROOT                            
    INPUT           C    hrEccen              0.00029567    0.00029567                                   ROOT                            
    INPUT           C    hrIllum              0.            0                                            ROOT                            
-   INPUT           C    hrMeanAnom           330.017       330.017                                      ROOT                            
+   INPUT           C    hrMeanAnom           0.            0                                            ROOT                            
    INPUT           C    hrPeriod             5578.17       5578.17              Always in current u     ROOT                            
    INPUT           C    hrPeriodSec          5578.17       5578.17                                      ROOT                            
-   INPUT           C    hrPlanetX            -5.551120e-17 -5.55112e-17                                 ROOT                            
+   INPUT           C    hrPlanetX            6.310890e-30  6.31089e-30                                  ROOT                            
    INPUT           C    hrPlanetY            0.            0                                            ROOT                            
    INPUT           C    hrPlanetZ            1.            1                                            ROOT                            
-   INPUT           C    hrPos                13.           13                                           ROOT                            
+   INPUT           C    hrPos                0.            0                                            ROOT                            
    INPUT           C    hrShadowEntry        123.9306      1.239305657959e+02                           ROOT                            
    INPUT           C    hrShadowExit         236.0694      2.360694342042e+02                           ROOT                            
-   INPUT           C    hrSpeed              7.65926       7.65926                                      ROOT                            
+   INPUT           C    hrSpeed              7.65956       7.65956                                      ROOT                            
    INPUT           C    hrSubSolarMeanAnom   7.038290e-12  7.03829e-12          -180 to 180             ROOT                            
    INPUT           C    hrSubSolarTrueAnom   7.042450e-12  7.04245e-12          -180 to 180             ROOT                            
-   INPUT           C    hrSunX               0.3103        0.3103                                       ROOT                            
+   INPUT           C    hrSunX               7.628050e-14  7.62805e-14                                  ROOT                            
    INPUT           C    hrSunY               -0.784127     -0.784127                                    ROOT                            
-   INPUT           C    hrSunZ               -0.537456     -0.537456                                    ROOT                            
-   INPUT           C    hrTime               5113.59       5113.59              Always in current u     ROOT                            
-   INPUT           C    hrTimeSec            5113.59       5113.59                                      ROOT                            
+   INPUT           C    hrSunZ               -0.620601     -0.620601                                    ROOT                            
+   INPUT           C    hrTime               0.            0                    Always in current u     ROOT                            
+   INPUT           C    hrTimeSec            0.            0                                            ROOT                            
    INPUT           C    hrTimeShadowEntry    1919.86       1919.86                                      ROOT                            
    INPUT           C    hrTimeShadowEntrySec 1919.86       1919.86                                      ROOT                            
    INPUT           C    hrTimeShadowExit     3658.314      3.658314108841e+03                           ROOT                            
    INPUT           C    hrTimeShadowExitSec  3658.314      3.658314108841e+03                           ROOT                            
-   INPUT           C    hrTrueAnom           330.          330                                          ROOT                            
+   INPUT           C    hrTrueAnom           0.            0                                            ROOT                            
    INPUT           C    hrVelocityX          1.            1                                            ROOT                            
-   INPUT           C    hrVelocityY          2.775560e-17  2.77556e-17                                  ROOT                            
-   INPUT           C    hrVelocityZ          0.0001477972  1.477971712353e-04                           ROOT                            
+   INPUT           C    hrVelocityY          -6.310890e-30 -6.31089e-30                                 ROOT                            
+   INPUT           C    hrVelocityZ          -1.262180e-29 -1.26218e-29                                 ROOT                            
 
                             SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     2
 
