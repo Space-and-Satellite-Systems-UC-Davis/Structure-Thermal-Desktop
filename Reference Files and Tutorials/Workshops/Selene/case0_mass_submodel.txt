@@ -1,0 +1,10 @@
+Submodel, Substrate, Insulation Mass, kg
+ X_NEG 0.27071 0.
+ X_POS 0.27071 0.
+ Y_NEG 0.27071 0.
+ Y_POS 0.27071 0.
+ Z_NEG 0.13536 0.
+ Z_POS 0.13536 0.
+Total: 1.35356 0.
+
+Total Mass = 1.353560 kg
