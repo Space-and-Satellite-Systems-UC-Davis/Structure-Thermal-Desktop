@@ -1,0 +1,12 @@
+X_NEG
+        Aluminum 6061-T6
+X_POS
+        Aluminum 6061-T6
+Y_NEG
+        Aluminum 6061-T6
+Y_POS
+        Aluminum 6061-T6
+Z_NEG
+        Aluminum 6061-T6
+Z_POS
+        Aluminum 6061-T6
