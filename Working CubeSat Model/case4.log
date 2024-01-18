@@ -1,8 +1,8 @@
-[ AutoCAD - Sun Apr 09 21:49:34 2023  ]----------------------------------------
+[ AutoCAD - Thu Jan 18 15:30:26 2024  ]----------------------------------------
 No duplicate nodes or insulation nodalization warnings found
 
 Calculating SINDA/FLUINT data
-Calculating Thermal Analyzer Input took 0.13 sec
+Calculating Thermal Analyzer Input took 0.15 sec
 
 Outputting SINDA/FLUINT data
 Outputting data for submodel COMPONENT_1...
@@ -26,7 +26,15 @@ Total Nodal Mass = 2.255796 kg
 
 *** RADCAD RAYTRACE HEATING RATES RUN START for database EXTERNAL_HR-Survivability_Test-rcoptics_open_v1.3 (2).rch
 Database already exists, checking to see if the model has changed...
-Restart was successful. No calculations were performed.
+Spin axis on not sameCheckRestart: Orbit Vectors
+Deleting old database named EXTERNAL_HR-Survivability_Test-rcoptics_open_v1.3 (2).rch
+Creating new database named EXTERNAL_HR-Survivability_Test-rcoptics_open_v1.3 (2).rch
+Running with 8 calculation threads
+Start and End position calc already done
+Total Elapsed time for heating rate calculations = 1.50 sec
+Outputting SINDA/FLUINT heating rate data to files:
+    C4A0.hra for arrays and C4A0.hrl for logic...
+Total Elapsed time for heating rate calculations and output = 1.95 sec
 
 
 *** RADCAD RAYTRACE RADK RUN START for database EXTERNAL_RDK-rcoptics_open_v1.3 (2).rck
@@ -50,10 +58,10 @@ Restart was successful. No calculations were performed.
      
     No overlapping surfaces greater than 10.0% found in INTERNAL_RDK
 
-*** Running SINDA model named C:\Users\rpkar\Documents\Working CubeSat Model\case4.inp
+*** Running SINDA model named C:\Users\rpkar\Documents\GitHub\Structure-Thermal-Desktop\Working CubeSat Model\case4.inp
 Successful completion of processor
-From C:\Users\rpkar\Documents\Working CubeSat Model\messages_case4.log
-     TIMEN  =    37800.00      The ASTAP execution time is:    6.77411580000080       seconds
-Time to run SINDA = 11.44 sec
+From C:\Users\rpkar\Documents\GitHub\Structure-Thermal-Desktop\Working CubeSat Model\messages_case4.log
+     TIMEN  =    37800.00      The ASTAP execution time is:    4.84927579999999       seconds
+Time to run SINDA = 9.94 sec
 
-Case Set Solved::Elapsed time = 12.26 sec
+Case Set Solved::Elapsed time = 12.80 sec

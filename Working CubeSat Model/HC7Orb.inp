@@ -62,7 +62,7 @@ HEADER CONTROL DATA, GLOBAL
     rstubf  = 0.5
     rsmaxf  = 3600.
     fbebala  = 0.1
-    sparseg  = 0.001
+    sparseg  = 0.0001
     fraver  = 0.
     rmsplt  = 0.1
     rmfrac  = 0.5

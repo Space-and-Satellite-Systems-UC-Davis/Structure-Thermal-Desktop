@@ -1,6 +1,6 @@
 HEADER OPTIONS
-C    SINDA Data generated with Thermal Desktop 6.3 Patch 13
-C    Generated on Fri Oct 20 15:44:51 2023
+C    SINDA Data generated with Thermal Desktop 23.2 Patch 3
+C    Generated on Thu Jan 18 15:25:35 2024
 C    From file: CubeSat.dwg
 C    Case Set: 7 Orbit
 C    Radiation Groups: External HR, External RDK, Internal RDK
