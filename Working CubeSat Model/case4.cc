@@ -1,6 +1,6 @@
 HEADER OPTIONS
-C    SINDA Data generated with Thermal Desktop 6.3 Patch 13
-C    Generated on Sun Apr  9 21:49:34 2023
+C    SINDA Data generated with Thermal Desktop 23.2 Patch 3
+C    Generated on Thu Jan 18 15:30:26 2024
 C    From file: CubeSat.dwg
 C    Case Set: 7 Orbit
 C    Radiation Groups: External HR, External RDK, Internal RDK
@@ -25,31 +25,31 @@ C    Symbol Names, Evaluated values, Input Strings, Comments
 C    hrBetaAngle          51.64         51.64
 C    hrEccen              0.00029567    0.00029567
 C    hrIllum              0.            0
-C    hrMeanAnom           330.017       330.017
+C    hrMeanAnom           0.            0
 C    hrPeriod             5578.17       5578.17              Always in current user units. If programming, use hrPeri...
 C    hrPeriodSec          5578.17       5578.17
-C    hrPlanetX            -5.551120e-17 -5.55112e-17
+C    hrPlanetX            6.310890e-30  6.31089e-30
 C    hrPlanetY            0.            0
 C    hrPlanetZ            1.            1
-C    hrPos                13.           13
+C    hrPos                0.            0
 C    hrShadowEntry        123.9306      1.239305657959e+02  
 C    hrShadowExit         236.0694      2.360694342042e+02  
-C    hrSpeed              7.65926       7.65926
+C    hrSpeed              7.65956       7.65956
 C    hrSubSolarMeanAnom   7.038290e-12  7.03829e-12          -180 to 180
 C    hrSubSolarTrueAnom   7.042450e-12  7.04245e-12          -180 to 180
-C    hrSunX               0.3103        0.3103
+C    hrSunX               7.628050e-14  7.62805e-14
 C    hrSunY               -0.784127     -0.784127
-C    hrSunZ               -0.537456     -0.537456
-C    hrTime               5113.59       5113.59              Always in current user units. If programming, use hrTime...
-C    hrTimeSec            5113.59       5113.59
+C    hrSunZ               -0.620601     -0.620601
+C    hrTime               0.            0                    Always in current user units. If programming, use hrTime...
+C    hrTimeSec            0.            0
 C    hrTimeShadowEntry    1919.86       1919.86
 C    hrTimeShadowEntrySec 1919.86       1919.86
 C    hrTimeShadowExit     3658.314      3.658314108841e+03  
 C    hrTimeShadowExitSec  3658.314      3.658314108841e+03  
-C    hrTrueAnom           330.          330
+C    hrTrueAnom           0.            0
 C    hrVelocityX          1.            1
-C    hrVelocityY          2.775560e-17  2.77556e-17
-C    hrVelocityZ          0.0001477972  1.477971712353e-04  
+C    hrVelocityY          -6.310890e-30 -6.31089e-30
+C    hrVelocityZ          -1.262180e-29 -1.26218e-29
 HEADER NODE DATA, COMPONENT_1
 HEADER VARIABLES 0, COMPONENT_1
 C Heat Load-MOTOR_HEAT[COMPONENT_1]::384
@@ -72,111 +72,111 @@ HEADER NODE DATA, MAIN
 HEADER CONDUCTOR DATA, MAIN
             1,    MOTOR.1,    MRW.1,    30.
 C Contact - Edge Contactor[MAIN][0]::386
-            2,    XNEG.1,    YPOS.5,    9.700767
+            2,    XNEG.1,    YPOS.5,    0.019
 C Contact - Edge Contactor[MAIN][0]::388
-            3,    XNEG.1,    ZNEG.1,    15.317
-            4,    XNEG.1,    ZNEG.2,    7.6585
-            5,    XNEG.1,    ZNEG.3,    3.82925
-            6,    XNEG.2,    ZNEG.6,    7.6585
-            7,    XNEG.3,    ZNEG.11,    7.6585
-            8,    XNEG.4,    ZNEG.16,    7.6585
+            3,    XNEG.1,    ZNEG.1,    0.03
+            4,    XNEG.1,    ZNEG.2,    0.015
+            5,    XNEG.1,    ZNEG.3,    0.0075
+            6,    XNEG.2,    ZNEG.6,    0.015
+            7,    XNEG.3,    ZNEG.11,    0.015
+            8,    XNEG.4,    ZNEG.16,    0.015
 C Contact - Edge Contactor[MAIN][0]::387
-            9,    XNEG.5,    YNEG.1,    10.7219
+            9,    XNEG.5,    YNEG.1,    0.021
 C Contact - Edge Contactor[MAIN][0]::388
-            10,    XNEG.5,    ZNEG.21,    15.317
-            11,    XNEG.5,    ZNEG.22,    7.6585
-            12,    XNEG.5,    ZNEG.23,    3.82925
+            10,    XNEG.5,    ZNEG.21,    0.03
+            11,    XNEG.5,    ZNEG.22,    0.015
+            12,    XNEG.5,    ZNEG.23,    0.0075
 C Contact - Edge Contactor[MAIN][0]::386
-            13,    XNEG.6,    YPOS.10,    10.21133
+            13,    XNEG.6,    YPOS.10,    0.02
 C Contact - Edge Contactor[MAIN][0]::387
-            14,    XNEG.10,    YNEG.6,    10.21133
+            14,    XNEG.10,    YNEG.6,    0.02
 C Contact - Edge Contactor[MAIN][0]::386
-            15,    XNEG.11,    YPOS.15,    10.21133
+            15,    XNEG.11,    YPOS.15,    0.02
 C Contact - Edge Contactor[MAIN][0]::387
-            16,    XNEG.15,    YNEG.11,    10.21133
+            16,    XNEG.15,    YNEG.11,    0.02
 C Contact - Edge Contactor[MAIN][0]::386
-            17,    XNEG.16,    YPOS.20,    10.21133
+            17,    XNEG.16,    YPOS.20,    0.02
 C Contact - Edge Contactor[MAIN][0]::387
-            18,    XNEG.20,    YNEG.16,    10.21133
+            18,    XNEG.20,    YNEG.16,    0.02
 C Contact - Edge Contactor[MAIN][0]::386
-            19,    XNEG.21,    YPOS.25,    10.21133
+            19,    XNEG.21,    YPOS.25,    0.02
 C Contact - Edge Contactor[MAIN][0]::389
-            20,    XNEG.21,    ZPOS.21,    15.317
-            21,    XNEG.21,    ZPOS.22,    7.6585
-            22,    XNEG.21,    ZPOS.23,    3.82925
-            23,    XNEG.22,    ZPOS.16,    7.6585
-            24,    XNEG.23,    ZPOS.11,    7.6585
-            25,    XNEG.24,    ZPOS.6,    7.6585
+            20,    XNEG.21,    ZPOS.21,    0.03
+            21,    XNEG.21,    ZPOS.22,    0.015
+            22,    XNEG.21,    ZPOS.23,    0.0075
+            23,    XNEG.22,    ZPOS.16,    0.015
+            24,    XNEG.23,    ZPOS.11,    0.015
+            25,    XNEG.24,    ZPOS.6,    0.015
 C Contact - Edge Contactor[MAIN][0]::387
-            26,    XNEG.25,    YNEG.21,    9.1902
+            26,    XNEG.25,    YNEG.21,    0.018
 C Contact - Edge Contactor[MAIN][0]::389
-            27,    XNEG.25,    ZPOS.1,    15.317
-            28,    XNEG.25,    ZPOS.2,    7.6585
-            29,    XNEG.25,    ZPOS.3,    3.82925
+            27,    XNEG.25,    ZPOS.1,    0.03
+            28,    XNEG.25,    ZPOS.2,    0.015
+            29,    XNEG.25,    ZPOS.3,    0.0075
 C Contact - Edge Contactor[MAIN][0]::387
-            30,    XPOS.1,    YNEG.5,    10.21133
+            30,    XPOS.1,    YNEG.5,    0.02
 C Contact - Edge Contactor[MAIN][0]::388
-            31,    XPOS.1,    ZNEG.23,    3.82925
-            32,    XPOS.1,    ZNEG.24,    7.6585
-            33,    XPOS.1,    ZNEG.25,    15.317
-            34,    XPOS.2,    ZNEG.20,    7.6585
-            35,    XPOS.3,    ZNEG.15,    7.6585
-            36,    XPOS.4,    ZNEG.10,    7.6585
+            31,    XPOS.1,    ZNEG.23,    0.0075
+            32,    XPOS.1,    ZNEG.24,    0.015
+            33,    XPOS.1,    ZNEG.25,    0.03
+            34,    XPOS.2,    ZNEG.20,    0.015
+            35,    XPOS.3,    ZNEG.15,    0.015
+            36,    XPOS.4,    ZNEG.10,    0.015
 C Contact - Edge Contactor[MAIN][0]::386
-            37,    XPOS.5,    YPOS.1,    9.1902
+            37,    XPOS.5,    YPOS.1,    0.018
 C Contact - Edge Contactor[MAIN][0]::388
-            38,    XPOS.5,    ZNEG.3,    3.82925
-            39,    XPOS.5,    ZNEG.4,    7.6585
-            40,    XPOS.5,    ZNEG.5,    15.317
+            38,    XPOS.5,    ZNEG.3,    0.0075
+            39,    XPOS.5,    ZNEG.4,    0.015
+            40,    XPOS.5,    ZNEG.5,    0.03
 C Contact - Edge Contactor[MAIN][0]::387
-            41,    XPOS.6,    YNEG.10,    10.21133
+            41,    XPOS.6,    YNEG.10,    0.02
 C Contact - Edge Contactor[MAIN][0]::386
-            42,    XPOS.10,    YPOS.6,    10.21133
+            42,    XPOS.10,    YPOS.6,    0.02
 C Contact - Edge Contactor[MAIN][0]::387
-            43,    XPOS.11,    YNEG.15,    10.21133
+            43,    XPOS.11,    YNEG.15,    0.02
 C Contact - Edge Contactor[MAIN][0]::386
-            44,    XPOS.15,    YPOS.11,    10.21133
+            44,    XPOS.15,    YPOS.11,    0.02
 C Contact - Edge Contactor[MAIN][0]::387
-            45,    XPOS.16,    YNEG.20,    10.21133
+            45,    XPOS.16,    YNEG.20,    0.02
 C Contact - Edge Contactor[MAIN][0]::386
-            46,    XPOS.20,    YPOS.16,    10.21133
+            46,    XPOS.20,    YPOS.16,    0.02
 C Contact - Edge Contactor[MAIN][0]::387
-            47,    XPOS.21,    YNEG.25,    10.7219
+            47,    XPOS.21,    YNEG.25,    0.021
 C Contact - Edge Contactor[MAIN][0]::389
-            48,    XPOS.21,    ZPOS.3,    3.82925
-            49,    XPOS.21,    ZPOS.4,    7.6585
-            50,    XPOS.21,    ZPOS.5,    15.317
-            51,    XPOS.22,    ZPOS.10,    7.6585
-            52,    XPOS.23,    ZPOS.15,    7.6585
-            53,    XPOS.24,    ZPOS.20,    7.6585
+            48,    XPOS.21,    ZPOS.3,    0.0075
+            49,    XPOS.21,    ZPOS.4,    0.015
+            50,    XPOS.21,    ZPOS.5,    0.03
+            51,    XPOS.22,    ZPOS.10,    0.015
+            52,    XPOS.23,    ZPOS.15,    0.015
+            53,    XPOS.24,    ZPOS.20,    0.015
 C Contact - Edge Contactor[MAIN][0]::386
-            54,    XPOS.25,    YPOS.21,    10.7219
+            54,    XPOS.25,    YPOS.21,    0.021
 C Contact - Edge Contactor[MAIN][0]::389
-            55,    XPOS.25,    ZPOS.23,    3.82925
-            56,    XPOS.25,    ZPOS.24,    7.6585
-            57,    XPOS.25,    ZPOS.25,    15.317
+            55,    XPOS.25,    ZPOS.23,    0.0075
+            56,    XPOS.25,    ZPOS.24,    0.015
+            57,    XPOS.25,    ZPOS.25,    0.03
 C Contact - Edge Contactor[MAIN][0]::387
-            58,    YNEG.1,    ZNEG.21,    4.5951
-            59,    YNEG.2,    ZNEG.22,    5.105667
-            60,    YNEG.3,    ZNEG.23,    5.105667
-            61,    YNEG.4,    ZNEG.24,    5.105667
-            62,    YNEG.5,    ZNEG.25,    5.105667
-            63,    YNEG.21,    ZPOS.1,    6.1268
-            64,    YNEG.22,    ZPOS.2,    5.105667
-            65,    YNEG.23,    ZPOS.3,    5.105667
-            66,    YNEG.24,    ZPOS.4,    5.105667
-            67,    YNEG.25,    ZPOS.5,    4.5951
+            58,    YNEG.1,    ZNEG.21,    0.009
+            59,    YNEG.2,    ZNEG.22,    0.01
+            60,    YNEG.3,    ZNEG.23,    0.01
+            61,    YNEG.4,    ZNEG.24,    0.01
+            62,    YNEG.5,    ZNEG.25,    0.01
+            63,    YNEG.21,    ZPOS.1,    0.012
+            64,    YNEG.22,    ZPOS.2,    0.01
+            65,    YNEG.23,    ZPOS.3,    0.01
+            66,    YNEG.24,    ZPOS.4,    0.01
+            67,    YNEG.25,    ZPOS.5,    0.009
 C Contact - Edge Contactor[MAIN][0]::386
-            68,    YPOS.1,    ZNEG.5,    6.1268
-            69,    YPOS.2,    ZNEG.4,    5.105667
-            70,    YPOS.3,    ZNEG.3,    5.105667
-            71,    YPOS.4,    ZNEG.2,    5.105667
-            72,    YPOS.5,    ZNEG.1,    5.616233
-            73,    YPOS.21,    ZPOS.25,    4.5951
-            74,    YPOS.22,    ZPOS.24,    5.105667
-            75,    YPOS.23,    ZPOS.23,    5.105667
-            76,    YPOS.24,    ZPOS.22,    5.105667
-            77,    YPOS.25,    ZPOS.21,    5.105667
+            68,    YPOS.1,    ZNEG.5,    0.012
+            69,    YPOS.2,    ZNEG.4,    0.01
+            70,    YPOS.3,    ZNEG.3,    0.01
+            71,    YPOS.4,    ZNEG.2,    0.01
+            72,    YPOS.5,    ZNEG.1,    0.011
+            73,    YPOS.21,    ZPOS.25,    0.009
+            74,    YPOS.22,    ZPOS.24,    0.01
+            75,    YPOS.23,    ZPOS.23,    0.01
+            76,    YPOS.24,    ZPOS.22,    0.01
+            77,    YPOS.25,    ZPOS.21,    0.01
 HEADER NODE DATA, MOTOR
             1,    20.,    43.23762
 HEADER NODE DATA, MRW

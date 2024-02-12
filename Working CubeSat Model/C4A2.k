@@ -1,6 +1,6 @@
 HEADER CONDUCTOR DATA, C4A2
-C     SINDA/FLUINT data created with Thermal Desktop 6.3 Patch 13
-C     Generated on Sun Apr  9 21:48:02 2023
+C     SINDA/FLUINT data created with Thermal Desktop 23.2 Patch 3
+C     Generated on Thu Jan 18 15:27:52 2024
 C
 C        Generated from database INTERNAL_RDK-rcoptics_open_v1.3 (2).rck
 C        Bij Cutoff factor:      0.001000

@@ -47,6 +47,7 @@
       USE REGDAT_MOD
       USE USERREGISTER_MOD
       USE CPADIMS_MOD
+      CALL INITSAVEX
       CALL INITCSR
       ATEST => RUSERC(   1 )
       BTEST => RUSERC(   2 )
@@ -226,11 +227,9 @@
         RETURN
         END
        SUBROUTINE VA1_GLOBAL
-       !DEC$ ATTRIBUTES DLLEXPORT::VA1_GLOBAL
        RETURN
        END
        SUBROUTINE VA1_GLOBAL_INIT
-       !DEC$ ATTRIBUTES DLLEXPORT::VA1_GLOBAL_INIT
        RETURN
        END
        SUBROUTINE VA10001
@@ -306,29 +305,27 @@
        RETURN
        END
        SUBROUTINE VA10013
-       CALL QVTEMP('C6A0')
-       CALL GVTEMP('C6A0')
-       CALL CVTEMP('C6A0')
+       CALL QVTEMP('C9A0')
+       CALL GVTEMP('C9A0')
+       CALL CVTEMP('C9A0')
        RETURN
        END
        SUBROUTINE VA10014
-       CALL QVTEMP('C6A1')
-       CALL GVTEMP('C6A1')
-       CALL CVTEMP('C6A1')
+       CALL QVTEMP('C9A1')
+       CALL GVTEMP('C9A1')
+       CALL CVTEMP('C9A1')
        RETURN
        END
        SUBROUTINE VA10015
-       CALL QVTEMP('C6A2')
-       CALL GVTEMP('C6A2')
-       CALL CVTEMP('C6A2')
+       CALL QVTEMP('C9A2')
+       CALL GVTEMP('C9A2')
+       CALL CVTEMP('C9A2')
        RETURN
        END
        SUBROUTINE VA2_GLOBAL
-       !DEC$ ATTRIBUTES DLLEXPORT::VA2_GLOBAL
        RETURN
        END
        SUBROUTINE VA2_GLOBAL_INIT
-       !DEC$ ATTRIBUTES DLLEXPORT::VA2_GLOBAL_INIT
        RETURN
        END
        SUBROUTINE VA20001
@@ -390,18 +387,16 @@
        use sf_interfaces
        USE USERREGISTER_MOD
        USE USERCOMMONDATA
-      CALL LOADQ_C6A0_1681519191
-       CALL QVTIME('C6A0')
-       CALL GVTIME('C6A0')
-       CALL CVTIME('C6A0')
+      CALL LOADQ_C9A0_1705621505
+       CALL QVTIME('C9A0')
+       CALL GVTIME('C9A0')
+       CALL CVTIME('C9A0')
        RETURN
        END
        SUBROUTINE VA0_GLOBAL
-       !DEC$ ATTRIBUTES DLLEXPORT::VA0_GLOBAL
        RETURN
        END
        SUBROUTINE VA0_GLOBAL_INIT
-       !DEC$ ATTRIBUTES DLLEXPORT::VA0_GLOBAL_INIT
        RETURN
        END
        SUBROUTINE VA00002
@@ -471,63 +466,51 @@
        RETURN
        END
        SUBROUTINE VA00014
-       CALL QVTIME('C6A1')
-       CALL GVTIME('C6A1')
-       CALL CVTIME('C6A1')
+       CALL QVTIME('C9A1')
+       CALL GVTIME('C9A1')
+       CALL CVTIME('C9A1')
        RETURN
        END
        SUBROUTINE VA00015
-       CALL QVTIME('C6A2')
-       CALL GVTIME('C6A2')
-       CALL CVTIME('C6A2')
+       CALL QVTIME('C9A2')
+       CALL GVTIME('C9A2')
+       CALL CVTIME('C9A2')
        RETURN
        END
        SUBROUTINE SLLOG1
-       !DEC$ ATTRIBUTES DLLEXPORT::SLLOG1
        RETURN
        END
        SUBROUTINE SLLOG2
-       !DEC$ ATTRIBUTES DLLEXPORT::SLLOG2
        RETURN
        END
        SUBROUTINE SLLOG0
-       !DEC$ ATTRIBUTES DLLEXPORT::SLLOG0
        RETURN
        END
        SUBROUTINE SOLOUT
-       !DEC$ ATTRIBUTES DLLEXPORT::SOLOUT
        RETURN
        END
        SUBROUTINE RELOUT
-       !DEC$ ATTRIBUTES DLLEXPORT::RELOUT
        RETURN
        END
        SUBROUTINE FL1_GLOBAL
-       !DEC$ ATTRIBUTES DLLEXPORT::FL1_GLOBAL
        RETURN
        END
        SUBROUTINE FL1_GLOBAL_INIT
-       !DEC$ ATTRIBUTES DLLEXPORT::FL1_GLOBAL_INIT
        RETURN
        END
        SUBROUTINE FL2_GLOBAL
-       !DEC$ ATTRIBUTES DLLEXPORT::FL2_GLOBAL
        RETURN
        END
        SUBROUTINE FL2_GLOBAL_INIT
-       !DEC$ ATTRIBUTES DLLEXPORT::FL2_GLOBAL_INIT
        RETURN
        END
        SUBROUTINE FL0_GLOBAL
-       !DEC$ ATTRIBUTES DLLEXPORT::FL0_GLOBAL
        RETURN
        END
        SUBROUTINE FL0_GLOBAL_INIT
-       !DEC$ ATTRIBUTES DLLEXPORT::FL0_GLOBAL_INIT
        RETURN
        END
        SUBROUTINE OPER
-       !DEC$ ATTRIBUTES DLLEXPORT::OPER
        use sf_interfaces
        USE USERREGISTER_MOD
        USE USERCOMMONDATA
@@ -546,9 +529,9 @@
        NBNAM(  10) = 'YPOS                            '
        NBNAM(  11) = 'ZNEG                            '
        NBNAM(  12) = 'ZPOS                            '
-       NBNAM(  13) = 'C6A0                            '
-       NBNAM(  14) = 'C6A1                            '
-       NBNAM(  15) = 'C6A2                            '
+       NBNAM(  13) = 'C9A0                            '
+       NBNAM(  14) = 'C9A1                            '
+       NBNAM(  15) = 'C9A2                            '
        CALL BUILD ('DEFAULT                         ',  15, NBNAM)
        CALL TDPOSTBL
        CALL TDHTR
@@ -560,7 +543,6 @@
        RETURN
        END
        SUBROUTINE OUT_GLOBAL
-       !DEC$ ATTRIBUTES DLLEXPORT::OUT_GLOBAL
        use sf_interfaces
        USE USERREGISTER_MOD
        USE USERCOMMONDATA
@@ -577,67 +559,51 @@
        RETURN
        END
        SUBROUTINE OUT_GLOBAL_INIT
-       !DEC$ ATTRIBUTES DLLEXPORT::OUT_GLOBAL_INIT
        RETURN
        END
        SUBROUTINE OUT0001
-       !DEC$ ATTRIBUTES DLLEXPORT::OUT0001
        RETURN
        END
        SUBROUTINE OUT0002
-       !DEC$ ATTRIBUTES DLLEXPORT::OUT0002
        RETURN
        END
        SUBROUTINE OUT0003
-       !DEC$ ATTRIBUTES DLLEXPORT::OUT0003
        RETURN
        END
        SUBROUTINE OUT0004
-       !DEC$ ATTRIBUTES DLLEXPORT::OUT0004
        RETURN
        END
        SUBROUTINE OUT0005
-       !DEC$ ATTRIBUTES DLLEXPORT::OUT0005
        RETURN
        END
        SUBROUTINE OUT0006
-       !DEC$ ATTRIBUTES DLLEXPORT::OUT0006
        RETURN
        END
        SUBROUTINE OUT0007
-       !DEC$ ATTRIBUTES DLLEXPORT::OUT0007
        RETURN
        END
        SUBROUTINE OUT0008
-       !DEC$ ATTRIBUTES DLLEXPORT::OUT0008
        RETURN
        END
        SUBROUTINE OUT0009
-       !DEC$ ATTRIBUTES DLLEXPORT::OUT0009
        RETURN
        END
        SUBROUTINE OUT0010
-       !DEC$ ATTRIBUTES DLLEXPORT::OUT0010
        RETURN
        END
        SUBROUTINE OUT0011
-       !DEC$ ATTRIBUTES DLLEXPORT::OUT0011
        RETURN
        END
        SUBROUTINE OUT0012
-       !DEC$ ATTRIBUTES DLLEXPORT::OUT0012
        RETURN
        END
        SUBROUTINE OUT0013
-       !DEC$ ATTRIBUTES DLLEXPORT::OUT0013
        RETURN
        END
        SUBROUTINE OUT0014
-       !DEC$ ATTRIBUTES DLLEXPORT::OUT0014
        RETURN
        END
        SUBROUTINE OUT0015
-       !DEC$ ATTRIBUTES DLLEXPORT::OUT0015
        RETURN
        END
        SUBROUTINE TDHTR
@@ -676,7 +642,7 @@
        USE USERCOMMONDATA
       RETURN
       END
-      RECURSIVE SUBROUTINE LOADQ_C6A0_1681519191
+      RECURSIVE SUBROUTINE LOADQ_C9A0_1705621505
       USE BINARY_READER_MOD
        use sf_interfaces
        USE USERREGISTER_MOD
@@ -688,13 +654,13 @@
       IF( NVAR__TD  .LT.  0 ) THEN
           ALLOCATE (DATA__TD(3171))
           CALL LOAD_BINARY_SINGLET_ARRAYS(
-     +        'C6A0.hra_bin'
+     +        'C9A0.hra_bin'
      +    , DATA__TD)
           NVAR__TD = 1
       ENDIF
       DATA__TD(1 + 453 + 1) =
      + A(3+1)
-      CALL LOADQ('C6A0',1,8,
+      CALL LOADQ('C9A0',1,8,
      +    DATA__TD(1+151),
      +    DATA__TD(1+302),
      +    DATA__TD(1),
@@ -704,22 +670,18 @@
       END
        SUBROUTINE FLOGI0(MODNO)
        INTEGER MODNO
-       !DEC$ ATTRIBUTES DLLEXPORT::FLOGI0
        RETURN
        END
        SUBROUTINE FLOGI1(MODNO)
        INTEGER MODNO
-       !DEC$ ATTRIBUTES DLLEXPORT::FLOGI1
        RETURN
        END
        SUBROUTINE FLOGI2(MODNO)
        INTEGER MODNO
-       !DEC$ ATTRIBUTES DLLEXPORT::FLOGI2
        RETURN
        END
        SUBROUTINE VARBL0(MODNO)
        INTEGER MODNO
-       !DEC$ ATTRIBUTES DLLEXPORT::VARBL0
        IF(MODNO .EQ. 1)   THEN
                 CALL VA00001
        ELSE IF(MODNO .EQ.         2)   THEN
@@ -755,7 +717,6 @@
        END
        SUBROUTINE VARBL1(MODNO)
        INTEGER MODNO
-       !DEC$ ATTRIBUTES DLLEXPORT::VARBL1
        IF(MODNO .EQ. 1)   THEN
                 CALL VA10001
        ELSE IF(MODNO .EQ.         2)   THEN
@@ -791,7 +752,6 @@
        END
        SUBROUTINE VARBL2(MODNO)
        INTEGER MODNO
-       !DEC$ ATTRIBUTES DLLEXPORT::VARBL2
        IF(MODNO .EQ. 1)   THEN
                 CALL VA20001
        ELSE IF(MODNO .EQ.         2)   THEN
@@ -867,7 +827,6 @@
        END
        SUBROUTINE OUTCAL(MODNO)
        INTEGER MODNO
-       !DEC$ ATTRIBUTES DLLEXPORT::OUTCAL
        IF(MODNO .EQ. 1)   THEN
                 CALL OUT0001
        ELSE IF(MODNO .EQ.         2)   THEN
@@ -917,7 +876,8 @@
        END
        SUBROUTINE FLUSLV(D,D1,A,A1,*)
        REAL D,D1
-       REAL A(1),A1(1)
+       REAL A(*)
+       LOGICAL A1(*)
        RETURN
        END
        SUBROUTINE PREFLO(A,A1,A2)
@@ -925,14 +885,15 @@
        RETURN
        END
        SUBROUTINE FLUINF(A)
-       REAL A(1)
+       INTEGER A
        RETURN
        END
        SUBROUTINE UPDATF(A)
-       REAL A(1)
+       INTEGER A
        RETURN
        END
        SUBROUTINE FCNVRG(A,D,A2,A3)
-       REAL A(1),A2(1),A3(1),D
+       LOGICAL A(*)
+       INTEGER A2(*),A3(*),D
        RETURN
        END

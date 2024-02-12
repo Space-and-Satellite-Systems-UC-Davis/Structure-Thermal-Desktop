@@ -1,8 +1,8 @@
-[ AutoCAD - Fri Apr 14 18:30:46 2023  ]----------------------------------------
+[ AutoCAD - Thu Jan 18 15:25:35 2024  ]----------------------------------------
 No duplicate nodes or insulation nodalization warnings found
 
 Calculating SINDA/FLUINT data
-Calculating Thermal Analyzer Input took 0.22 sec
+Calculating Thermal Analyzer Input took 0.19 sec
 
 Outputting SINDA/FLUINT data
 Outputting data for submodel COMPONENT_1...
@@ -26,11 +26,15 @@ Total Nodal Mass = 2.255796 kg
 
 *** RADCAD RAYTRACE HEATING RATES RUN START for database EXTERNAL_HR-Hot_Cases-rcoptics_open_v1.3 (2).rch
 Database already exists, checking to see if the model has changed...
+Outputting SINDA/FLUINT heating rate data to files:
+    C6A0.hra for arrays and C6A0.hrl for logic...
 Restart was successful. No calculations were performed.
 
 
 *** RADCAD RAYTRACE RADK RUN START for database EXTERNAL_RDK-rcoptics_open_v1.3 (2).rck
 Database already exists, checking to see if the model has changed...
+Ints not the same(at 2): 20 19
+Outputting SINDA data to C6A1.k
 Restart was successful. No calculations were performed.
     150 calculation nodes
     150 radks were output, 0 radks were filtered out
@@ -42,6 +46,8 @@ Restart was successful. No calculations were performed.
 
 *** RADCAD RAYTRACE RADK RUN START for database INTERNAL_RDK-rcoptics_open_v1.3 (2).rck
 Database already exists, checking to see if the model has changed...
+Ints not the same(at 2): 20 19
+Outputting SINDA data to C6A2.k
 Restart was successful. No calculations were performed.
     152 calculation nodes
     7919 radks were output, 3557 radks were filtered out
@@ -49,15 +55,11 @@ Restart was successful. No calculations were performed.
     5000 average number of rays per node shot
      
     No overlapping surfaces greater than 10.0% found in INTERNAL_RDK
-Error[13] deleting C:\Users\rpkar\Documents\Working CubeSat Model\HC7Orb.sav
-This problem can be caused by network or disk failures
-A program other than Thermal Desktop may be locking up this
-file, possibly anti-virus or backup software.
 
-*** Running SINDA model named C:\Users\rpkar\Documents\Working CubeSat Model\HC7Orb.inp
+*** Running SINDA model named C:\Users\rpkar\Documents\GitHub\Structure-Thermal-Desktop\Working CubeSat Model\HC7Orb.inp
 Successful completion of processor
-From C:\Users\rpkar\Documents\Working CubeSat Model\messages_HC7Orb.log
-     TIMEN  =    37800.00      The ASTAP execution time is:    5.01626470000156       seconds
-Time to run SINDA = 12.99 sec
+From C:\Users\rpkar\Documents\GitHub\Structure-Thermal-Desktop\Working CubeSat Model\messages_HC7Orb.log
+     TIMEN  =    37800.00      The ASTAP execution time is:    5.29716819999999       seconds
+Time to run SINDA = 17.54 sec
 
-Case Set Solved::Elapsed time = 14.02 sec
+Case Set Solved::Elapsed time = 20.59 sec

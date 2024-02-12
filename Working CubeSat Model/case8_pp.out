@@ -1,0 +1,863 @@
+
+
+                       S I N D A / F L U I N T 
+
+
+
+    ____          _______
+  //    \|   __    \|   \\ 
+ ||      |  /  \   ||    ||    C&R Technologies, Inc.
+ ||         \__/   ||    ||    Boulder Colorado, USA
+ ||         /  \   ||___//     Phone 303.971.0292, FAX 303.971.0035
+ ||         |  |/  ||   \\     www.crtech.com, support@crtech.com
+ ||      |  \__/\  ||    \\    
+  \\____/|         ||     \\   Hot engineering ... Cool software (R)
+
+
+
+             P R E P R O C E S S O R  E X E C U T I O N
+
+             VERSION ................... CR23.2N   
+             MODIFICATION DATE ......... 02NOV2023 
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     1
+
+ MODEL = SINDA          
+ OPTIONS DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER OPTIONS                                                                       ROOT                            
+   INPUT               OUTPUT = case8.out                                                               ROOT                            
+   INPUT               SAVE = case8.sav                                                                 ROOT                            
+   INPUT               MLINE = 100000 $ Limits headers output                                           ROOT                            
+   INPUT           TITLE CubeSat.dwg - 7 Orbit                                                          ROOT                            
+   INPUT           C    SINDA Data generated with Thermal Desktop 23.2 Patch 3                          ROOT                            
+   INPUT           C    Generated on Thu Jan 18 15:45:02 2024                                           ROOT                            
+   INPUT           C    From file: CubeSat.dwg                                                          ROOT                            
+   INPUT           C    Case Set: 7 Orbit                                                               ROOT                            
+   INPUT           C    Radiation Groups: External HR, External RDK, Internal RDK                       ROOT                            
+   INPUT           C    Running Steady and 90min (10800s) Transient States                              ROOT                            
+   INPUT           C    TDUNITS,   Energy     = J                                                       ROOT                            
+   INPUT           C    TDUNITS,   Time       = s                                                       ROOT                            
+   INPUT           C    TDUNITS,   Temp       = C                                                       ROOT                            
+   INPUT           C    TDUNITS,   Mass       = kg                                                      ROOT                            
+   INPUT           C    TDUNITS,   Length     = m                                                       ROOT                            
+   INPUT           C    TDUNITS,   Orbit      = km                                                      ROOT                            
+   INPUT           C    TDUNITS,   Pressure   = Pa                                                      ROOT                            
+   INPUT           C    TDUNITS,   Force      = N                                                       ROOT                            
+   INPUT           C    TDUNITS,   Angle      = Degrees                                                 ROOT                            
+   INPUT           C    TDUNITS,   Volt       = volt                                                    ROOT                            
+   INPUT           C    TDUNITS,   Current    = amp                                                     ROOT                            
+   INPUT           C    DWG name:      CubeSat.dwg                                                      ROOT                            
+   INPUT           C    Thermophysical Property Database: ThermalDataFilled.tdp                         ROOT                            
+   INPUT           C    Optical Property Database:        optical properties\rcoptics_open_v1.3 (2)     ROOT                            
+   INPUT           C    Computer name: RYANLAPTOP                                                       ROOT                            
+   INPUT           C    User name:     rpkar                                                            ROOT                            
+   INPUT           C    Symbol Names, Evaluated values, Input Strings, Comments                         ROOT                            
+   INPUT           C    hrBetaAngle          51.64         51.64                                        ROOT                            
+   INPUT           C    hrEccen              0.00029567    0.00029567                                   ROOT                            
+   INPUT           C    hrIllum              0.            0                                            ROOT                            
+   INPUT           C    hrMeanAnom           0.            0                                            ROOT                            
+   INPUT           C    hrPeriod             5578.17       5578.17              Always in current u     ROOT                            
+   INPUT           C    hrPeriodSec          5578.17       5578.17                                      ROOT                            
+   INPUT           C    hrPlanetX            6.310890e-30  6.31089e-30                                  ROOT                            
+   INPUT           C    hrPlanetY            0.            0                                            ROOT                            
+   INPUT           C    hrPlanetZ            1.            1                                            ROOT                            
+   INPUT           C    hrPos                0.            0                                            ROOT                            
+   INPUT           C    hrShadowEntry        123.9306      1.239305657959e+02                           ROOT                            
+   INPUT           C    hrShadowExit         236.0694      2.360694342042e+02                           ROOT                            
+   INPUT           C    hrSpeed              7.65956       7.65956                                      ROOT                            
+   INPUT           C    hrSubSolarMeanAnom   7.038290e-12  7.03829e-12          -180 to 180             ROOT                            
+   INPUT           C    hrSubSolarTrueAnom   7.042450e-12  7.04245e-12          -180 to 180             ROOT                            
+   INPUT           C    hrSunX               7.628050e-14  7.62805e-14                                  ROOT                            
+   INPUT           C    hrSunY               -0.784127     -0.784127                                    ROOT                            
+   INPUT           C    hrSunZ               -0.620601     -0.620601                                    ROOT                            
+   INPUT           C    hrTime               0.            0                    Always in current u     ROOT                            
+   INPUT           C    hrTimeSec            0.            0                                            ROOT                            
+   INPUT           C    hrTimeShadowEntry    1919.86       1919.86                                      ROOT                            
+   INPUT           C    hrTimeShadowEntrySec 1919.86       1919.86                                      ROOT                            
+   INPUT           C    hrTimeShadowExit     3658.314      3.658314108841e+03                           ROOT                            
+   INPUT           C    hrTimeShadowExitSec  3658.314      3.658314108841e+03                           ROOT                            
+   INPUT           C    hrTrueAnom           0.            0                                            ROOT                            
+   INPUT           C    hrVelocityX          1.            1                                            ROOT                            
+   INPUT           C    hrVelocityY          -6.310890e-30 -6.31089e-30                                 ROOT                            
+   INPUT           C    hrVelocityZ          -1.262180e-29 -1.26218e-29                                 ROOT                            
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     2
+
+ MODEL = SINDA                                                                  CubeSat.dwg - 7 Orbit
+ MODEL NAME CHECK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+
+  LIST OF HEADER CARDS IN NODE DATA - CHECKING MODEL NAMES AGAINST BUILD CARDS
+
+HEADER NODE DATA, COMPONENT_1
+HEADER NODE DATA, MAIN
+HEADER NODE DATA, MOTOR
+HEADER NODE DATA, MRW
+HEADER NODE DATA, SPACE
+HEADER NODE DATA, STRUCTURE
+HEADER NODE DATA, XNEG
+HEADER NODE DATA, XPOS
+HEADER NODE DATA, YNEG
+HEADER NODE DATA, YPOS
+HEADER NODE DATA, ZNEG
+HEADER NODE DATA, ZPOS
+HEADER NODE DATA, C9A0
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     3
+
+ MODEL = SINDA                                                                  CubeSat.dwg - 7 Orbit
+ CONSTANTS DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER CONTROL DATA, GLOBAL                                                          GLOBAL                          
+   INPUT               ABSZRO = -273.15                                                                 GLOBAL                          
+   INPUT               SIGMA  = 5.670400E-08                                                            GLOBAL                          
+   INPUT               NLOOPS  = 1000                                                                   GLOBAL                          
+   INPUT               NLOOPT  = 100                                                                    GLOBAL                          
+   INPUT               TIMEO  = 0.                                                                      GLOBAL                          
+   INPUT               TIMEND  = 37800.                                                                 GLOBAL                          
+   INPUT               DTIMES  = 0.                                                                     GLOBAL                          
+   INPUT               PATMOS  = 0.                                                                     GLOBAL                          
+   INPUT               ARLXCA  = 0.001                                                                  GLOBAL                          
+   INPUT               DRLXCA  = 0.001                                                                  GLOBAL                          
+   INPUT               EXTLIM  = 0.5                                                                    GLOBAL                          
+   INPUT               MATMET = 2 $ AUTODETERMINE SINGLE MATRIX                                         GLOBAL                          
+   INPUT               ITERXT = 3                                                                       GLOBAL                          
+   INPUT               EBALSA  = 0.01                                                                   GLOBAL                          
+   INPUT               EBALNA  = 0.                                                                     GLOBAL                          
+   INPUT               ITEROT  = (LOOPCT >= NLOOPS - 2 && LOOPCT != NLOOPS) ? 1 : 0                     GLOBAL                          
+   INPUT               ITHOLD  = 0                                                                      GLOBAL                          
+   INPUT               OUTPUT  = 0.                                                                     GLOBAL                          
+   INPUT               ATMPCA  = 1.000000E+30                                                           GLOBAL                          
+   INPUT               DTMPCA  = 50.                                                                    GLOBAL                          
+   INPUT               DTIMEI  = 0.                                                                     GLOBAL                          
+   INPUT               DTIMEL  = 0.                                                                     GLOBAL                          
+   INPUT               DTIMEH  = 1.000000E+30                                                           GLOBAL                          
+   INPUT               CSGFAC  = 1.                                                                     GLOBAL                          
+   INPUT               OPEITR  = 0                                                                      GLOBAL                          
+   INPUT               DTSIZF  = 0.1                                                                    GLOBAL                          
+   INPUT               DTTUBF  = 0.1                                                                    GLOBAL                          
+   INPUT               DTMAXF  = 1.000000E+30                                                           GLOBAL                          
+   INPUT               DTMINF  = 0.                                                                     GLOBAL                          
+   INPUT               OUTPTF = 0.                                                                      GLOBAL                          
+   INPUT               OPITRF  = 0                                                                      GLOBAL                          
+   INPUT               RERRF  = 0.01                                                                    GLOBAL                          
+   INPUT               REBALF  = 0.01                                                                   GLOBAL                          
+   INPUT               ITHLDF  = 0                                                                      GLOBAL                          
+   INPUT               ITROTF  = (LOOPCT >= NLOOPS - 2 && LOOPCT != NLOOPS) ? 1 : 0                     GLOBAL                          
+   INPUT               RSSIZF  = 0.5                                                                    GLOBAL                          
+   INPUT               RSTUBF  = 0.5                                                                    GLOBAL                          
+   INPUT               RSMAXF  = 3600.                                                                  GLOBAL                          
+   INPUT               FBEBALA  = 0.1                                                                   GLOBAL                          
+   INPUT               SPARSEG  = 0.0001                                                                GLOBAL                          
+   INPUT               FRAVER  = 0.                                                                     GLOBAL                          
+   INPUT               RMSPLT  = 0.1                                                                    GLOBAL                          
+   INPUT               RMFRAC  = 0.5                                                                    GLOBAL                          
+   INPUT               RMRATE  = 0.1                                                                    GLOBAL                          
+   INPUT               UID =    SI                                                                      GLOBAL                          
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     4
+
+ MODEL = SINDA                                                                  CubeSat.dwg - 7 Orbit
+ ARRAY DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER ARRAY DATA, C9A0                                                              C9A0                            
+   INPUT           PSTOP                                                                                C9A0                            
+   INPUT           PSTART                                                                               C9A0                            
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     5
+
+ MODEL = SINDA                                                                  CubeSat.dwg - 7 Orbit
+ CHARACTER ARRAY DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER CARRAY DATA, C9A0                                                             C9A0                            
+   INPUT            1 = XNEG, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19         C9A0                            
+   INPUT            2 =  20, 21, 22, 23, 24, 25, XPOS, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13        C9A0                            
+   INPUT            3 =  14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, YNEG, 1, 2, 3, 4, 5, 6         C9A0                            
+   INPUT            4 =  7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25        C9A0                            
+   INPUT            5 =  YPOS, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19        C9A0                            
+   INPUT            6 =  20, 21, 22, 23, 24, 25, ZNEG, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13        C9A0                            
+   INPUT            7 =  14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, ZPOS, 1, 2, 3, 4, 5, 6         C9A0                            
+   INPUT            8 =  7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25        C9A0                            
+   INPUT           C INSERT C9A0.hrl                                                                    C9A0                            
+   INPUT           HEADER SOLVER                                                                        GLOBAL                          
+   INPUT               ADERO  = 0.0001                                                                  GLOBAL                          
+   INPUT               RDERO  = 0.02                                                                    GLOBAL                          
+   INPUT               AERRO  = 0.0001                                                                  GLOBAL                          
+   INPUT               RERRO  = 0.01                                                                    GLOBAL                          
+   INPUT               PUSHO  = 1.                                                                      GLOBAL                          
+   INPUT               RCACTO  = 0.1                                                                    GLOBAL                          
+   INPUT               RCERRO  = 0.003                                                                  GLOBAL                          
+   INPUT               ACHGO  = 0.1                                                                     GLOBAL                          
+   INPUT               RCHGO  = 0.9                                                                     GLOBAL                          
+   INPUT               RCVIO  = 0.2                                                                     GLOBAL                          
+   INPUT               METHO  = 2                                                                       GLOBAL                          
+   INPUT               NLOOPO  = 100                                                                    GLOBAL                          
+   INPUT               MDERO  = 0                                                                       GLOBAL                          
+   INPUT               NCONVO  = 2                                                                      GLOBAL                          
+   INPUT               NERVUS  = 0                                                                      GLOBAL                          
+   INPUT               NEWPRO  = 0                                                                      GLOBAL                          
+   INPUT               NLOOPR  = 100                                                                    GLOBAL                          
+   INPUT               ADERR  = 0.01                                                                    GLOBAL                          
+   INPUT               RERRR  = 0.001                                                                   GLOBAL                          
+   INPUT               AERRR  = 1.000000E-05                                                            GLOBAL                          
+   INPUT               RDERR  = 0.02                                                                    GLOBAL                          
+   INPUT           C INSERT case8.cc                                                                    GLOBAL                          
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     6
+
+ MODEL = SINDA                                                                  CubeSat.dwg - 7 Orbit
+ NODE DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER NODE DATA, COMPONENT_1                                                        COMPONENT_1                     
+   INPUT           HEADER NODE DATA, MAIN                                                               MAIN                            
+   INPUT           HEADER NODE DATA, MOTOR                                                              MOTOR                           
+   INPUT                       1,    20.,    43.23762                                                   MOTOR                           
+   INPUT           HEADER NODE DATA, MRW                                                                MRW                             
+   INPUT                       1,    20.,    321.7725                                                   MRW                             
+   INPUT           HEADER NODE DATA, SPACE                                                              SPACE                           
+   INPUT                       -1,    -270.42,    -1.0                                                  SPACE                           
+   INPUT           HEADER NODE DATA, STRUCTURE                                                          STRUCTURE                       
+   INPUT           HEADER NODE DATA, XNEG                                                               XNEG                            
+   INPUT                       1,    20.,    9.60836                                                    XNEG                            
+   INPUT                       2,    20.,    9.60836                                                    XNEG                            
+   INPUT                       3,    20.,    9.60836                                                    XNEG                            
+   INPUT                       4,    20.,    9.60836                                                    XNEG                            
+   INPUT                       5,    20.,    9.60836                                                    XNEG                            
+   INPUT                       6,    20.,    9.60836                                                    XNEG                            
+   INPUT                       7,    20.,    9.60836                                                    XNEG                            
+   INPUT                       8,    20.,    9.60836                                                    XNEG                            
+   INPUT                       9,    20.,    9.60836                                                    XNEG                            
+   INPUT                       10,    20.,    9.60836                                                   XNEG                            
+   INPUT                       11,    20.,    9.60836                                                   XNEG                            
+   INPUT                       12,    20.,    9.60836                                                   XNEG                            
+   INPUT                       13,    20.,    9.60836                                                   XNEG                            
+   INPUT                       14,    20.,    9.60836                                                   XNEG                            
+   INPUT                       15,    20.,    9.60836                                                   XNEG                            
+   INPUT                       16,    20.,    9.60836                                                   XNEG                            
+   INPUT                       17,    20.,    9.60836                                                   XNEG                            
+   INPUT                       18,    20.,    9.60836                                                   XNEG                            
+   INPUT                       19,    20.,    9.60836                                                   XNEG                            
+   INPUT                       20,    20.,    9.60836                                                   XNEG                            
+   INPUT                       21,    20.,    9.60836                                                   XNEG                            
+   INPUT                       22,    20.,    9.60836                                                   XNEG                            
+   INPUT                       23,    20.,    9.60836                                                   XNEG                            
+   INPUT                       24,    20.,    9.60836                                                   XNEG                            
+   INPUT                       25,    20.,    9.60836                                                   XNEG                            
+   INPUT           HEADER NODE DATA, XPOS                                                               XPOS                            
+   INPUT                       1,    20.,    9.60836                                                    XPOS                            
+   INPUT                       2,    20.,    9.60836                                                    XPOS                            
+   INPUT                       3,    20.,    9.60836                                                    XPOS                            
+   INPUT                       4,    20.,    9.60836                                                    XPOS                            
+   INPUT                       5,    20.,    9.60836                                                    XPOS                            
+   INPUT                       6,    20.,    9.60836                                                    XPOS                            
+   INPUT                       7,    20.,    9.60836                                                    XPOS                            
+   INPUT                       8,    20.,    9.60836                                                    XPOS                            
+   INPUT                       9,    20.,    9.60836                                                    XPOS                            
+   INPUT                       10,    20.,    9.60836                                                   XPOS                            
+   INPUT                       11,    20.,    9.60836                                                   XPOS                            
+   INPUT                       12,    20.,    9.60836                                                   XPOS                            
+   INPUT                       13,    20.,    9.60836                                                   XPOS                            
+   INPUT                       14,    20.,    9.60836                                                   XPOS                            
+   INPUT                       15,    20.,    9.60836                                                   XPOS                            
+   INPUT                       16,    20.,    9.60836                                                   XPOS                            
+   INPUT                       17,    20.,    9.60836                                                   XPOS                            
+   INPUT                       18,    20.,    9.60836                                                   XPOS                            
+   INPUT                       19,    20.,    9.60836                                                   XPOS                            
+   INPUT                       20,    20.,    9.60836                                                   XPOS                            
+   INPUT                       21,    20.,    9.60836                                                   XPOS                            
+   INPUT                       22,    20.,    9.60836                                                   XPOS                            
+   INPUT                       23,    20.,    9.60836                                                   XPOS                            
+   INPUT                       24,    20.,    9.60836                                                   XPOS                            
+   INPUT                       25,    20.,    9.60836                                                   XPOS                            
+   INPUT           HEADER NODE DATA, YNEG                                                               YNEG                            
+   INPUT                       1,    20.,    9.60836                                                    YNEG                            
+   INPUT                       2,    20.,    9.60836                                                    YNEG                            
+   INPUT                       3,    20.,    9.60836                                                    YNEG                            
+   INPUT                       4,    20.,    9.60836                                                    YNEG                            
+   INPUT                       5,    20.,    9.60836                                                    YNEG                            
+   INPUT                       6,    20.,    9.60836                                                    YNEG                            
+   INPUT                       7,    20.,    9.60836                                                    YNEG                            
+   INPUT                       8,    20.,    9.60836                                                    YNEG                            
+   INPUT                       9,    20.,    9.60836                                                    YNEG                            
+   INPUT                       10,    20.,    9.60836                                                   YNEG                            
+   INPUT                       11,    20.,    9.60836                                                   YNEG                            
+   INPUT                       12,    20.,    9.60836                                                   YNEG                            
+   INPUT                       13,    20.,    9.60836                                                   YNEG                            
+   INPUT                       14,    20.,    9.60836                                                   YNEG                            
+   INPUT                       15,    20.,    9.60836                                                   YNEG                            
+   INPUT                       16,    20.,    9.60836                                                   YNEG                            
+   INPUT                       17,    20.,    9.60836                                                   YNEG                            
+   INPUT                       18,    20.,    9.60836                                                   YNEG                            
+   INPUT                       19,    20.,    9.60836                                                   YNEG                            
+   INPUT                       20,    20.,    9.60836                                                   YNEG                            
+   INPUT                       21,    20.,    9.60836                                                   YNEG                            
+   INPUT                       22,    20.,    9.60836                                                   YNEG                            
+   INPUT                       23,    20.,    9.60836                                                   YNEG                            
+   INPUT                       24,    20.,    9.60836                                                   YNEG                            
+   INPUT                       25,    20.,    9.60836                                                   YNEG                            
+   INPUT           HEADER NODE DATA, YPOS                                                               YPOS                            
+   INPUT                       1,    20.,    9.60836                                                    YPOS                            
+   INPUT                       2,    20.,    9.60836                                                    YPOS                            
+   INPUT                       3,    20.,    9.60836                                                    YPOS                            
+   INPUT                       4,    20.,    9.60836                                                    YPOS                            
+   INPUT                       5,    20.,    9.60836                                                    YPOS                            
+   INPUT                       6,    20.,    9.60836                                                    YPOS                            
+   INPUT                       7,    20.,    9.60836                                                    YPOS                            
+   INPUT                       8,    20.,    9.60836                                                    YPOS                            
+   INPUT                       9,    20.,    9.60836                                                    YPOS                            
+   INPUT                       10,    20.,    9.60836                                                   YPOS                            
+   INPUT                       11,    20.,    9.60836                                                   YPOS                            
+   INPUT                       12,    20.,    9.60836                                                   YPOS                            
+   INPUT                       13,    20.,    9.60836                                                   YPOS                            
+   INPUT                       14,    20.,    9.60836                                                   YPOS                            
+   INPUT                       15,    20.,    9.60836                                                   YPOS                            
+   INPUT                       16,    20.,    9.60836                                                   YPOS                            
+   INPUT                       17,    20.,    9.60836                                                   YPOS                            
+   INPUT                       18,    20.,    9.60836                                                   YPOS                            
+   INPUT                       19,    20.,    9.60836                                                   YPOS                            
+   INPUT                       20,    20.,    9.60836                                                   YPOS                            
+   INPUT                       21,    20.,    9.60836                                                   YPOS                            
+   INPUT                       22,    20.,    9.60836                                                   YPOS                            
+   INPUT                       23,    20.,    9.60836                                                   YPOS                            
+   INPUT                       24,    20.,    9.60836                                                   YPOS                            
+   INPUT                       25,    20.,    9.60836                                                   YPOS                            
+   INPUT           HEADER NODE DATA, ZNEG                                                               ZNEG                            
+   INPUT                       1,    20.,    4.80418                                                    ZNEG                            
+   INPUT                       2,    20.,    4.80418                                                    ZNEG                            
+   INPUT                       3,    20.,    4.80418                                                    ZNEG                            
+   INPUT                       4,    20.,    4.80418                                                    ZNEG                            
+   INPUT                       5,    20.,    4.80418                                                    ZNEG                            
+   INPUT                       6,    20.,    4.80418                                                    ZNEG                            
+   INPUT                       7,    20.,    4.80418                                                    ZNEG                            
+   INPUT                       8,    20.,    4.80418                                                    ZNEG                            
+   INPUT                       9,    20.,    4.80418                                                    ZNEG                            
+   INPUT                       10,    20.,    4.80418                                                   ZNEG                            
+   INPUT                       11,    20.,    4.80418                                                   ZNEG                            
+   INPUT                       12,    20.,    4.80418                                                   ZNEG                            
+   INPUT                       13,    20.,    4.80418                                                   ZNEG                            
+   INPUT                       14,    20.,    4.80418                                                   ZNEG                            
+   INPUT                       15,    20.,    4.80418                                                   ZNEG                            
+   INPUT                       16,    20.,    4.80418                                                   ZNEG                            
+   INPUT                       17,    20.,    4.80418                                                   ZNEG                            
+   INPUT                       18,    20.,    4.80418                                                   ZNEG                            
+   INPUT                       19,    20.,    4.80418                                                   ZNEG                            
+   INPUT                       20,    20.,    4.80418                                                   ZNEG                            
+   INPUT                       21,    20.,    4.80418                                                   ZNEG                            
+   INPUT                       22,    20.,    4.80418                                                   ZNEG                            
+   INPUT                       23,    20.,    4.80418                                                   ZNEG                            
+   INPUT                       24,    20.,    4.80418                                                   ZNEG                            
+   INPUT                       25,    20.,    4.80418                                                   ZNEG                            
+   INPUT           HEADER NODE DATA, ZPOS                                                               ZPOS                            
+   INPUT                       1,    20.,    4.80418                                                    ZPOS                            
+   INPUT                       2,    20.,    4.80418                                                    ZPOS                            
+   INPUT                       3,    20.,    4.80418                                                    ZPOS                            
+   INPUT                       4,    20.,    4.80418                                                    ZPOS                            
+   INPUT                       5,    20.,    4.80418                                                    ZPOS                            
+   INPUT                       6,    20.,    4.80418                                                    ZPOS                            
+   INPUT                       7,    20.,    4.80418                                                    ZPOS                            
+   INPUT                       8,    20.,    4.80418                                                    ZPOS                            
+   INPUT                       9,    20.,    4.80418                                                    ZPOS                            
+   INPUT                       10,    20.,    4.80418                                                   ZPOS                            
+   INPUT                       11,    20.,    4.80418                                                   ZPOS                            
+   INPUT                       12,    20.,    4.80418                                                   ZPOS                            
+   INPUT                       13,    20.,    4.80418                                                   ZPOS                            
+   INPUT                       14,    20.,    4.80418                                                   ZPOS                            
+   INPUT                       15,    20.,    4.80418                                                   ZPOS                            
+   INPUT                       16,    20.,    4.80418                                                   ZPOS                            
+   INPUT                       17,    20.,    4.80418                                                   ZPOS                            
+   INPUT                       18,    20.,    4.80418                                                   ZPOS                            
+   INPUT                       19,    20.,    4.80418                                                   ZPOS                            
+   INPUT                       20,    20.,    4.80418                                                   ZPOS                            
+   INPUT                       21,    20.,    4.80418                                                   ZPOS                            
+   INPUT                       22,    20.,    4.80418                                                   ZPOS                            
+   INPUT                       23,    20.,    4.80418                                                   ZPOS                            
+   INPUT                       24,    20.,    4.80418                                                   ZPOS                            
+   INPUT                       25,    20.,    4.80418                                                   ZPOS                            
+   INPUT           HEADER NODE DATA, C9A0                                                               C9A0                            
+   INPUT           HEADER NODE DATA,C9A1                                                                C9A1                            
+   INPUT           HEADER NODE DATA,C9A2                                                                C9A2                            
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     7
+
+ MODEL = SINDA                                                                  CubeSat.dwg - 7 Orbit
+ CONDUCTOR DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER CONDUCTOR DATA, MAIN                                                          MAIN                            
+   INPUT                       1,    MOTOR.1,    MRW.1,    30.                                          MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::386                                             MAIN                            
+   INPUT                       2,    XNEG.1,    YPOS.5,    0.019                                        MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::388                                             MAIN                            
+   INPUT                       3,    XNEG.1,    ZNEG.1,    0.03                                         MAIN                            
+   INPUT                       4,    XNEG.1,    ZNEG.2,    0.015                                        MAIN                            
+   INPUT                       5,    XNEG.1,    ZNEG.3,    0.0075                                       MAIN                            
+   INPUT                       6,    XNEG.2,    ZNEG.6,    0.015                                        MAIN                            
+   INPUT                       7,    XNEG.3,    ZNEG.11,    0.015                                       MAIN                            
+   INPUT                       8,    XNEG.4,    ZNEG.16,    0.015                                       MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::387                                             MAIN                            
+   INPUT                       9,    XNEG.5,    YNEG.1,    0.021                                        MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::388                                             MAIN                            
+   INPUT                       10,    XNEG.5,    ZNEG.21,    0.03                                       MAIN                            
+   INPUT                       11,    XNEG.5,    ZNEG.22,    0.015                                      MAIN                            
+   INPUT                       12,    XNEG.5,    ZNEG.23,    0.0075                                     MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::386                                             MAIN                            
+   INPUT                       13,    XNEG.6,    YPOS.10,    0.02                                       MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::387                                             MAIN                            
+   INPUT                       14,    XNEG.10,    YNEG.6,    0.02                                       MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::386                                             MAIN                            
+   INPUT                       15,    XNEG.11,    YPOS.15,    0.02                                      MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::387                                             MAIN                            
+   INPUT                       16,    XNEG.15,    YNEG.11,    0.02                                      MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::386                                             MAIN                            
+   INPUT                       17,    XNEG.16,    YPOS.20,    0.02                                      MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::387                                             MAIN                            
+   INPUT                       18,    XNEG.20,    YNEG.16,    0.02                                      MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::386                                             MAIN                            
+   INPUT                       19,    XNEG.21,    YPOS.25,    0.02                                      MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::389                                             MAIN                            
+   INPUT                       20,    XNEG.21,    ZPOS.21,    0.03                                      MAIN                            
+   INPUT                       21,    XNEG.21,    ZPOS.22,    0.015                                     MAIN                            
+   INPUT                       22,    XNEG.21,    ZPOS.23,    0.0075                                    MAIN                            
+   INPUT                       23,    XNEG.22,    ZPOS.16,    0.015                                     MAIN                            
+   INPUT                       24,    XNEG.23,    ZPOS.11,    0.015                                     MAIN                            
+   INPUT                       25,    XNEG.24,    ZPOS.6,    0.015                                      MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::387                                             MAIN                            
+   INPUT                       26,    XNEG.25,    YNEG.21,    0.018                                     MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::389                                             MAIN                            
+   INPUT                       27,    XNEG.25,    ZPOS.1,    0.03                                       MAIN                            
+   INPUT                       28,    XNEG.25,    ZPOS.2,    0.015                                      MAIN                            
+   INPUT                       29,    XNEG.25,    ZPOS.3,    0.0075                                     MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::387                                             MAIN                            
+   INPUT                       30,    XPOS.1,    YNEG.5,    0.02                                        MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::388                                             MAIN                            
+   INPUT                       31,    XPOS.1,    ZNEG.23,    0.0075                                     MAIN                            
+   INPUT                       32,    XPOS.1,    ZNEG.24,    0.015                                      MAIN                            
+   INPUT                       33,    XPOS.1,    ZNEG.25,    0.03                                       MAIN                            
+   INPUT                       34,    XPOS.2,    ZNEG.20,    0.015                                      MAIN                            
+   INPUT                       35,    XPOS.3,    ZNEG.15,    0.015                                      MAIN                            
+   INPUT                       36,    XPOS.4,    ZNEG.10,    0.015                                      MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::386                                             MAIN                            
+   INPUT                       37,    XPOS.5,    YPOS.1,    0.018                                       MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::388                                             MAIN                            
+   INPUT                       38,    XPOS.5,    ZNEG.3,    0.0075                                      MAIN                            
+   INPUT                       39,    XPOS.5,    ZNEG.4,    0.015                                       MAIN                            
+   INPUT                       40,    XPOS.5,    ZNEG.5,    0.03                                        MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::387                                             MAIN                            
+   INPUT                       41,    XPOS.6,    YNEG.10,    0.02                                       MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::386                                             MAIN                            
+   INPUT                       42,    XPOS.10,    YPOS.6,    0.02                                       MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::387                                             MAIN                            
+   INPUT                       43,    XPOS.11,    YNEG.15,    0.02                                      MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::386                                             MAIN                            
+   INPUT                       44,    XPOS.15,    YPOS.11,    0.02                                      MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::387                                             MAIN                            
+   INPUT                       45,    XPOS.16,    YNEG.20,    0.02                                      MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::386                                             MAIN                            
+   INPUT                       46,    XPOS.20,    YPOS.16,    0.02                                      MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::387                                             MAIN                            
+   INPUT                       47,    XPOS.21,    YNEG.25,    0.021                                     MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::389                                             MAIN                            
+   INPUT                       48,    XPOS.21,    ZPOS.3,    0.0075                                     MAIN                            
+   INPUT                       49,    XPOS.21,    ZPOS.4,    0.015                                      MAIN                            
+   INPUT                       50,    XPOS.21,    ZPOS.5,    0.03                                       MAIN                            
+   INPUT                       51,    XPOS.22,    ZPOS.10,    0.015                                     MAIN                            
+   INPUT                       52,    XPOS.23,    ZPOS.15,    0.015                                     MAIN                            
+   INPUT                       53,    XPOS.24,    ZPOS.20,    0.015                                     MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::386                                             MAIN                            
+   INPUT                       54,    XPOS.25,    YPOS.21,    0.021                                     MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::389                                             MAIN                            
+   INPUT                       55,    XPOS.25,    ZPOS.23,    0.0075                                    MAIN                            
+   INPUT                       56,    XPOS.25,    ZPOS.24,    0.015                                     MAIN                            
+   INPUT                       57,    XPOS.25,    ZPOS.25,    0.03                                      MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::387                                             MAIN                            
+   INPUT                       58,    YNEG.1,    ZNEG.21,    0.009                                      MAIN                            
+   INPUT                       59,    YNEG.2,    ZNEG.22,    0.01                                       MAIN                            
+   INPUT                       60,    YNEG.3,    ZNEG.23,    0.01                                       MAIN                            
+   INPUT                       61,    YNEG.4,    ZNEG.24,    0.01                                       MAIN                            
+   INPUT                       62,    YNEG.5,    ZNEG.25,    0.01                                       MAIN                            
+   INPUT                       63,    YNEG.21,    ZPOS.1,    0.012                                      MAIN                            
+   INPUT                       64,    YNEG.22,    ZPOS.2,    0.01                                       MAIN                            
+   INPUT                       65,    YNEG.23,    ZPOS.3,    0.01                                       MAIN                            
+   INPUT                       66,    YNEG.24,    ZPOS.4,    0.01                                       MAIN                            
+   INPUT                       67,    YNEG.25,    ZPOS.5,    0.009                                      MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::386                                             MAIN                            
+   INPUT                       68,    YPOS.1,    ZNEG.5,    0.012                                       MAIN                            
+   INPUT                       69,    YPOS.2,    ZNEG.4,    0.01                                        MAIN                            
+   INPUT                       70,    YPOS.3,    ZNEG.3,    0.01                                        MAIN                            
+   INPUT                       71,    YPOS.4,    ZNEG.2,    0.01                                        MAIN                            
+   INPUT                       72,    YPOS.5,    ZNEG.1,    0.011                                       MAIN                            
+   INPUT                       73,    YPOS.21,    ZPOS.25,    0.009                                     MAIN                            
+   INPUT                       74,    YPOS.22,    ZPOS.24,    0.01                                      MAIN                            
+   INPUT                       75,    YPOS.23,    ZPOS.23,    0.01                                      MAIN                            
+   INPUT                       76,    YPOS.24,    ZPOS.22,    0.01                                      MAIN                            
+   INPUT                       77,    YPOS.25,    ZPOS.21,    0.01                                      MAIN                            
+   INPUT           HEADER CONDUCTOR DATA, STRUCTURE                                                     STRUCTURE                       
+   INPUT                       1,    XNEG.1,    XNEG.2,    1.5317                                       STRUCTURE                       
+   INPUT                       2,    XNEG.1,    XNEG.6,    0.382925                                     STRUCTURE                       
+   INPUT                       3,    XNEG.2,    XNEG.3,    1.5317                                       STRUCTURE                       
+   INPUT                       4,    XNEG.2,    XNEG.7,    0.382925                                     STRUCTURE                       
+   INPUT                       5,    XNEG.3,    XNEG.4,    1.5317                                       STRUCTURE                       
+   INPUT                       6,    XNEG.3,    XNEG.8,    0.382925                                     STRUCTURE                       
+   INPUT                       7,    XNEG.4,    XNEG.5,    1.5317                                       STRUCTURE                       
+   INPUT                       8,    XNEG.4,    XNEG.9,    0.382925                                     STRUCTURE                       
+   INPUT                       9,    XNEG.5,    XNEG.10,    0.382925                                    STRUCTURE                       
+   INPUT                       10,    XNEG.6,    XNEG.7,    1.5317                                      STRUCTURE                       
+   INPUT                       11,    XNEG.6,    XNEG.11,    0.382925                                   STRUCTURE                       
+   INPUT                       12,    XNEG.7,    XNEG.8,    1.5317                                      STRUCTURE                       
+   INPUT                       13,    XNEG.7,    XNEG.12,    0.382925                                   STRUCTURE                       
+   INPUT                       14,    XNEG.8,    XNEG.9,    1.5317                                      STRUCTURE                       
+   INPUT                       15,    XNEG.8,    XNEG.13,    0.382925                                   STRUCTURE                       
+   INPUT                       16,    XNEG.9,    XNEG.10,    1.5317                                     STRUCTURE                       
+   INPUT                       17,    XNEG.9,    XNEG.14,    0.382925                                   STRUCTURE                       
+   INPUT                       18,    XNEG.10,    XNEG.15,    0.382925                                  STRUCTURE                       
+   INPUT                       19,    XNEG.11,    XNEG.12,    1.5317                                    STRUCTURE                       
+   INPUT                       20,    XNEG.11,    XNEG.16,    0.382925                                  STRUCTURE                       
+   INPUT                       21,    XNEG.12,    XNEG.13,    1.5317                                    STRUCTURE                       
+   INPUT                       22,    XNEG.12,    XNEG.17,    0.382925                                  STRUCTURE                       
+   INPUT                       23,    XNEG.13,    XNEG.14,    1.5317                                    STRUCTURE                       
+   INPUT                       24,    XNEG.13,    XNEG.18,    0.382925                                  STRUCTURE                       
+   INPUT                       25,    XNEG.14,    XNEG.15,    1.5317                                    STRUCTURE                       
+   INPUT                       26,    XNEG.14,    XNEG.19,    0.382925                                  STRUCTURE                       
+   INPUT                       27,    XNEG.15,    XNEG.20,    0.382925                                  STRUCTURE                       
+   INPUT                       28,    XNEG.16,    XNEG.17,    1.5317                                    STRUCTURE                       
+   INPUT                       29,    XNEG.16,    XNEG.21,    0.382925                                  STRUCTURE                       
+   INPUT                       30,    XNEG.17,    XNEG.18,    1.5317                                    STRUCTURE                       
+   INPUT                       31,    XNEG.17,    XNEG.22,    0.382925                                  STRUCTURE                       
+   INPUT                       32,    XNEG.18,    XNEG.19,    1.5317                                    STRUCTURE                       
+   INPUT                       33,    XNEG.18,    XNEG.23,    0.382925                                  STRUCTURE                       
+   INPUT                       34,    XNEG.19,    XNEG.20,    1.5317                                    STRUCTURE                       
+   INPUT                       35,    XNEG.19,    XNEG.24,    0.382925                                  STRUCTURE                       
+   INPUT                       36,    XNEG.20,    XNEG.25,    0.382925                                  STRUCTURE                       
+   INPUT                       37,    XNEG.21,    XNEG.22,    1.5317                                    STRUCTURE                       
+   INPUT                       38,    XNEG.22,    XNEG.23,    1.5317                                    STRUCTURE                       
+   INPUT                       39,    XNEG.23,    XNEG.24,    1.5317                                    STRUCTURE                       
+   INPUT                       40,    XNEG.24,    XNEG.25,    1.5317                                    STRUCTURE                       
+   INPUT                       41,    XPOS.1,    XPOS.2,    1.5317                                      STRUCTURE                       
+   INPUT                       42,    XPOS.1,    XPOS.6,    0.382925                                    STRUCTURE                       
+   INPUT                       43,    XPOS.2,    XPOS.3,    1.5317                                      STRUCTURE                       
+   INPUT                       44,    XPOS.2,    XPOS.7,    0.382925                                    STRUCTURE                       
+   INPUT                       45,    XPOS.3,    XPOS.4,    1.5317                                      STRUCTURE                       
+   INPUT                       46,    XPOS.3,    XPOS.8,    0.382925                                    STRUCTURE                       
+   INPUT                       47,    XPOS.4,    XPOS.5,    1.5317                                      STRUCTURE                       
+   INPUT                       48,    XPOS.4,    XPOS.9,    0.382925                                    STRUCTURE                       
+   INPUT                       49,    XPOS.5,    XPOS.10,    0.382925                                   STRUCTURE                       
+   INPUT                       50,    XPOS.6,    XPOS.7,    1.5317                                      STRUCTURE                       
+   INPUT                       51,    XPOS.6,    XPOS.11,    0.382925                                   STRUCTURE                       
+   INPUT                       52,    XPOS.7,    XPOS.8,    1.5317                                      STRUCTURE                       
+   INPUT                       53,    XPOS.7,    XPOS.12,    0.382925                                   STRUCTURE                       
+   INPUT                       54,    XPOS.8,    XPOS.9,    1.5317                                      STRUCTURE                       
+   INPUT                       55,    XPOS.8,    XPOS.13,    0.382925                                   STRUCTURE                       
+   INPUT                       56,    XPOS.9,    XPOS.10,    1.5317                                     STRUCTURE                       
+   INPUT                       57,    XPOS.9,    XPOS.14,    0.382925                                   STRUCTURE                       
+   INPUT                       58,    XPOS.10,    XPOS.15,    0.382925                                  STRUCTURE                       
+   INPUT                       59,    XPOS.11,    XPOS.12,    1.5317                                    STRUCTURE                       
+   INPUT                       60,    XPOS.11,    XPOS.16,    0.382925                                  STRUCTURE                       
+   INPUT                       61,    XPOS.12,    XPOS.13,    1.5317                                    STRUCTURE                       
+   INPUT                       62,    XPOS.12,    XPOS.17,    0.382925                                  STRUCTURE                       
+   INPUT                       63,    XPOS.13,    XPOS.14,    1.5317                                    STRUCTURE                       
+   INPUT                       64,    XPOS.13,    XPOS.18,    0.382925                                  STRUCTURE                       
+   INPUT                       65,    XPOS.14,    XPOS.15,    1.5317                                    STRUCTURE                       
+   INPUT                       66,    XPOS.14,    XPOS.19,    0.382925                                  STRUCTURE                       
+   INPUT                       67,    XPOS.15,    XPOS.20,    0.382925                                  STRUCTURE                       
+   INPUT                       68,    XPOS.16,    XPOS.17,    1.5317                                    STRUCTURE                       
+   INPUT                       69,    XPOS.16,    XPOS.21,    0.382925                                  STRUCTURE                       
+   INPUT                       70,    XPOS.17,    XPOS.18,    1.5317                                    STRUCTURE                       
+   INPUT                       71,    XPOS.17,    XPOS.22,    0.382925                                  STRUCTURE                       
+   INPUT                       72,    XPOS.18,    XPOS.19,    1.5317                                    STRUCTURE                       
+   INPUT                       73,    XPOS.18,    XPOS.23,    0.382925                                  STRUCTURE                       
+   INPUT                       74,    XPOS.19,    XPOS.20,    1.5317                                    STRUCTURE                       
+   INPUT                       75,    XPOS.19,    XPOS.24,    0.382925                                  STRUCTURE                       
+   INPUT                       76,    XPOS.20,    XPOS.25,    0.382925                                  STRUCTURE                       
+   INPUT                       77,    XPOS.21,    XPOS.22,    1.5317                                    STRUCTURE                       
+   INPUT                       78,    XPOS.22,    XPOS.23,    1.5317                                    STRUCTURE                       
+   INPUT                       79,    XPOS.23,    XPOS.24,    1.5317                                    STRUCTURE                       
+   INPUT                       80,    XPOS.24,    XPOS.25,    1.5317                                    STRUCTURE                       
+   INPUT                       81,    YNEG.1,    YNEG.2,    1.5317                                      STRUCTURE                       
+   INPUT                       82,    YNEG.1,    YNEG.6,    0.382925                                    STRUCTURE                       
+   INPUT                       83,    YNEG.2,    YNEG.3,    1.5317                                      STRUCTURE                       
+   INPUT                       84,    YNEG.2,    YNEG.7,    0.382925                                    STRUCTURE                       
+   INPUT                       85,    YNEG.3,    YNEG.4,    1.5317                                      STRUCTURE                       
+   INPUT                       86,    YNEG.3,    YNEG.8,    0.382925                                    STRUCTURE                       
+   INPUT                       87,    YNEG.4,    YNEG.5,    1.5317                                      STRUCTURE                       
+   INPUT                       88,    YNEG.4,    YNEG.9,    0.382925                                    STRUCTURE                       
+   INPUT                       89,    YNEG.5,    YNEG.10,    0.382925                                   STRUCTURE                       
+   INPUT                       90,    YNEG.6,    YNEG.7,    1.5317                                      STRUCTURE                       
+   INPUT                       91,    YNEG.6,    YNEG.11,    0.382925                                   STRUCTURE                       
+   INPUT                       92,    YNEG.7,    YNEG.8,    1.5317                                      STRUCTURE                       
+   INPUT                       93,    YNEG.7,    YNEG.12,    0.382925                                   STRUCTURE                       
+   INPUT                       94,    YNEG.8,    YNEG.9,    1.5317                                      STRUCTURE                       
+   INPUT                       95,    YNEG.8,    YNEG.13,    0.382925                                   STRUCTURE                       
+   INPUT                       96,    YNEG.9,    YNEG.10,    1.5317                                     STRUCTURE                       
+   INPUT                       97,    YNEG.9,    YNEG.14,    0.382925                                   STRUCTURE                       
+   INPUT                       98,    YNEG.10,    YNEG.15,    0.382925                                  STRUCTURE                       
+   INPUT                       99,    YNEG.11,    YNEG.12,    1.5317                                    STRUCTURE                       
+   INPUT                       100,    YNEG.11,    YNEG.16,    0.382925                                 STRUCTURE                       
+   INPUT                       101,    YNEG.12,    YNEG.13,    1.5317                                   STRUCTURE                       
+   INPUT                       102,    YNEG.12,    YNEG.17,    0.382925                                 STRUCTURE                       
+   INPUT                       103,    YNEG.13,    YNEG.14,    1.5317                                   STRUCTURE                       
+   INPUT                       104,    YNEG.13,    YNEG.18,    0.382925                                 STRUCTURE                       
+   INPUT                       105,    YNEG.14,    YNEG.15,    1.5317                                   STRUCTURE                       
+   INPUT                       106,    YNEG.14,    YNEG.19,    0.382925                                 STRUCTURE                       
+   INPUT                       107,    YNEG.15,    YNEG.20,    0.382925                                 STRUCTURE                       
+   INPUT                       108,    YNEG.16,    YNEG.17,    1.5317                                   STRUCTURE                       
+   INPUT                       109,    YNEG.16,    YNEG.21,    0.382925                                 STRUCTURE                       
+   INPUT                       110,    YNEG.17,    YNEG.18,    1.5317                                   STRUCTURE                       
+   INPUT                       111,    YNEG.17,    YNEG.22,    0.382925                                 STRUCTURE                       
+   INPUT                       112,    YNEG.18,    YNEG.19,    1.5317                                   STRUCTURE                       
+   INPUT                       113,    YNEG.18,    YNEG.23,    0.382925                                 STRUCTURE                       
+   INPUT                       114,    YNEG.19,    YNEG.20,    1.5317                                   STRUCTURE                       
+   INPUT                       115,    YNEG.19,    YNEG.24,    0.382925                                 STRUCTURE                       
+   INPUT                       116,    YNEG.20,    YNEG.25,    0.382925                                 STRUCTURE                       
+   INPUT                       117,    YNEG.21,    YNEG.22,    1.5317                                   STRUCTURE                       
+   INPUT                       118,    YNEG.22,    YNEG.23,    1.5317                                   STRUCTURE                       
+   INPUT                       119,    YNEG.23,    YNEG.24,    1.5317                                   STRUCTURE                       
+   INPUT                       120,    YNEG.24,    YNEG.25,    1.5317                                   STRUCTURE                       
+   INPUT                       121,    YPOS.1,    YPOS.2,    1.5317                                     STRUCTURE                       
+   INPUT                       122,    YPOS.1,    YPOS.6,    0.382925                                   STRUCTURE                       
+   INPUT                       123,    YPOS.2,    YPOS.3,    1.5317                                     STRUCTURE                       
+   INPUT                       124,    YPOS.2,    YPOS.7,    0.382925                                   STRUCTURE                       
+   INPUT                       125,    YPOS.3,    YPOS.4,    1.5317                                     STRUCTURE                       
+   INPUT                       126,    YPOS.3,    YPOS.8,    0.382925                                   STRUCTURE                       
+   INPUT                       127,    YPOS.4,    YPOS.5,    1.5317                                     STRUCTURE                       
+   INPUT                       128,    YPOS.4,    YPOS.9,    0.382925                                   STRUCTURE                       
+   INPUT                       129,    YPOS.5,    YPOS.10,    0.382925                                  STRUCTURE                       
+   INPUT                       130,    YPOS.6,    YPOS.7,    1.5317                                     STRUCTURE                       
+   INPUT                       131,    YPOS.6,    YPOS.11,    0.382925                                  STRUCTURE                       
+   INPUT                       132,    YPOS.7,    YPOS.8,    1.5317                                     STRUCTURE                       
+   INPUT                       133,    YPOS.7,    YPOS.12,    0.382925                                  STRUCTURE                       
+   INPUT                       134,    YPOS.8,    YPOS.9,    1.5317                                     STRUCTURE                       
+   INPUT                       135,    YPOS.8,    YPOS.13,    0.382925                                  STRUCTURE                       
+   INPUT                       136,    YPOS.9,    YPOS.10,    1.5317                                    STRUCTURE                       
+   INPUT                       137,    YPOS.9,    YPOS.14,    0.382925                                  STRUCTURE                       
+   INPUT                       138,    YPOS.10,    YPOS.15,    0.382925                                 STRUCTURE                       
+   INPUT                       139,    YPOS.11,    YPOS.12,    1.5317                                   STRUCTURE                       
+   INPUT                       140,    YPOS.11,    YPOS.16,    0.382925                                 STRUCTURE                       
+   INPUT                       141,    YPOS.12,    YPOS.13,    1.5317                                   STRUCTURE                       
+   INPUT                       142,    YPOS.12,    YPOS.17,    0.382925                                 STRUCTURE                       
+   INPUT                       143,    YPOS.13,    YPOS.14,    1.5317                                   STRUCTURE                       
+   INPUT                       144,    YPOS.13,    YPOS.18,    0.382925                                 STRUCTURE                       
+   INPUT                       145,    YPOS.14,    YPOS.15,    1.5317                                   STRUCTURE                       
+   INPUT                       146,    YPOS.14,    YPOS.19,    0.382925                                 STRUCTURE                       
+   INPUT                       147,    YPOS.15,    YPOS.20,    0.382925                                 STRUCTURE                       
+   INPUT                       148,    YPOS.16,    YPOS.17,    1.5317                                   STRUCTURE                       
+   INPUT                       149,    YPOS.16,    YPOS.21,    0.382925                                 STRUCTURE                       
+   INPUT                       150,    YPOS.17,    YPOS.18,    1.5317                                   STRUCTURE                       
+   INPUT                       151,    YPOS.17,    YPOS.22,    0.382925                                 STRUCTURE                       
+   INPUT                       152,    YPOS.18,    YPOS.19,    1.5317                                   STRUCTURE                       
+   INPUT                       153,    YPOS.18,    YPOS.23,    0.382925                                 STRUCTURE                       
+   INPUT                       154,    YPOS.19,    YPOS.20,    1.5317                                   STRUCTURE                       
+   INPUT                       155,    YPOS.19,    YPOS.24,    0.382925                                 STRUCTURE                       
+   INPUT                       156,    YPOS.20,    YPOS.25,    0.382925                                 STRUCTURE                       
+   INPUT                       157,    YPOS.21,    YPOS.22,    1.5317                                   STRUCTURE                       
+   INPUT                       158,    YPOS.22,    YPOS.23,    1.5317                                   STRUCTURE                       
+   INPUT                       159,    YPOS.23,    YPOS.24,    1.5317                                   STRUCTURE                       
+   INPUT                       160,    YPOS.24,    YPOS.25,    1.5317                                   STRUCTURE                       
+   INPUT                       161,    ZNEG.1,    ZNEG.2,    0.76585                                    STRUCTURE                       
+   INPUT                       162,    ZNEG.1,    ZNEG.6,    0.76585                                    STRUCTURE                       
+   INPUT                       163,    ZNEG.2,    ZNEG.3,    0.76585                                    STRUCTURE                       
+   INPUT                       164,    ZNEG.2,    ZNEG.7,    0.76585                                    STRUCTURE                       
+   INPUT                       165,    ZNEG.3,    ZNEG.4,    0.76585                                    STRUCTURE                       
+   INPUT                       166,    ZNEG.3,    ZNEG.8,    0.76585                                    STRUCTURE                       
+   INPUT                       167,    ZNEG.4,    ZNEG.5,    0.76585                                    STRUCTURE                       
+   INPUT                       168,    ZNEG.4,    ZNEG.9,    0.76585                                    STRUCTURE                       
+   INPUT                       169,    ZNEG.5,    ZNEG.10,    0.76585                                   STRUCTURE                       
+   INPUT                       170,    ZNEG.6,    ZNEG.7,    0.76585                                    STRUCTURE                       
+   INPUT                       171,    ZNEG.6,    ZNEG.11,    0.76585                                   STRUCTURE                       
+   INPUT                       172,    ZNEG.7,    ZNEG.8,    0.76585                                    STRUCTURE                       
+   INPUT                       173,    ZNEG.7,    ZNEG.12,    0.76585                                   STRUCTURE                       
+   INPUT                       174,    ZNEG.8,    ZNEG.9,    0.76585                                    STRUCTURE                       
+   INPUT                       175,    ZNEG.8,    ZNEG.13,    0.76585                                   STRUCTURE                       
+   INPUT                       176,    ZNEG.9,    ZNEG.10,    0.76585                                   STRUCTURE                       
+   INPUT                       177,    ZNEG.9,    ZNEG.14,    0.76585                                   STRUCTURE                       
+   INPUT                       178,    ZNEG.10,    ZNEG.15,    0.76585                                  STRUCTURE                       
+   INPUT                       179,    ZNEG.11,    ZNEG.12,    0.76585                                  STRUCTURE                       
+   INPUT                       180,    ZNEG.11,    ZNEG.16,    0.76585                                  STRUCTURE                       
+   INPUT                       181,    ZNEG.12,    ZNEG.13,    0.76585                                  STRUCTURE                       
+   INPUT                       182,    ZNEG.12,    ZNEG.17,    0.76585                                  STRUCTURE                       
+   INPUT                       183,    ZNEG.13,    ZNEG.14,    0.76585                                  STRUCTURE                       
+   INPUT                       184,    ZNEG.13,    ZNEG.18,    0.76585                                  STRUCTURE                       
+   INPUT                       185,    ZNEG.14,    ZNEG.15,    0.76585                                  STRUCTURE                       
+   INPUT                       186,    ZNEG.14,    ZNEG.19,    0.76585                                  STRUCTURE                       
+   INPUT                       187,    ZNEG.15,    ZNEG.20,    0.76585                                  STRUCTURE                       
+   INPUT                       188,    ZNEG.16,    ZNEG.17,    0.76585                                  STRUCTURE                       
+   INPUT                       189,    ZNEG.16,    ZNEG.21,    0.76585                                  STRUCTURE                       
+   INPUT                       190,    ZNEG.17,    ZNEG.18,    0.76585                                  STRUCTURE                       
+   INPUT                       191,    ZNEG.17,    ZNEG.22,    0.76585                                  STRUCTURE                       
+   INPUT                       192,    ZNEG.18,    ZNEG.19,    0.76585                                  STRUCTURE                       
+   INPUT                       193,    ZNEG.18,    ZNEG.23,    0.76585                                  STRUCTURE                       
+   INPUT                       194,    ZNEG.19,    ZNEG.20,    0.76585                                  STRUCTURE                       
+   INPUT                       195,    ZNEG.19,    ZNEG.24,    0.76585                                  STRUCTURE                       
+   INPUT                       196,    ZNEG.20,    ZNEG.25,    0.76585                                  STRUCTURE                       
+   INPUT                       197,    ZNEG.21,    ZNEG.22,    0.76585                                  STRUCTURE                       
+   INPUT                       198,    ZNEG.22,    ZNEG.23,    0.76585                                  STRUCTURE                       
+   INPUT                       199,    ZNEG.23,    ZNEG.24,    0.76585                                  STRUCTURE                       
+   INPUT                       200,    ZNEG.24,    ZNEG.25,    0.76585                                  STRUCTURE                       
+   INPUT                       201,    ZPOS.1,    ZPOS.2,    0.76585                                    STRUCTURE                       
+   INPUT                       202,    ZPOS.1,    ZPOS.6,    0.76585                                    STRUCTURE                       
+   INPUT                       203,    ZPOS.2,    ZPOS.3,    0.76585                                    STRUCTURE                       
+   INPUT                       204,    ZPOS.2,    ZPOS.7,    0.76585                                    STRUCTURE                       
+   INPUT                       205,    ZPOS.3,    ZPOS.4,    0.76585                                    STRUCTURE                       
+   INPUT                       206,    ZPOS.3,    ZPOS.8,    0.76585                                    STRUCTURE                       
+   INPUT                       207,    ZPOS.4,    ZPOS.5,    0.76585                                    STRUCTURE                       
+   INPUT                       208,    ZPOS.4,    ZPOS.9,    0.76585                                    STRUCTURE                       
+   INPUT                       209,    ZPOS.5,    ZPOS.10,    0.76585                                   STRUCTURE                       
+   INPUT                       210,    ZPOS.6,    ZPOS.7,    0.76585                                    STRUCTURE                       
+   INPUT                       211,    ZPOS.6,    ZPOS.11,    0.76585                                   STRUCTURE                       
+   INPUT                       212,    ZPOS.7,    ZPOS.8,    0.76585                                    STRUCTURE                       
+   INPUT                       213,    ZPOS.7,    ZPOS.12,    0.76585                                   STRUCTURE                       
+   INPUT                       214,    ZPOS.8,    ZPOS.9,    0.76585                                    STRUCTURE                       
+   INPUT                       215,    ZPOS.8,    ZPOS.13,    0.76585                                   STRUCTURE                       
+   INPUT                       216,    ZPOS.9,    ZPOS.10,    0.76585                                   STRUCTURE                       
+   INPUT                       217,    ZPOS.9,    ZPOS.14,    0.76585                                   STRUCTURE                       
+   INPUT                       218,    ZPOS.10,    ZPOS.15,    0.76585                                  STRUCTURE                       
+   INPUT                       219,    ZPOS.11,    ZPOS.12,    0.76585                                  STRUCTURE                       
+   INPUT                       220,    ZPOS.11,    ZPOS.16,    0.76585                                  STRUCTURE                       
+   INPUT                       221,    ZPOS.12,    ZPOS.13,    0.76585                                  STRUCTURE                       
+   INPUT                       222,    ZPOS.12,    ZPOS.17,    0.76585                                  STRUCTURE                       
+   INPUT                       223,    ZPOS.13,    ZPOS.14,    0.76585                                  STRUCTURE                       
+   INPUT                       224,    ZPOS.13,    ZPOS.18,    0.76585                                  STRUCTURE                       
+   INPUT                       225,    ZPOS.14,    ZPOS.15,    0.76585                                  STRUCTURE                       
+   INPUT                       226,    ZPOS.14,    ZPOS.19,    0.76585                                  STRUCTURE                       
+   INPUT                       227,    ZPOS.15,    ZPOS.20,    0.76585                                  STRUCTURE                       
+   INPUT                       228,    ZPOS.16,    ZPOS.17,    0.76585                                  STRUCTURE                       
+   INPUT                       229,    ZPOS.16,    ZPOS.21,    0.76585                                  STRUCTURE                       
+   INPUT                       230,    ZPOS.17,    ZPOS.18,    0.76585                                  STRUCTURE                       
+   INPUT                       231,    ZPOS.17,    ZPOS.22,    0.76585                                  STRUCTURE                       
+   INPUT                       232,    ZPOS.18,    ZPOS.19,    0.76585                                  STRUCTURE                       
+   INPUT                       233,    ZPOS.18,    ZPOS.23,    0.76585                                  STRUCTURE                       
+   INPUT                       234,    ZPOS.19,    ZPOS.20,    0.76585                                  STRUCTURE                       
+   INPUT                       235,    ZPOS.19,    ZPOS.24,    0.76585                                  STRUCTURE                       
+   INPUT                       236,    ZPOS.20,    ZPOS.25,    0.76585                                  STRUCTURE                       
+   INPUT                       237,    ZPOS.21,    ZPOS.22,    0.76585                                  STRUCTURE                       
+   INPUT                       238,    ZPOS.22,    ZPOS.23,    0.76585                                  STRUCTURE                       
+   INPUT                       239,    ZPOS.23,    ZPOS.24,    0.76585                                  STRUCTURE                       
+   INPUT                       240,    ZPOS.24,    ZPOS.25,    0.76585                                  STRUCTURE                       
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     8
+
+ MODEL = SINDA                                                                  CubeSat.dwg - 7 Orbit
+ VARIABLES DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER VARIABLES0, COMPONENT_1                                                       COMPONENT_1                     
+   INPUT                 MOTOR.Q1 = MOTOR.Q1 + 0.2                                                      COMPONENT_1                     
+   INPUT           HEADER VARIABLES0, C9A0                                                              C9A0                            
+   INPUT           F     CALL LOADQ_C9A0_1705621505                                                     C9A0                            
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     9
+
+ MODEL = SINDA                                                                  CubeSat.dwg - 7 Orbit
+ OPERATIONS BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER OPERATIONS                                                                    GLOBAL                          
+   INPUT                 CALL TDPREBL   $ PLACE BEFORE BUILD, CODE IN SUBROUTINE DATA                   GLOBAL                          
+   INPUT           BUILD DEFAULT,COMPONENT_1,MAIN,MOTOR,MRW,SPACE,STRUCTURE,XNEG,XPOS,YNEG,YPOS,ZNE     GLOBAL                          
+   INPUT                 CALL TDPOSTBL   $ PLACE AFTER BUILD, CODE IN SUBROUTINE DATA                   GLOBAL                          
+   INPUT                 CALL TDHTR $ HOLD HEATER TEMPS FOR STEADY STATE                                GLOBAL                          
+   INPUT                 CALL STEADY                                                                    GLOBAL                          
+   INPUT                 CALL TDREL $ RELEASE HEATERS FOR TRANSIENT                                     GLOBAL                          
+   INPUT                 CALL TRANSIENT                                                                 GLOBAL                          
+   INPUT                 CALL TDHTOT $ OUTPUT HEATER SUMMARY                                            GLOBAL                          
+   INPUT                 CALL TDPOSTSL $ LOGIC IN SUBROUTINE DATA                                       GLOBAL                          
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    10
+
+ MODEL = SINDA                                                                  CubeSat.dwg - 7 Orbit
+ OUTPUT DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER OUTPUT CALLS, GLOBAL                                                          GLOBAL                          
+   INPUT                 CALL TPRINT('ALL')                                                             GLOBAL                          
+   INPUT                 IF(NSOL  .GT.  1 ) THEN                                                        GLOBAL                          
+   INPUT                     IF(TIMEN  .GE.  TIMEND) THEN                                               GLOBAL                          
+   INPUT                         CALL SAVE('ALL',0)                                                     GLOBAL                          
+   INPUT                     ELSE                                                                       GLOBAL                          
+   INPUT                         CALL SAVE('TR',0)                                                      GLOBAL                          
+   INPUT                     ENDIF                                                                      GLOBAL                          
+   INPUT                 ELSE IF( LOOPCT  .GT.  0 ) THEN                                                GLOBAL                          
+   INPUT                     CALL SAVE('ALL',0)                                                         GLOBAL                          
+   INPUT                 ENDIF                                                                          GLOBAL                          
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    11
+
+ MODEL = SINDA                                                                  CubeSat.dwg - 7 Orbit
+ SUBROUTINE DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER SUBROUTINES                                                                   GLOBAL                          
+   INPUT                 SUBROUTINE TDHTR                                                               GLOBAL                          
+   INPUT                 RETURN                                                                         GLOBAL                          
+   INPUT                 END                                                                            GLOBAL                          
+   INPUT                 SUBROUTINE TDREL                                                               GLOBAL                          
+   INPUT           F     RETURN                                                                         GLOBAL                          
+   INPUT           F     END                                                                            GLOBAL                          
+   INPUT           F     SUBROUTINE TDHTOT                                                              GLOBAL                          
+   INPUT           F     RETURN                                                                         GLOBAL                          
+   INPUT           F     END                                                                            GLOBAL                          
+   INPUT           F     SUBROUTINE TDHTRST                                                             GLOBAL                          
+   INPUT           F     RETURN                                                                         GLOBAL                          
+   INPUT           F     END                                                                            GLOBAL                          
+   INPUT           F     SUBROUTINE TDPREBL                                                             GLOBAL                          
+   INPUT                 CALL COMMON                                                                    GLOBAL                          
+   INPUT           F     RETURN                                                                         GLOBAL                          
+   INPUT           F     END                                                                            GLOBAL                          
+   INPUT           F     SUBROUTINE TDPOSTBL                                                            GLOBAL                          
+   INPUT                 CALL COMMON                                                                    GLOBAL                          
+   INPUT           F     RETURN                                                                         GLOBAL                          
+   INPUT           F     END                                                                            GLOBAL                          
+   INPUT           F     SUBROUTINE TDPOSTSL                                                            GLOBAL                          
+   INPUT                 CALL COMMON                                                                    GLOBAL                          
+   INPUT           F     RETURN                                                                         GLOBAL                          
+   INPUT           F     END                                                                            GLOBAL                          
+   INPUT           F     SUBROUTINE BASEPLOT                                                            GLOBAL                          
+   INPUT                 CALL COMMON                                                                    GLOBAL                          
+   INPUT           F     RETURN                                                                         GLOBAL                          
+   INPUT           F     END                                                                            GLOBAL                          
+   INPUT           C INSERT C9A0.hra                                                                    GLOBAL                          
+   INPUT           F     RECURSIVE SUBROUTINE LOADQ_C9A0_1705621505                                     GLOBAL                          
+   INPUT           F     USE BINARY_READER_MOD                                                          GLOBAL                          
+   INPUT                 CALL COMMON                                                                    GLOBAL                          
+   INPUT           F     INTEGER NVAR__TD                                                               GLOBAL                          
+   INPUT           F     REAL, ALLOCATABLE ::  DATA__TD(:)                                              GLOBAL                          
+   INPUT           F     DATA NVAR__TD /-1/                                                             GLOBAL                          
+   INPUT           F     SAVE NVAR__TD, DATA__TD                                                        GLOBAL                          
+   INPUT           F     IF( NVAR__TD  .LT.  0 ) THEN                                                   GLOBAL                          
+   INPUT           F         ALLOCATE (DATA__TD(3171))                                                  GLOBAL                          
+   INPUT           F         CALL LOAD_BINARY_SINGLET_ARRAYS(                                           GLOBAL                          
+   INPUT           F    +        'C9A0.hra_bin'                                                         GLOBAL                          
+   INPUT           F    +    , DATA__TD)                                                                GLOBAL                          
+   INPUT           F         NVAR__TD = 1                                                               GLOBAL                          
+   INPUT           F     ENDIF                                                                          GLOBAL                          
+   INPUT           F     DATA__TD(1 + 453 + 1) =                                                        GLOBAL                          
+   INPUT                +     C9A0.A(5+1)                                                               GLOBAL                          
+   INPUT           F     CALL LOADQ('C9A0',1,8,                                                         GLOBAL                          
+   INPUT           F    +    DATA__TD(1+151),                                                           GLOBAL                          
+   INPUT           F    +    DATA__TD(1+302),                                                           GLOBAL                          
+   INPUT           F    +    DATA__TD(1),                                                               GLOBAL                          
+   INPUT           F    +    DATA__TD(1+453),                                                           GLOBAL                          
+   INPUT                +    C9A0.A4)                                                                   GLOBAL                          
+   INPUT           F     RETURN                                                                         GLOBAL                          
+   INPUT           F     END                                                                            GLOBAL                          
+   INPUT           C INSERT C9A1.k_in                                                                   GLOBAL                          
+   INPUT           CINSERT C9A1.k_in                                                                    GLOBAL                          
+   INPUT           C INSERT C9A2.k_in                                                                   GLOBAL                          
+   INPUT           CINSERT C9A2.k_in                                                                    GLOBAL                          
