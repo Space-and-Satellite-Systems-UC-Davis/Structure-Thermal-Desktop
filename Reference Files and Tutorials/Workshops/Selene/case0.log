@@ -1,0 +1,63 @@
+[ AutoCAD - Sun Nov 05 14:35:08 2023  ]----------------------------------------
+No duplicate nodes or insulation nodalization warnings found
+
+Calculating SINDA/FLUINT data
+Calculating Thermal Analyzer Input took 0.02 sec
+
+Outputting SINDA/FLUINT data
+Outputting data for submodel GLOBAL...
+Outputting data for submodel MAIN...
+Outputting data for submodel X_NEG...
+Outputting data for submodel X_POS...
+Outputting data for submodel Y_NEG...
+Outputting data for submodel Y_POS...
+Outputting data for submodel Z_NEG...
+Outputting data for submodel Z_POS...
+    Number of nodes:      150
+    Number of conductors: 240
+    
+Total Nodal Mass = 1.353560 kg
+
+
+*** RADCAD RAYTRACE HEATING RATES RUN START for database EXTERNAL_HR-Survivability_Test-OpticalDataCustom.rch
+Creating new database named EXTERNAL_HR-Survivability_Test-OpticalDataCustom.rch
+Fixed RadCAD
+Fixed license found.
+Running with 12 calculation threads
+Start and End position calc already done
+Total Elapsed time for heating rate calculations = 0.69 sec
+Outputting SINDA/FLUINT heating rate data to files:
+    C0A0.hra for arrays and C0A0.hrl for logic...
+Total Elapsed time for heating rate calculations and output = 0.84 sec
+
+
+*** RADCAD RAYTRACE HEATING RATES RUN START for database EXTERNAL_RDK-Survivability_Test-OpticalDataCustom.rch
+Creating new database named EXTERNAL_RDK-Survivability_Test-OpticalDataCustom.rch
+Fixed RadCAD
+Fixed license found.
+Running with 12 calculation threads
+Start and End position calc already done
+Total Elapsed time for heating rate calculations = 0.64 sec
+Outputting SINDA/FLUINT heating rate data to files:
+    C0A1.hra for arrays and C0A1.hrl for logic...
+Total Elapsed time for heating rate calculations and output = 0.71 sec
+
+
+*** RADCAD RAYTRACE HEATING RATES RUN START for database INTERNAL_RDK-Survivability_Test-OpticalDataCustom.rch
+Creating new database named INTERNAL_RDK-Survivability_Test-OpticalDataCustom.rch
+Fixed RadCAD
+Fixed license found.
+Running with 12 calculation threads
+Start and End position calc already done
+Total Elapsed time for heating rate calculations = 0.64 sec
+Outputting SINDA/FLUINT heating rate data to files:
+    C0A2.hra for arrays and C0A2.hrl for logic...
+Total Elapsed time for heating rate calculations and output = 0.72 sec
+
+*** Running SINDA model named c:\users\binyh\onedrive\documents\structure-thermal-desktop\reference files and tutorials\workshops\selene\case0.inp
+Successful completion of processor
+From c:\users\binyh\onedrive\documents\structure-thermal-desktop\reference files and tutorials\workshops\selene\messages_case0.log
+     TIMEN  =    5400.000      The ASTAP execution time is:   0.773383700056002       seconds
+Time to run SINDA = 7.62 sec
+
+Case Set Solved::Elapsed time = 10.61 sec

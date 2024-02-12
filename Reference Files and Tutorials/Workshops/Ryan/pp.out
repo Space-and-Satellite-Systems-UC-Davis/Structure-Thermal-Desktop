@@ -1,0 +1,728 @@
+
+
+                       S I N D A / F L U I N T 
+
+
+
+    ____          _______
+  //    \|   __    \|   \\ 
+ ||      |  /  \   ||    ||    C&R Technologies, Inc.
+ ||         \__/   ||    ||    Boulder Colorado, USA
+ ||         /  \   ||___//     Phone 303.971.0292, FAX 303.971.0035
+ ||         |  |/  ||   \\     www.crtech.com, support@crtech.com
+ ||      |  \__/\  ||    \\    
+  \\____/|         ||     \\   Hot engineering ... Cool software (R)
+
+
+
+             P R E P R O C E S S O R  E X E C U T I O N
+
+             VERSION ................... CR6.3N    
+             MODIFICATION DATE ......... 08FEB2023 
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     1
+
+ MODEL = SINDA          
+ OPTIONS DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER OPTIONS                                                                       ROOT                            
+   INPUT               OUTPUT = case0.out                                                               ROOT                            
+   INPUT               SAVE = case0.sav                                                                 ROOT                            
+   INPUT               MLINE = 100000 $ Limits headers output                                           ROOT                            
+   INPUT           TITLE CubesatFrame_RYAN.dwg - 1_DAY_TEST                                             ROOT                            
+   INPUT           C    SINDA Data generated with Thermal Desktop 6.3 Patch 22                          ROOT                            
+   INPUT           C    Generated on Sun Nov  5 14:34:58 2023                                           ROOT                            
+   INPUT           C    From file: CubesatFrame_RYAN.dwg                                                ROOT                            
+   INPUT           C    Case Set: 1_DAY_TEST                                                            ROOT                            
+   INPUT           C    TDUNITS,   Energy     = J                                                       ROOT                            
+   INPUT           C    TDUNITS,   Time       = s                                                       ROOT                            
+   INPUT           C    TDUNITS,   Temp       = K                                                       ROOT                            
+   INPUT           C    TDUNITS,   Mass       = kg                                                      ROOT                            
+   INPUT           C    TDUNITS,   Length     = m                                                       ROOT                            
+   INPUT           C    TDUNITS,   Orbit      = km                                                      ROOT                            
+   INPUT           C    TDUNITS,   Pressure   = Pa                                                      ROOT                            
+   INPUT           C    TDUNITS,   Force      = N                                                       ROOT                            
+   INPUT           C    TDUNITS,   Angle      = Degrees                                                 ROOT                            
+   INPUT           C    TDUNITS,   Volt       = volt                                                    ROOT                            
+   INPUT           C    TDUNITS,   Current    = amp                                                     ROOT                            
+   INPUT           C    DWG name:      CubesatFrame_RYAN.dwg                                            ROOT                            
+   INPUT           C    Thermophysical Property Database: ThermalDataFilled.tdp                         ROOT                            
+   INPUT           C    Optical Property Database:        OpticalDataCustom.rco                         ROOT                            
+   INPUT           C    Computer name: LAPTOPCOPY                                                       ROOT                            
+   INPUT           C    User name:     rpkar                                                            ROOT                            
+   INPUT           C    Symbol Names, Evaluated values, Input Strings, Comments                         ROOT                            
+   INPUT           C    hrBetaAngle          51.64         51.64                                        ROOT                            
+   INPUT           C    hrEccen              0.00029567    0.00029567                                   ROOT                            
+   INPUT           C    hrIllum              0.            0                                            ROOT                            
+   INPUT           C    hrMeanAnom           0.            0                                            ROOT                            
+   INPUT           C    hrPeriod             5578.17       5578.17              Always in current u     ROOT                            
+   INPUT           C    hrPeriodSec          5578.17       5578.17                                      ROOT                            
+   INPUT           C    hrPos                0.            0                                            ROOT                            
+   INPUT           C    hrShadowEntry        123.9306      1.239305657959e+02                           ROOT                            
+   INPUT           C    hrShadowExit         236.0694      2.360694342042e+02                           ROOT                            
+   INPUT           C    hrSubSolarMeanAnom   7.038290e-12  7.03829e-12          -180 to 180             ROOT                            
+   INPUT           C    hrSubSolarTrueAnom   7.042450e-12  7.04245e-12          -180 to 180             ROOT                            
+   INPUT           C    hrTime               0.            0                    Always in current u     ROOT                            
+   INPUT           C    hrTimeSec            0.            0                                            ROOT                            
+   INPUT           C    hrTimeShadowEntry    1919.86       1919.86                                      ROOT                            
+   INPUT           C    hrTimeShadowEntrySec 1919.86       1919.86                                      ROOT                            
+   INPUT           C    hrTimeShadowExit     3658.314      3.658313998490e+03                           ROOT                            
+   INPUT           C    hrTimeShadowExitSec  3658.314      3.658313998490e+03                           ROOT                            
+   INPUT           C    hrTrueAnom           0.            0                                            ROOT                            
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     2
+
+ MODEL = SINDA                                                           CubesatFrame_RYAN.dwg - 1_DAY_TEST
+ MODEL NAME CHECK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+
+  LIST OF HEADER CARDS IN NODE DATA - CHECKING MODEL NAMES AGAINST BUILD CARDS
+
+HEADER NODE DATA, MAIN
+HEADER NODE DATA, SPACE
+HEADER NODE DATA, X_NEG
+HEADER NODE DATA, X_POS
+HEADER NODE DATA, Y_NEG
+HEADER NODE DATA, Y_POS
+HEADER NODE DATA, Z_NEG
+HEADER NODE DATA, Z_POS
+HEADER NODE DATA, C0A0
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     3
+
+ MODEL = SINDA                                                           CubesatFrame_RYAN.dwg - 1_DAY_TEST
+ CONSTANTS DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER CONTROL DATA, GLOBAL                                                          GLOBAL                          
+   INPUT               ABSZRO = 0.                                                                      GLOBAL                          
+   INPUT               SIGMA  = 5.670400E-08                                                            GLOBAL                          
+   INPUT               NLOOPS  = 1000                                                                   GLOBAL                          
+   INPUT               NLOOPT  = 100                                                                    GLOBAL                          
+   INPUT               TIMEO  = 0.                                                                      GLOBAL                          
+   INPUT               TIMEND  = 5400.                                                                  GLOBAL                          
+   INPUT               DTIMES  = 0.                                                                     GLOBAL                          
+   INPUT               PATMOS  = 0.                                                                     GLOBAL                          
+   INPUT               ARLXCA  = 0.001                                                                  GLOBAL                          
+   INPUT               DRLXCA  = 0.001                                                                  GLOBAL                          
+   INPUT               EXTLIM  = 0.5                                                                    GLOBAL                          
+   INPUT               MATMET = 2 $ AUTODETERMINE SINGLE MATRIX                                         GLOBAL                          
+   INPUT               ITERXT = 3                                                                       GLOBAL                          
+   INPUT               EBALSA  = 0.01                                                                   GLOBAL                          
+   INPUT               EBALNA  = 0.                                                                     GLOBAL                          
+   INPUT               ITEROT  = (LOOPCT >= NLOOPS - 2 && LOOPCT != NLOOPS) ? 1 : 0                     GLOBAL                          
+   INPUT               ITHOLD  = 0                                                                      GLOBAL                          
+   INPUT               OUTPUT  = 0.                                                                     GLOBAL                          
+   INPUT               ATMPCA  = 1.000000E+30                                                           GLOBAL                          
+   INPUT               DTMPCA  = 50.                                                                    GLOBAL                          
+   INPUT               DTIMEI  = 0.                                                                     GLOBAL                          
+   INPUT               DTIMEL  = 0.                                                                     GLOBAL                          
+   INPUT               DTIMEH  = 1.000000E+30                                                           GLOBAL                          
+   INPUT               CSGFAC  = 1.                                                                     GLOBAL                          
+   INPUT               OPEITR  = 0                                                                      GLOBAL                          
+   INPUT               DTSIZF  = 0.1                                                                    GLOBAL                          
+   INPUT               DTTUBF  = 0.1                                                                    GLOBAL                          
+   INPUT               DTMAXF  = 1.000000E+30                                                           GLOBAL                          
+   INPUT               DTMINF  = 0.                                                                     GLOBAL                          
+   INPUT               OUTPTF = 0.                                                                      GLOBAL                          
+   INPUT               OPITRF  = 0                                                                      GLOBAL                          
+   INPUT               RERRF  = 0.01                                                                    GLOBAL                          
+   INPUT               REBALF  = 0.01                                                                   GLOBAL                          
+   INPUT               ITHLDF  = 0                                                                      GLOBAL                          
+   INPUT               ITROTF  = (LOOPCT >= NLOOPS - 2 && LOOPCT != NLOOPS) ? 1 : 0                     GLOBAL                          
+   INPUT               RSSIZF  = 0.5                                                                    GLOBAL                          
+   INPUT               RSTUBF  = 0.5                                                                    GLOBAL                          
+   INPUT               RSMAXF  = 3600.                                                                  GLOBAL                          
+   INPUT               FBEBALA  = 0.1                                                                   GLOBAL                          
+   INPUT               SPARSEG  = 0.001                                                                 GLOBAL                          
+   INPUT               FRAVER  = 0.                                                                     GLOBAL                          
+   INPUT               RMSPLT  = 0.1                                                                    GLOBAL                          
+   INPUT               RMFRAC  = 0.5                                                                    GLOBAL                          
+   INPUT               RMRATE  = 0.1                                                                    GLOBAL                          
+   INPUT               UID =    SI                                                                      GLOBAL                          
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     4
+
+ MODEL = SINDA                                                           CubesatFrame_RYAN.dwg - 1_DAY_TEST
+ ARRAY DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER ARRAY DATA, C0A0                                                              C0A0                            
+   INPUT           PSTOP                                                                                C0A0                            
+   INPUT           PSTART                                                                               C0A0                            
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     5
+
+ MODEL = SINDA                                                           CubesatFrame_RYAN.dwg - 1_DAY_TEST
+ CHARACTER ARRAY DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER CARRAY DATA, C0A0                                                             C0A0                            
+   INPUT            1 = X_NEG, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19        C0A0                            
+   INPUT            2 =  20, 21, 22, 23, 24, 25, X_POS, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13       C0A0                            
+   INPUT            3 =  14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, Y_NEG, 1, 2, 3, 4, 5, 6        C0A0                            
+   INPUT            4 =  7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25        C0A0                            
+   INPUT            5 =  Y_POS, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19       C0A0                            
+   INPUT            6 =  20, 21, 22, 23, 24, 25, Z_NEG, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13       C0A0                            
+   INPUT            7 =  14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, Z_POS, 1, 2, 3, 4, 5, 6        C0A0                            
+   INPUT            8 =  7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25        C0A0                            
+   INPUT           C INSERT C0A0.hrl                                                                    C0A0                            
+   INPUT           HEADER SOLVER                                                                        GLOBAL                          
+   INPUT               ADERO  = 0.0001                                                                  GLOBAL                          
+   INPUT               RDERO  = 0.02                                                                    GLOBAL                          
+   INPUT               AERRO  = 0.0001                                                                  GLOBAL                          
+   INPUT               RERRO  = 0.01                                                                    GLOBAL                          
+   INPUT               PUSHO  = 1.                                                                      GLOBAL                          
+   INPUT               RCACTO  = 0.1                                                                    GLOBAL                          
+   INPUT               RCERRO  = 0.003                                                                  GLOBAL                          
+   INPUT               ACHGO  = 0.1                                                                     GLOBAL                          
+   INPUT               RCHGO  = 0.9                                                                     GLOBAL                          
+   INPUT               RCVIO  = 0.2                                                                     GLOBAL                          
+   INPUT               METHO  = 2                                                                       GLOBAL                          
+   INPUT               NLOOPO  = 100                                                                    GLOBAL                          
+   INPUT               MDERO  = 0                                                                       GLOBAL                          
+   INPUT               NCONVO  = 2                                                                      GLOBAL                          
+   INPUT               NERVUS  = 0                                                                      GLOBAL                          
+   INPUT               NEWPRO  = 0                                                                      GLOBAL                          
+   INPUT               NLOOPR  = 100                                                                    GLOBAL                          
+   INPUT               ADERR  = 0.01                                                                    GLOBAL                          
+   INPUT               RERRR  = 0.001                                                                   GLOBAL                          
+   INPUT               AERRR  = 1.000000E-05                                                            GLOBAL                          
+   INPUT               RDERR  = 0.02                                                                    GLOBAL                          
+   INPUT           C INSERT case0.cc                                                                    GLOBAL                          
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     6
+
+ MODEL = SINDA                                                           CubesatFrame_RYAN.dwg - 1_DAY_TEST
+ NODE DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER NODE DATA, MAIN                                                               MAIN                            
+   INPUT           HEADER NODE DATA, SPACE                                                              SPACE                           
+   INPUT                       -1,    2.73,    -1.0                                                     SPACE                           
+   INPUT           HEADER NODE DATA, X_NEG                                                              X_NEG                           
+   INPUT                       1,    293.15,    9.60836                                                 X_NEG                           
+   INPUT                       2,    293.15,    9.60836                                                 X_NEG                           
+   INPUT                       3,    293.15,    9.60836                                                 X_NEG                           
+   INPUT                       4,    293.15,    9.60836                                                 X_NEG                           
+   INPUT                       5,    293.15,    9.60836                                                 X_NEG                           
+   INPUT                       6,    293.15,    9.60836                                                 X_NEG                           
+   INPUT                       7,    293.15,    9.60836                                                 X_NEG                           
+   INPUT                       8,    293.15,    9.60836                                                 X_NEG                           
+   INPUT                       9,    293.15,    9.60836                                                 X_NEG                           
+   INPUT                       10,    293.15,    9.60836                                                X_NEG                           
+   INPUT                       11,    293.15,    9.60836                                                X_NEG                           
+   INPUT                       12,    293.15,    9.60836                                                X_NEG                           
+   INPUT                       13,    293.15,    9.60836                                                X_NEG                           
+   INPUT                       14,    293.15,    9.60836                                                X_NEG                           
+   INPUT                       15,    293.15,    9.60836                                                X_NEG                           
+   INPUT                       16,    293.15,    9.60836                                                X_NEG                           
+   INPUT                       17,    293.15,    9.60836                                                X_NEG                           
+   INPUT                       18,    293.15,    9.60836                                                X_NEG                           
+   INPUT                       19,    293.15,    9.60836                                                X_NEG                           
+   INPUT                       20,    293.15,    9.60836                                                X_NEG                           
+   INPUT                       21,    293.15,    9.60836                                                X_NEG                           
+   INPUT                       22,    293.15,    9.60836                                                X_NEG                           
+   INPUT                       23,    293.15,    9.60836                                                X_NEG                           
+   INPUT                       24,    293.15,    9.60836                                                X_NEG                           
+   INPUT                       25,    293.15,    9.60836                                                X_NEG                           
+   INPUT           HEADER NODE DATA, X_POS                                                              X_POS                           
+   INPUT                       1,    293.15,    9.60836                                                 X_POS                           
+   INPUT                       2,    293.15,    9.60836                                                 X_POS                           
+   INPUT                       3,    293.15,    9.60836                                                 X_POS                           
+   INPUT                       4,    293.15,    9.60836                                                 X_POS                           
+   INPUT                       5,    293.15,    9.60836                                                 X_POS                           
+   INPUT                       6,    293.15,    9.60836                                                 X_POS                           
+   INPUT                       7,    293.15,    9.60836                                                 X_POS                           
+   INPUT                       8,    293.15,    9.60836                                                 X_POS                           
+   INPUT                       9,    293.15,    9.60836                                                 X_POS                           
+   INPUT                       10,    293.15,    9.60836                                                X_POS                           
+   INPUT                       11,    293.15,    9.60836                                                X_POS                           
+   INPUT                       12,    293.15,    9.60836                                                X_POS                           
+   INPUT                       13,    293.15,    9.60836                                                X_POS                           
+   INPUT                       14,    293.15,    9.60836                                                X_POS                           
+   INPUT                       15,    293.15,    9.60836                                                X_POS                           
+   INPUT                       16,    293.15,    9.60836                                                X_POS                           
+   INPUT                       17,    293.15,    9.60836                                                X_POS                           
+   INPUT                       18,    293.15,    9.60836                                                X_POS                           
+   INPUT                       19,    293.15,    9.60836                                                X_POS                           
+   INPUT                       20,    293.15,    9.60836                                                X_POS                           
+   INPUT                       21,    293.15,    9.60836                                                X_POS                           
+   INPUT                       22,    293.15,    9.60836                                                X_POS                           
+   INPUT                       23,    293.15,    9.60836                                                X_POS                           
+   INPUT                       24,    293.15,    9.60836                                                X_POS                           
+   INPUT                       25,    293.15,    9.60836                                                X_POS                           
+   INPUT           HEADER NODE DATA, Y_NEG                                                              Y_NEG                           
+   INPUT                       1,    293.15,    9.60836                                                 Y_NEG                           
+   INPUT                       2,    293.15,    9.60836                                                 Y_NEG                           
+   INPUT                       3,    293.15,    9.60836                                                 Y_NEG                           
+   INPUT                       4,    293.15,    9.60836                                                 Y_NEG                           
+   INPUT                       5,    293.15,    9.60836                                                 Y_NEG                           
+   INPUT                       6,    293.15,    9.60836                                                 Y_NEG                           
+   INPUT                       7,    293.15,    9.60836                                                 Y_NEG                           
+   INPUT                       8,    293.15,    9.60836                                                 Y_NEG                           
+   INPUT                       9,    293.15,    9.60836                                                 Y_NEG                           
+   INPUT                       10,    293.15,    9.60836                                                Y_NEG                           
+   INPUT                       11,    293.15,    9.60836                                                Y_NEG                           
+   INPUT                       12,    293.15,    9.60836                                                Y_NEG                           
+   INPUT                       13,    293.15,    9.60836                                                Y_NEG                           
+   INPUT                       14,    293.15,    9.60836                                                Y_NEG                           
+   INPUT                       15,    293.15,    9.60836                                                Y_NEG                           
+   INPUT                       16,    293.15,    9.60836                                                Y_NEG                           
+   INPUT                       17,    293.15,    9.60836                                                Y_NEG                           
+   INPUT                       18,    293.15,    9.60836                                                Y_NEG                           
+   INPUT                       19,    293.15,    9.60836                                                Y_NEG                           
+   INPUT                       20,    293.15,    9.60836                                                Y_NEG                           
+   INPUT                       21,    293.15,    9.60836                                                Y_NEG                           
+   INPUT                       22,    293.15,    9.60836                                                Y_NEG                           
+   INPUT                       23,    293.15,    9.60836                                                Y_NEG                           
+   INPUT                       24,    293.15,    9.60836                                                Y_NEG                           
+   INPUT                       25,    293.15,    9.60836                                                Y_NEG                           
+   INPUT           HEADER NODE DATA, Y_POS                                                              Y_POS                           
+   INPUT                       1,    293.15,    9.60836                                                 Y_POS                           
+   INPUT                       2,    293.15,    9.60836                                                 Y_POS                           
+   INPUT                       3,    293.15,    9.60836                                                 Y_POS                           
+   INPUT                       4,    293.15,    9.60836                                                 Y_POS                           
+   INPUT                       5,    293.15,    9.60836                                                 Y_POS                           
+   INPUT                       6,    293.15,    9.60836                                                 Y_POS                           
+   INPUT                       7,    293.15,    9.60836                                                 Y_POS                           
+   INPUT                       8,    293.15,    9.60836                                                 Y_POS                           
+   INPUT                       9,    293.15,    9.60836                                                 Y_POS                           
+   INPUT                       10,    293.15,    9.60836                                                Y_POS                           
+   INPUT                       11,    293.15,    9.60836                                                Y_POS                           
+   INPUT                       12,    293.15,    9.60836                                                Y_POS                           
+   INPUT                       13,    293.15,    9.60836                                                Y_POS                           
+   INPUT                       14,    293.15,    9.60836                                                Y_POS                           
+   INPUT                       15,    293.15,    9.60836                                                Y_POS                           
+   INPUT                       16,    293.15,    9.60836                                                Y_POS                           
+   INPUT                       17,    293.15,    9.60836                                                Y_POS                           
+   INPUT                       18,    293.15,    9.60836                                                Y_POS                           
+   INPUT                       19,    293.15,    9.60836                                                Y_POS                           
+   INPUT                       20,    293.15,    9.60836                                                Y_POS                           
+   INPUT                       21,    293.15,    9.60836                                                Y_POS                           
+   INPUT                       22,    293.15,    9.60836                                                Y_POS                           
+   INPUT                       23,    293.15,    9.60836                                                Y_POS                           
+   INPUT                       24,    293.15,    9.60836                                                Y_POS                           
+   INPUT                       25,    293.15,    9.60836                                                Y_POS                           
+   INPUT           HEADER NODE DATA, Z_NEG                                                              Z_NEG                           
+   INPUT                       1,    293.15,    4.80418                                                 Z_NEG                           
+   INPUT                       2,    293.15,    4.80418                                                 Z_NEG                           
+   INPUT                       3,    293.15,    4.80418                                                 Z_NEG                           
+   INPUT                       4,    293.15,    4.80418                                                 Z_NEG                           
+   INPUT                       5,    293.15,    4.80418                                                 Z_NEG                           
+   INPUT                       6,    293.15,    4.80418                                                 Z_NEG                           
+   INPUT                       7,    293.15,    4.80418                                                 Z_NEG                           
+   INPUT                       8,    293.15,    4.80418                                                 Z_NEG                           
+   INPUT                       9,    293.15,    4.80418                                                 Z_NEG                           
+   INPUT                       10,    293.15,    4.80418                                                Z_NEG                           
+   INPUT                       11,    293.15,    4.80418                                                Z_NEG                           
+   INPUT                       12,    293.15,    4.80418                                                Z_NEG                           
+   INPUT                       13,    293.15,    4.80418                                                Z_NEG                           
+   INPUT                       14,    293.15,    4.80418                                                Z_NEG                           
+   INPUT                       15,    293.15,    4.80418                                                Z_NEG                           
+   INPUT                       16,    293.15,    4.80418                                                Z_NEG                           
+   INPUT                       17,    293.15,    4.80418                                                Z_NEG                           
+   INPUT                       18,    293.15,    4.80418                                                Z_NEG                           
+   INPUT                       19,    293.15,    4.80418                                                Z_NEG                           
+   INPUT                       20,    293.15,    4.80418                                                Z_NEG                           
+   INPUT                       21,    293.15,    4.80418                                                Z_NEG                           
+   INPUT                       22,    293.15,    4.80418                                                Z_NEG                           
+   INPUT                       23,    293.15,    4.80418                                                Z_NEG                           
+   INPUT                       24,    293.15,    4.80418                                                Z_NEG                           
+   INPUT                       25,    293.15,    4.80418                                                Z_NEG                           
+   INPUT           HEADER NODE DATA, Z_POS                                                              Z_POS                           
+   INPUT                       1,    293.15,    4.80418                                                 Z_POS                           
+   INPUT                       2,    293.15,    4.80418                                                 Z_POS                           
+   INPUT                       3,    293.15,    4.80418                                                 Z_POS                           
+   INPUT                       4,    293.15,    4.80418                                                 Z_POS                           
+   INPUT                       5,    293.15,    4.80418                                                 Z_POS                           
+   INPUT                       6,    293.15,    4.80418                                                 Z_POS                           
+   INPUT                       7,    293.15,    4.80418                                                 Z_POS                           
+   INPUT                       8,    293.15,    4.80418                                                 Z_POS                           
+   INPUT                       9,    293.15,    4.80418                                                 Z_POS                           
+   INPUT                       10,    293.15,    4.80418                                                Z_POS                           
+   INPUT                       11,    293.15,    4.80418                                                Z_POS                           
+   INPUT                       12,    293.15,    4.80418                                                Z_POS                           
+   INPUT                       13,    293.15,    4.80418                                                Z_POS                           
+   INPUT                       14,    293.15,    4.80418                                                Z_POS                           
+   INPUT                       15,    293.15,    4.80418                                                Z_POS                           
+   INPUT                       16,    293.15,    4.80418                                                Z_POS                           
+   INPUT                       17,    293.15,    4.80418                                                Z_POS                           
+   INPUT                       18,    293.15,    4.80418                                                Z_POS                           
+   INPUT                       19,    293.15,    4.80418                                                Z_POS                           
+   INPUT                       20,    293.15,    4.80418                                                Z_POS                           
+   INPUT                       21,    293.15,    4.80418                                                Z_POS                           
+   INPUT                       22,    293.15,    4.80418                                                Z_POS                           
+   INPUT                       23,    293.15,    4.80418                                                Z_POS                           
+   INPUT                       24,    293.15,    4.80418                                                Z_POS                           
+   INPUT                       25,    293.15,    4.80418                                                Z_POS                           
+   INPUT           HEADER NODE DATA, C0A0                                                               C0A0                            
+   INPUT           HEADER NODE DATA,C0A1                                                                C0A1                            
+   INPUT           HEADER NODE DATA,C0A2                                                                C0A2                            
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     7
+
+ MODEL = SINDA                                                           CubesatFrame_RYAN.dwg - 1_DAY_TEST
+ CONDUCTOR DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER CONDUCTOR DATA, MAIN                                                          MAIN                            
+   INPUT                       1,    X_NEG.1,    X_NEG.2,    1.5317                                     MAIN                            
+   INPUT                       2,    X_NEG.1,    X_NEG.6,    0.382925                                   MAIN                            
+   INPUT                       3,    X_NEG.2,    X_NEG.3,    1.5317                                     MAIN                            
+   INPUT                       4,    X_NEG.2,    X_NEG.7,    0.382925                                   MAIN                            
+   INPUT                       5,    X_NEG.3,    X_NEG.4,    1.5317                                     MAIN                            
+   INPUT                       6,    X_NEG.3,    X_NEG.8,    0.382925                                   MAIN                            
+   INPUT                       7,    X_NEG.4,    X_NEG.5,    1.5317                                     MAIN                            
+   INPUT                       8,    X_NEG.4,    X_NEG.9,    0.382925                                   MAIN                            
+   INPUT                       9,    X_NEG.5,    X_NEG.10,    0.382925                                  MAIN                            
+   INPUT                       10,    X_NEG.6,    X_NEG.7,    1.5317                                    MAIN                            
+   INPUT                       11,    X_NEG.6,    X_NEG.11,    0.382925                                 MAIN                            
+   INPUT                       12,    X_NEG.7,    X_NEG.8,    1.5317                                    MAIN                            
+   INPUT                       13,    X_NEG.7,    X_NEG.12,    0.382925                                 MAIN                            
+   INPUT                       14,    X_NEG.8,    X_NEG.9,    1.5317                                    MAIN                            
+   INPUT                       15,    X_NEG.8,    X_NEG.13,    0.382925                                 MAIN                            
+   INPUT                       16,    X_NEG.9,    X_NEG.10,    1.5317                                   MAIN                            
+   INPUT                       17,    X_NEG.9,    X_NEG.14,    0.382925                                 MAIN                            
+   INPUT                       18,    X_NEG.10,    X_NEG.15,    0.382925                                MAIN                            
+   INPUT                       19,    X_NEG.11,    X_NEG.12,    1.5317                                  MAIN                            
+   INPUT                       20,    X_NEG.11,    X_NEG.16,    0.382925                                MAIN                            
+   INPUT                       21,    X_NEG.12,    X_NEG.13,    1.5317                                  MAIN                            
+   INPUT                       22,    X_NEG.12,    X_NEG.17,    0.382925                                MAIN                            
+   INPUT                       23,    X_NEG.13,    X_NEG.14,    1.5317                                  MAIN                            
+   INPUT                       24,    X_NEG.13,    X_NEG.18,    0.382925                                MAIN                            
+   INPUT                       25,    X_NEG.14,    X_NEG.15,    1.5317                                  MAIN                            
+   INPUT                       26,    X_NEG.14,    X_NEG.19,    0.382925                                MAIN                            
+   INPUT                       27,    X_NEG.15,    X_NEG.20,    0.382925                                MAIN                            
+   INPUT                       28,    X_NEG.16,    X_NEG.17,    1.5317                                  MAIN                            
+   INPUT                       29,    X_NEG.16,    X_NEG.21,    0.382925                                MAIN                            
+   INPUT                       30,    X_NEG.17,    X_NEG.18,    1.5317                                  MAIN                            
+   INPUT                       31,    X_NEG.17,    X_NEG.22,    0.382925                                MAIN                            
+   INPUT                       32,    X_NEG.18,    X_NEG.19,    1.5317                                  MAIN                            
+   INPUT                       33,    X_NEG.18,    X_NEG.23,    0.382925                                MAIN                            
+   INPUT                       34,    X_NEG.19,    X_NEG.20,    1.5317                                  MAIN                            
+   INPUT                       35,    X_NEG.19,    X_NEG.24,    0.382925                                MAIN                            
+   INPUT                       36,    X_NEG.20,    X_NEG.25,    0.382925                                MAIN                            
+   INPUT                       37,    X_NEG.21,    X_NEG.22,    1.5317                                  MAIN                            
+   INPUT                       38,    X_NEG.22,    X_NEG.23,    1.5317                                  MAIN                            
+   INPUT                       39,    X_NEG.23,    X_NEG.24,    1.5317                                  MAIN                            
+   INPUT                       40,    X_NEG.24,    X_NEG.25,    1.5317                                  MAIN                            
+   INPUT                       41,    X_POS.1,    X_POS.2,    1.5317                                    MAIN                            
+   INPUT                       42,    X_POS.1,    X_POS.6,    0.382925                                  MAIN                            
+   INPUT                       43,    X_POS.2,    X_POS.3,    1.5317                                    MAIN                            
+   INPUT                       44,    X_POS.2,    X_POS.7,    0.382925                                  MAIN                            
+   INPUT                       45,    X_POS.3,    X_POS.4,    1.5317                                    MAIN                            
+   INPUT                       46,    X_POS.3,    X_POS.8,    0.382925                                  MAIN                            
+   INPUT                       47,    X_POS.4,    X_POS.5,    1.5317                                    MAIN                            
+   INPUT                       48,    X_POS.4,    X_POS.9,    0.382925                                  MAIN                            
+   INPUT                       49,    X_POS.5,    X_POS.10,    0.382925                                 MAIN                            
+   INPUT                       50,    X_POS.6,    X_POS.7,    1.5317                                    MAIN                            
+   INPUT                       51,    X_POS.6,    X_POS.11,    0.382925                                 MAIN                            
+   INPUT                       52,    X_POS.7,    X_POS.8,    1.5317                                    MAIN                            
+   INPUT                       53,    X_POS.7,    X_POS.12,    0.382925                                 MAIN                            
+   INPUT                       54,    X_POS.8,    X_POS.9,    1.5317                                    MAIN                            
+   INPUT                       55,    X_POS.8,    X_POS.13,    0.382925                                 MAIN                            
+   INPUT                       56,    X_POS.9,    X_POS.10,    1.5317                                   MAIN                            
+   INPUT                       57,    X_POS.9,    X_POS.14,    0.382925                                 MAIN                            
+   INPUT                       58,    X_POS.10,    X_POS.15,    0.382925                                MAIN                            
+   INPUT                       59,    X_POS.11,    X_POS.12,    1.5317                                  MAIN                            
+   INPUT                       60,    X_POS.11,    X_POS.16,    0.382925                                MAIN                            
+   INPUT                       61,    X_POS.12,    X_POS.13,    1.5317                                  MAIN                            
+   INPUT                       62,    X_POS.12,    X_POS.17,    0.382925                                MAIN                            
+   INPUT                       63,    X_POS.13,    X_POS.14,    1.5317                                  MAIN                            
+   INPUT                       64,    X_POS.13,    X_POS.18,    0.382925                                MAIN                            
+   INPUT                       65,    X_POS.14,    X_POS.15,    1.5317                                  MAIN                            
+   INPUT                       66,    X_POS.14,    X_POS.19,    0.382925                                MAIN                            
+   INPUT                       67,    X_POS.15,    X_POS.20,    0.382925                                MAIN                            
+   INPUT                       68,    X_POS.16,    X_POS.17,    1.5317                                  MAIN                            
+   INPUT                       69,    X_POS.16,    X_POS.21,    0.382925                                MAIN                            
+   INPUT                       70,    X_POS.17,    X_POS.18,    1.5317                                  MAIN                            
+   INPUT                       71,    X_POS.17,    X_POS.22,    0.382925                                MAIN                            
+   INPUT                       72,    X_POS.18,    X_POS.19,    1.5317                                  MAIN                            
+   INPUT                       73,    X_POS.18,    X_POS.23,    0.382925                                MAIN                            
+   INPUT                       74,    X_POS.19,    X_POS.20,    1.5317                                  MAIN                            
+   INPUT                       75,    X_POS.19,    X_POS.24,    0.382925                                MAIN                            
+   INPUT                       76,    X_POS.20,    X_POS.25,    0.382925                                MAIN                            
+   INPUT                       77,    X_POS.21,    X_POS.22,    1.5317                                  MAIN                            
+   INPUT                       78,    X_POS.22,    X_POS.23,    1.5317                                  MAIN                            
+   INPUT                       79,    X_POS.23,    X_POS.24,    1.5317                                  MAIN                            
+   INPUT                       80,    X_POS.24,    X_POS.25,    1.5317                                  MAIN                            
+   INPUT                       81,    Y_NEG.1,    Y_NEG.2,    0.382925                                  MAIN                            
+   INPUT                       82,    Y_NEG.1,    Y_NEG.6,    1.5317                                    MAIN                            
+   INPUT                       83,    Y_NEG.2,    Y_NEG.3,    0.382925                                  MAIN                            
+   INPUT                       84,    Y_NEG.2,    Y_NEG.7,    1.5317                                    MAIN                            
+   INPUT                       85,    Y_NEG.3,    Y_NEG.4,    0.382925                                  MAIN                            
+   INPUT                       86,    Y_NEG.3,    Y_NEG.8,    1.5317                                    MAIN                            
+   INPUT                       87,    Y_NEG.4,    Y_NEG.5,    0.382925                                  MAIN                            
+   INPUT                       88,    Y_NEG.4,    Y_NEG.9,    1.5317                                    MAIN                            
+   INPUT                       89,    Y_NEG.5,    Y_NEG.10,    1.5317                                   MAIN                            
+   INPUT                       90,    Y_NEG.6,    Y_NEG.7,    0.382925                                  MAIN                            
+   INPUT                       91,    Y_NEG.6,    Y_NEG.11,    1.5317                                   MAIN                            
+   INPUT                       92,    Y_NEG.7,    Y_NEG.8,    0.382925                                  MAIN                            
+   INPUT                       93,    Y_NEG.7,    Y_NEG.12,    1.5317                                   MAIN                            
+   INPUT                       94,    Y_NEG.8,    Y_NEG.9,    0.382925                                  MAIN                            
+   INPUT                       95,    Y_NEG.8,    Y_NEG.13,    1.5317                                   MAIN                            
+   INPUT                       96,    Y_NEG.9,    Y_NEG.10,    0.382925                                 MAIN                            
+   INPUT                       97,    Y_NEG.9,    Y_NEG.14,    1.5317                                   MAIN                            
+   INPUT                       98,    Y_NEG.10,    Y_NEG.15,    1.5317                                  MAIN                            
+   INPUT                       99,    Y_NEG.11,    Y_NEG.12,    0.382925                                MAIN                            
+   INPUT                       100,    Y_NEG.11,    Y_NEG.16,    1.5317                                 MAIN                            
+   INPUT                       101,    Y_NEG.12,    Y_NEG.13,    0.382925                               MAIN                            
+   INPUT                       102,    Y_NEG.12,    Y_NEG.17,    1.5317                                 MAIN                            
+   INPUT                       103,    Y_NEG.13,    Y_NEG.14,    0.382925                               MAIN                            
+   INPUT                       104,    Y_NEG.13,    Y_NEG.18,    1.5317                                 MAIN                            
+   INPUT                       105,    Y_NEG.14,    Y_NEG.15,    0.382925                               MAIN                            
+   INPUT                       106,    Y_NEG.14,    Y_NEG.19,    1.5317                                 MAIN                            
+   INPUT                       107,    Y_NEG.15,    Y_NEG.20,    1.5317                                 MAIN                            
+   INPUT                       108,    Y_NEG.16,    Y_NEG.17,    0.382925                               MAIN                            
+   INPUT                       109,    Y_NEG.16,    Y_NEG.21,    1.5317                                 MAIN                            
+   INPUT                       110,    Y_NEG.17,    Y_NEG.18,    0.382925                               MAIN                            
+   INPUT                       111,    Y_NEG.17,    Y_NEG.22,    1.5317                                 MAIN                            
+   INPUT                       112,    Y_NEG.18,    Y_NEG.19,    0.382925                               MAIN                            
+   INPUT                       113,    Y_NEG.18,    Y_NEG.23,    1.5317                                 MAIN                            
+   INPUT                       114,    Y_NEG.19,    Y_NEG.20,    0.382925                               MAIN                            
+   INPUT                       115,    Y_NEG.19,    Y_NEG.24,    1.5317                                 MAIN                            
+   INPUT                       116,    Y_NEG.20,    Y_NEG.25,    1.5317                                 MAIN                            
+   INPUT                       117,    Y_NEG.21,    Y_NEG.22,    0.382925                               MAIN                            
+   INPUT                       118,    Y_NEG.22,    Y_NEG.23,    0.382925                               MAIN                            
+   INPUT                       119,    Y_NEG.23,    Y_NEG.24,    0.382925                               MAIN                            
+   INPUT                       120,    Y_NEG.24,    Y_NEG.25,    0.382925                               MAIN                            
+   INPUT                       121,    Y_POS.1,    Y_POS.2,    1.5317                                   MAIN                            
+   INPUT                       122,    Y_POS.1,    Y_POS.6,    0.382925                                 MAIN                            
+   INPUT                       123,    Y_POS.2,    Y_POS.3,    1.5317                                   MAIN                            
+   INPUT                       124,    Y_POS.2,    Y_POS.7,    0.382925                                 MAIN                            
+   INPUT                       125,    Y_POS.3,    Y_POS.4,    1.5317                                   MAIN                            
+   INPUT                       126,    Y_POS.3,    Y_POS.8,    0.382925                                 MAIN                            
+   INPUT                       127,    Y_POS.4,    Y_POS.5,    1.5317                                   MAIN                            
+   INPUT                       128,    Y_POS.4,    Y_POS.9,    0.382925                                 MAIN                            
+   INPUT                       129,    Y_POS.5,    Y_POS.10,    0.382925                                MAIN                            
+   INPUT                       130,    Y_POS.6,    Y_POS.7,    1.5317                                   MAIN                            
+   INPUT                       131,    Y_POS.6,    Y_POS.11,    0.382925                                MAIN                            
+   INPUT                       132,    Y_POS.7,    Y_POS.8,    1.5317                                   MAIN                            
+   INPUT                       133,    Y_POS.7,    Y_POS.12,    0.382925                                MAIN                            
+   INPUT                       134,    Y_POS.8,    Y_POS.9,    1.5317                                   MAIN                            
+   INPUT                       135,    Y_POS.8,    Y_POS.13,    0.382925                                MAIN                            
+   INPUT                       136,    Y_POS.9,    Y_POS.10,    1.5317                                  MAIN                            
+   INPUT                       137,    Y_POS.9,    Y_POS.14,    0.382925                                MAIN                            
+   INPUT                       138,    Y_POS.10,    Y_POS.15,    0.382925                               MAIN                            
+   INPUT                       139,    Y_POS.11,    Y_POS.12,    1.5317                                 MAIN                            
+   INPUT                       140,    Y_POS.11,    Y_POS.16,    0.382925                               MAIN                            
+   INPUT                       141,    Y_POS.12,    Y_POS.13,    1.5317                                 MAIN                            
+   INPUT                       142,    Y_POS.12,    Y_POS.17,    0.382925                               MAIN                            
+   INPUT                       143,    Y_POS.13,    Y_POS.14,    1.5317                                 MAIN                            
+   INPUT                       144,    Y_POS.13,    Y_POS.18,    0.382925                               MAIN                            
+   INPUT                       145,    Y_POS.14,    Y_POS.15,    1.5317                                 MAIN                            
+   INPUT                       146,    Y_POS.14,    Y_POS.19,    0.382925                               MAIN                            
+   INPUT                       147,    Y_POS.15,    Y_POS.20,    0.382925                               MAIN                            
+   INPUT                       148,    Y_POS.16,    Y_POS.17,    1.5317                                 MAIN                            
+   INPUT                       149,    Y_POS.16,    Y_POS.21,    0.382925                               MAIN                            
+   INPUT                       150,    Y_POS.17,    Y_POS.18,    1.5317                                 MAIN                            
+   INPUT                       151,    Y_POS.17,    Y_POS.22,    0.382925                               MAIN                            
+   INPUT                       152,    Y_POS.18,    Y_POS.19,    1.5317                                 MAIN                            
+   INPUT                       153,    Y_POS.18,    Y_POS.23,    0.382925                               MAIN                            
+   INPUT                       154,    Y_POS.19,    Y_POS.20,    1.5317                                 MAIN                            
+   INPUT                       155,    Y_POS.19,    Y_POS.24,    0.382925                               MAIN                            
+   INPUT                       156,    Y_POS.20,    Y_POS.25,    0.382925                               MAIN                            
+   INPUT                       157,    Y_POS.21,    Y_POS.22,    1.5317                                 MAIN                            
+   INPUT                       158,    Y_POS.22,    Y_POS.23,    1.5317                                 MAIN                            
+   INPUT                       159,    Y_POS.23,    Y_POS.24,    1.5317                                 MAIN                            
+   INPUT                       160,    Y_POS.24,    Y_POS.25,    1.5317                                 MAIN                            
+   INPUT                       161,    Z_NEG.1,    Z_NEG.2,    0.76585                                  MAIN                            
+   INPUT                       162,    Z_NEG.1,    Z_NEG.6,    0.76585                                  MAIN                            
+   INPUT                       163,    Z_NEG.2,    Z_NEG.3,    0.76585                                  MAIN                            
+   INPUT                       164,    Z_NEG.2,    Z_NEG.7,    0.76585                                  MAIN                            
+   INPUT                       165,    Z_NEG.3,    Z_NEG.4,    0.76585                                  MAIN                            
+   INPUT                       166,    Z_NEG.3,    Z_NEG.8,    0.76585                                  MAIN                            
+   INPUT                       167,    Z_NEG.4,    Z_NEG.5,    0.76585                                  MAIN                            
+   INPUT                       168,    Z_NEG.4,    Z_NEG.9,    0.76585                                  MAIN                            
+   INPUT                       169,    Z_NEG.5,    Z_NEG.10,    0.76585                                 MAIN                            
+   INPUT                       170,    Z_NEG.6,    Z_NEG.7,    0.76585                                  MAIN                            
+   INPUT                       171,    Z_NEG.6,    Z_NEG.11,    0.76585                                 MAIN                            
+   INPUT                       172,    Z_NEG.7,    Z_NEG.8,    0.76585                                  MAIN                            
+   INPUT                       173,    Z_NEG.7,    Z_NEG.12,    0.76585                                 MAIN                            
+   INPUT                       174,    Z_NEG.8,    Z_NEG.9,    0.76585                                  MAIN                            
+   INPUT                       175,    Z_NEG.8,    Z_NEG.13,    0.76585                                 MAIN                            
+   INPUT                       176,    Z_NEG.9,    Z_NEG.10,    0.76585                                 MAIN                            
+   INPUT                       177,    Z_NEG.9,    Z_NEG.14,    0.76585                                 MAIN                            
+   INPUT                       178,    Z_NEG.10,    Z_NEG.15,    0.76585                                MAIN                            
+   INPUT                       179,    Z_NEG.11,    Z_NEG.12,    0.76585                                MAIN                            
+   INPUT                       180,    Z_NEG.11,    Z_NEG.16,    0.76585                                MAIN                            
+   INPUT                       181,    Z_NEG.12,    Z_NEG.13,    0.76585                                MAIN                            
+   INPUT                       182,    Z_NEG.12,    Z_NEG.17,    0.76585                                MAIN                            
+   INPUT                       183,    Z_NEG.13,    Z_NEG.14,    0.76585                                MAIN                            
+   INPUT                       184,    Z_NEG.13,    Z_NEG.18,    0.76585                                MAIN                            
+   INPUT                       185,    Z_NEG.14,    Z_NEG.15,    0.76585                                MAIN                            
+   INPUT                       186,    Z_NEG.14,    Z_NEG.19,    0.76585                                MAIN                            
+   INPUT                       187,    Z_NEG.15,    Z_NEG.20,    0.76585                                MAIN                            
+   INPUT                       188,    Z_NEG.16,    Z_NEG.17,    0.76585                                MAIN                            
+   INPUT                       189,    Z_NEG.16,    Z_NEG.21,    0.76585                                MAIN                            
+   INPUT                       190,    Z_NEG.17,    Z_NEG.18,    0.76585                                MAIN                            
+   INPUT                       191,    Z_NEG.17,    Z_NEG.22,    0.76585                                MAIN                            
+   INPUT                       192,    Z_NEG.18,    Z_NEG.19,    0.76585                                MAIN                            
+   INPUT                       193,    Z_NEG.18,    Z_NEG.23,    0.76585                                MAIN                            
+   INPUT                       194,    Z_NEG.19,    Z_NEG.20,    0.76585                                MAIN                            
+   INPUT                       195,    Z_NEG.19,    Z_NEG.24,    0.76585                                MAIN                            
+   INPUT                       196,    Z_NEG.20,    Z_NEG.25,    0.76585                                MAIN                            
+   INPUT                       197,    Z_NEG.21,    Z_NEG.22,    0.76585                                MAIN                            
+   INPUT                       198,    Z_NEG.22,    Z_NEG.23,    0.76585                                MAIN                            
+   INPUT                       199,    Z_NEG.23,    Z_NEG.24,    0.76585                                MAIN                            
+   INPUT                       200,    Z_NEG.24,    Z_NEG.25,    0.76585                                MAIN                            
+   INPUT                       201,    Z_POS.1,    Z_POS.2,    0.76585                                  MAIN                            
+   INPUT                       202,    Z_POS.1,    Z_POS.6,    0.76585                                  MAIN                            
+   INPUT                       203,    Z_POS.2,    Z_POS.3,    0.76585                                  MAIN                            
+   INPUT                       204,    Z_POS.2,    Z_POS.7,    0.76585                                  MAIN                            
+   INPUT                       205,    Z_POS.3,    Z_POS.4,    0.76585                                  MAIN                            
+   INPUT                       206,    Z_POS.3,    Z_POS.8,    0.76585                                  MAIN                            
+   INPUT                       207,    Z_POS.4,    Z_POS.5,    0.76585                                  MAIN                            
+   INPUT                       208,    Z_POS.4,    Z_POS.9,    0.76585                                  MAIN                            
+   INPUT                       209,    Z_POS.5,    Z_POS.10,    0.76585                                 MAIN                            
+   INPUT                       210,    Z_POS.6,    Z_POS.7,    0.76585                                  MAIN                            
+   INPUT                       211,    Z_POS.6,    Z_POS.11,    0.76585                                 MAIN                            
+   INPUT                       212,    Z_POS.7,    Z_POS.8,    0.76585                                  MAIN                            
+   INPUT                       213,    Z_POS.7,    Z_POS.12,    0.76585                                 MAIN                            
+   INPUT                       214,    Z_POS.8,    Z_POS.9,    0.76585                                  MAIN                            
+   INPUT                       215,    Z_POS.8,    Z_POS.13,    0.76585                                 MAIN                            
+   INPUT                       216,    Z_POS.9,    Z_POS.10,    0.76585                                 MAIN                            
+   INPUT                       217,    Z_POS.9,    Z_POS.14,    0.76585                                 MAIN                            
+   INPUT                       218,    Z_POS.10,    Z_POS.15,    0.76585                                MAIN                            
+   INPUT                       219,    Z_POS.11,    Z_POS.12,    0.76585                                MAIN                            
+   INPUT                       220,    Z_POS.11,    Z_POS.16,    0.76585                                MAIN                            
+   INPUT                       221,    Z_POS.12,    Z_POS.13,    0.76585                                MAIN                            
+   INPUT                       222,    Z_POS.12,    Z_POS.17,    0.76585                                MAIN                            
+   INPUT                       223,    Z_POS.13,    Z_POS.14,    0.76585                                MAIN                            
+   INPUT                       224,    Z_POS.13,    Z_POS.18,    0.76585                                MAIN                            
+   INPUT                       225,    Z_POS.14,    Z_POS.15,    0.76585                                MAIN                            
+   INPUT                       226,    Z_POS.14,    Z_POS.19,    0.76585                                MAIN                            
+   INPUT                       227,    Z_POS.15,    Z_POS.20,    0.76585                                MAIN                            
+   INPUT                       228,    Z_POS.16,    Z_POS.17,    0.76585                                MAIN                            
+   INPUT                       229,    Z_POS.16,    Z_POS.21,    0.76585                                MAIN                            
+   INPUT                       230,    Z_POS.17,    Z_POS.18,    0.76585                                MAIN                            
+   INPUT                       231,    Z_POS.17,    Z_POS.22,    0.76585                                MAIN                            
+   INPUT                       232,    Z_POS.18,    Z_POS.19,    0.76585                                MAIN                            
+   INPUT                       233,    Z_POS.18,    Z_POS.23,    0.76585                                MAIN                            
+   INPUT                       234,    Z_POS.19,    Z_POS.20,    0.76585                                MAIN                            
+   INPUT                       235,    Z_POS.19,    Z_POS.24,    0.76585                                MAIN                            
+   INPUT                       236,    Z_POS.20,    Z_POS.25,    0.76585                                MAIN                            
+   INPUT                       237,    Z_POS.21,    Z_POS.22,    0.76585                                MAIN                            
+   INPUT                       238,    Z_POS.22,    Z_POS.23,    0.76585                                MAIN                            
+   INPUT                       239,    Z_POS.23,    Z_POS.24,    0.76585                                MAIN                            
+   INPUT                       240,    Z_POS.24,    Z_POS.25,    0.76585                                MAIN                            
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     8
+
+ MODEL = SINDA                                                           CubesatFrame_RYAN.dwg - 1_DAY_TEST
+ VARIABLES DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER VARIABLES0, C0A0                                                              C0A0                            
+   INPUT           F     CALL LOADQ_C0A0_1699223700                                                     C0A0                            
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     9
+
+ MODEL = SINDA                                                           CubesatFrame_RYAN.dwg - 1_DAY_TEST
+ OPERATIONS BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER OPERATIONS                                                                    GLOBAL                          
+   INPUT                 CALL TDPREBL   $ PLACE BEFORE BUILD, CODE IN SUBROUTINE DATA                   GLOBAL                          
+   INPUT           BUILD DEFAULT,MAIN,SPACE,X_NEG,X_POS,Y_NEG,Y_POS,Z_NEG,Z_POS,C0A0,C0A1,C0A2          GLOBAL                          
+   INPUT                 CALL TDPOSTBL   $ PLACE AFTER BUILD, CODE IN SUBROUTINE DATA                   GLOBAL                          
+   INPUT                 CALL TRANSIENT                                                                 GLOBAL                          
+   INPUT                 CALL TDHTOT $ OUTPUT HEATER SUMMARY                                            GLOBAL                          
+   INPUT                 CALL TDPOSTSL $ LOGIC IN SUBROUTINE DATA                                       GLOBAL                          
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    10
+
+ MODEL = SINDA                                                           CubesatFrame_RYAN.dwg - 1_DAY_TEST
+ OUTPUT DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER OUTPUT CALLS, GLOBAL                                                          GLOBAL                          
+   INPUT                 CALL TPRINT('ALL')                                                             GLOBAL                          
+   INPUT                 IF(NSOL  .GT.  1 ) THEN                                                        GLOBAL                          
+   INPUT                     IF(TIMEN  .GE.  TIMEND) THEN                                               GLOBAL                          
+   INPUT                         CALL SAVE('ALL',0)                                                     GLOBAL                          
+   INPUT                     ELSE                                                                       GLOBAL                          
+   INPUT                         CALL SAVE('TR',0)                                                      GLOBAL                          
+   INPUT                     ENDIF                                                                      GLOBAL                          
+   INPUT                 ELSE IF( LOOPCT  .GT.  0 ) THEN                                                GLOBAL                          
+   INPUT                     CALL SAVE('ALL',0)                                                         GLOBAL                          
+   INPUT                 ENDIF                                                                          GLOBAL                          
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    11
+
+ MODEL = SINDA                                                           CubesatFrame_RYAN.dwg - 1_DAY_TEST
+ SUBROUTINE DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER SUBROUTINES                                                                   GLOBAL                          
+   INPUT                 SUBROUTINE TDHTR                                                               GLOBAL                          
+   INPUT                 RETURN                                                                         GLOBAL                          
+   INPUT                 END                                                                            GLOBAL                          
+   INPUT                 SUBROUTINE TDREL                                                               GLOBAL                          
+   INPUT           F     RETURN                                                                         GLOBAL                          
+   INPUT           F     END                                                                            GLOBAL                          
+   INPUT           F     SUBROUTINE TDHTOT                                                              GLOBAL                          
+   INPUT           F     RETURN                                                                         GLOBAL                          
+   INPUT           F     END                                                                            GLOBAL                          
+   INPUT           F     SUBROUTINE TDHTRST                                                             GLOBAL                          
+   INPUT           F     RETURN                                                                         GLOBAL                          
+   INPUT           F     END                                                                            GLOBAL                          
+   INPUT           F     SUBROUTINE TDPREBL                                                             GLOBAL                          
+   INPUT                 CALL COMMON                                                                    GLOBAL                          
+   INPUT           F     RETURN                                                                         GLOBAL                          
+   INPUT           F     END                                                                            GLOBAL                          
+   INPUT           F     SUBROUTINE TDPOSTBL                                                            GLOBAL                          
+   INPUT                 CALL COMMON                                                                    GLOBAL                          
+   INPUT           F     RETURN                                                                         GLOBAL                          
+   INPUT           F     END                                                                            GLOBAL                          
+   INPUT           F     SUBROUTINE TDPOSTSL                                                            GLOBAL                          
+   INPUT                 CALL COMMON                                                                    GLOBAL                          
+   INPUT           F     RETURN                                                                         GLOBAL                          
+   INPUT           F     END                                                                            GLOBAL                          
+   INPUT           F     SUBROUTINE BASEPLOT                                                            GLOBAL                          
+   INPUT                 CALL COMMON                                                                    GLOBAL                          
+   INPUT           F     RETURN                                                                         GLOBAL                          
+   INPUT           F     END                                                                            GLOBAL                          
+   INPUT           C INSERT C0A0.hra                                                                    GLOBAL                          
+   INPUT           F     RECURSIVE SUBROUTINE LOADQ_C0A0_1699223700                                     GLOBAL                          
+   INPUT           F     USE BINARY_READER_MOD                                                          GLOBAL                          
+   INPUT                 CALL COMMON                                                                    GLOBAL                          
+   INPUT           F     INTEGER NVAR__TD                                                               GLOBAL                          
+   INPUT           F     REAL, ALLOCATABLE ::  DATA__TD(:)                                              GLOBAL                          
+   INPUT           F     DATA NVAR__TD /-1/                                                             GLOBAL                          
+   INPUT           F     SAVE NVAR__TD, DATA__TD                                                        GLOBAL                          
+   INPUT           F     IF( NVAR__TD  .LT.  0 ) THEN                                                   GLOBAL                          
+   INPUT           F         ALLOCATE (DATA__TD(3171))                                                  GLOBAL                          
+   INPUT           F         CALL LOAD_BINARY_SINGLET_ARRAYS(                                           GLOBAL                          
+   INPUT           F    +        'C0A0.hra_bin'                                                         GLOBAL                          
+   INPUT           F    +    , DATA__TD)                                                                GLOBAL                          
+   INPUT           F         NVAR__TD = 1                                                               GLOBAL                          
+   INPUT           F     ENDIF                                                                          GLOBAL                          
+   INPUT           F     DATA__TD(1 + 453 + 1) =                                                        GLOBAL                          
+   INPUT                +     C0A0.A(5+1)                                                               GLOBAL                          
+   INPUT           F     CALL LOADQ('C0A0',1,8,                                                         GLOBAL                          
+   INPUT           F    +    DATA__TD(1+151),                                                           GLOBAL                          
+   INPUT           F    +    DATA__TD(1+302),                                                           GLOBAL                          
+   INPUT           F    +    DATA__TD(1),                                                               GLOBAL                          
+   INPUT           F    +    DATA__TD(1+453),                                                           GLOBAL                          
+   INPUT                +    C0A0.A4)                                                                   GLOBAL                          
+   INPUT           F     RETURN                                                                         GLOBAL                          
+   INPUT           F     END                                                                            GLOBAL                          
+   INPUT           C INSERT C0A1.k_in                                                                   GLOBAL                          
+   INPUT           CINSERT C0A1.k_in                                                                    GLOBAL                          
+   INPUT           C INSERT C0A2.k_in                                                                   GLOBAL                          
+   INPUT           CINSERT C0A2.k_in                                                                    GLOBAL                          

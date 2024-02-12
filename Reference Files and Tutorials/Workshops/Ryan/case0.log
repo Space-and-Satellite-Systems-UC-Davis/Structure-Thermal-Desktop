@@ -1,0 +1,72 @@
+[ AutoCAD - Sun Nov 05 14:34:58 2023  ]----------------------------------------
+No duplicate nodes or insulation nodalization warnings found
+
+Calculating SINDA/FLUINT data
+Calculating Thermal Analyzer Input took 0.08 sec
+
+Outputting SINDA/FLUINT data
+Outputting data for submodel GLOBAL...
+Outputting data for submodel MAIN...
+Outputting data for submodel SPACE...
+Outputting data for submodel X_NEG...
+Outputting data for submodel X_POS...
+Outputting data for submodel Y_NEG...
+Outputting data for submodel Y_POS...
+Outputting data for submodel Z_NEG...
+Outputting data for submodel Z_POS...
+    Number of nodes:      151
+    Number of conductors: 240
+    
+Total Nodal Mass = 1.353560 kg
+
+
+*** RADCAD RAYTRACE HEATING RATES RUN START for database EXTERNAL_HR-Survivability_Test-OpticalDataCustom.rch
+Creating new database named EXTERNAL_HR-Survivability_Test-OpticalDataCustom.rch
+Fixed RadCAD
+Fixed license found.
+Running with 2 calculation threads
+Start and End position calc already done
+Total Elapsed time for heating rate calculations = 1.55 sec
+Outputting SINDA/FLUINT heating rate data to files:
+    C0A0.hra for arrays and C0A0.hrl for logic...
+Total Elapsed time for heating rate calculations and output = 1.89 sec
+
+
+*** RADCAD RAYTRACE RADK RUN START for database EXTERNAL_RDK-OpticalDataCustom.rck
+Creating new database named EXTERNAL_RDK-OpticalDataCustom.rck
+Fixed RadCAD
+Fixed license found.
+Running with 2 calculation threads
+Time to calculate radk = 0.17 sec
+Outputting SINDA/FLUINT radks to file C0A1.k...
+Total elapsed time for calculations and output = 0.51 sec
+    150 calculation nodes
+    150 radks were output, 0 radks were filtered out
+    0 nodes(0%) have bij sum + bij inactive < .9
+    5000 average number of rays per node shot
+     
+    No overlapping surfaces greater than 10.0% found in EXTERNAL_RDK
+
+
+*** RADCAD RAYTRACE RADK RUN START for database INTERNAL_RDK-OpticalDataCustom.rck
+Creating new database named INTERNAL_RDK-OpticalDataCustom.rck
+Fixed RadCAD
+Fixed license found.
+Running with 2 calculation threads
+Time to calculate radk = 0.31 sec
+Outputting SINDA/FLUINT radks to file C0A2.k...
+Total elapsed time for calculations and output = 0.60 sec
+    150 calculation nodes
+    8659 radks were output, 678 radks were filtered out
+    0 nodes(0%) have bij sum + bij inactive < .9
+    5000 average number of rays per node shot
+     
+    No overlapping surfaces greater than 10.0% found in INTERNAL_RDK
+
+*** Running SINDA model named C:\Users\rpkar\Documents\GitHub\Structure-Thermal-Desktop\Reference Files and Tutorials\Workshops\Ryan\case0.inp
+Successful completion of processor
+From C:\Users\rpkar\Documents\GitHub\Structure-Thermal-Desktop\Reference Files and Tutorials\Workshops\Ryan\messages_case0.log
+     TIMEN  =    5400.000      The ASTAP execution time is:    1.78382579999925       seconds
+Time to run SINDA = 8.69 sec
+
+Case Set Solved::Elapsed time = 12.58 sec
