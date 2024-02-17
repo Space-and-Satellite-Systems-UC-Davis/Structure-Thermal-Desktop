@@ -1,7 +1,9 @@
 HEADER OPTIONS
-C    SINDA Data generated with Thermal Desktop 23.2 Patch 3
-C    Generated on Thu Jan 18 15:45:02 2024
-C    From file: CubeSat.dwg
+C    SINDA Data generated with Thermal Desktop 24.1 Patch 0
+C    Installed Sinda: Sinda/Fluint 24.1 patch level 0
+C    Generated on Fri Feb 16 18:24:43 2024
+C    From file: CUBESAT.dwg
+C    XREF name: Frame file: .\Frame.dwg
 C    Case Set: 7 Orbit
 C    Radiation Groups: External HR, External RDK, Internal RDK
 C    Running Steady and 90min (10800s) Transient States
@@ -16,7 +18,7 @@ C    TDUNITS,   Force      = N
 C    TDUNITS,   Angle      = Degrees
 C    TDUNITS,   Volt       = volt
 C    TDUNITS,   Current    = amp
-C    DWG name:      CubeSat.dwg
+C    DWG name:      CUBESAT.dwg
 C    Thermophysical Property Database: ThermalDataFilled.tdp
 C    Optical Property Database:        optical properties\rcoptics_open_v1.3 (2).rco
 C    Computer name: RYANLAPTOP
@@ -50,10 +52,6 @@ C    hrTrueAnom           0.            0
 C    hrVelocityX          1.            1
 C    hrVelocityY          -6.310890e-30 -6.31089e-30
 C    hrVelocityZ          -1.262180e-29 -1.26218e-29
-HEADER NODE DATA, COMPONENT_1
-HEADER VARIABLES 0, COMPONENT_1
-C Heat Load-MOTOR_HEAT[COMPONENT_1]::384
-      MOTOR.Q1 = MOTOR.Q1 + 0.2
 HEADER OUTPUT CALLS, GLOBAL
 C Case Set Prop Generated Code
 
@@ -68,519 +66,482 @@ C Case Set Prop Generated Code
           CALL SAVE('ALL',0)
       ENDIF
 
-HEADER NODE DATA, MAIN
-HEADER CONDUCTOR DATA, MAIN
-            1,    MOTOR.1,    MRW.1,    30.
-C Contact - Edge Contactor[MAIN][0]::386
-            2,    XNEG.1,    YPOS.5,    0.019
-C Contact - Edge Contactor[MAIN][0]::388
-            3,    XNEG.1,    ZNEG.1,    0.03
-            4,    XNEG.1,    ZNEG.2,    0.015
-            5,    XNEG.1,    ZNEG.3,    0.0075
-            6,    XNEG.2,    ZNEG.6,    0.015
-            7,    XNEG.3,    ZNEG.11,    0.015
-            8,    XNEG.4,    ZNEG.16,    0.015
-C Contact - Edge Contactor[MAIN][0]::387
-            9,    XNEG.5,    YNEG.1,    0.021
-C Contact - Edge Contactor[MAIN][0]::388
-            10,    XNEG.5,    ZNEG.21,    0.03
-            11,    XNEG.5,    ZNEG.22,    0.015
-            12,    XNEG.5,    ZNEG.23,    0.0075
-C Contact - Edge Contactor[MAIN][0]::386
-            13,    XNEG.6,    YPOS.10,    0.02
-C Contact - Edge Contactor[MAIN][0]::387
-            14,    XNEG.10,    YNEG.6,    0.02
-C Contact - Edge Contactor[MAIN][0]::386
-            15,    XNEG.11,    YPOS.15,    0.02
-C Contact - Edge Contactor[MAIN][0]::387
-            16,    XNEG.15,    YNEG.11,    0.02
-C Contact - Edge Contactor[MAIN][0]::386
-            17,    XNEG.16,    YPOS.20,    0.02
-C Contact - Edge Contactor[MAIN][0]::387
-            18,    XNEG.20,    YNEG.16,    0.02
-C Contact - Edge Contactor[MAIN][0]::386
-            19,    XNEG.21,    YPOS.25,    0.02
-C Contact - Edge Contactor[MAIN][0]::389
-            20,    XNEG.21,    ZPOS.21,    0.03
-            21,    XNEG.21,    ZPOS.22,    0.015
-            22,    XNEG.21,    ZPOS.23,    0.0075
-            23,    XNEG.22,    ZPOS.16,    0.015
-            24,    XNEG.23,    ZPOS.11,    0.015
-            25,    XNEG.24,    ZPOS.6,    0.015
-C Contact - Edge Contactor[MAIN][0]::387
-            26,    XNEG.25,    YNEG.21,    0.018
-C Contact - Edge Contactor[MAIN][0]::389
-            27,    XNEG.25,    ZPOS.1,    0.03
-            28,    XNEG.25,    ZPOS.2,    0.015
-            29,    XNEG.25,    ZPOS.3,    0.0075
-C Contact - Edge Contactor[MAIN][0]::387
-            30,    XPOS.1,    YNEG.5,    0.02
-C Contact - Edge Contactor[MAIN][0]::388
-            31,    XPOS.1,    ZNEG.23,    0.0075
-            32,    XPOS.1,    ZNEG.24,    0.015
-            33,    XPOS.1,    ZNEG.25,    0.03
-            34,    XPOS.2,    ZNEG.20,    0.015
-            35,    XPOS.3,    ZNEG.15,    0.015
-            36,    XPOS.4,    ZNEG.10,    0.015
-C Contact - Edge Contactor[MAIN][0]::386
-            37,    XPOS.5,    YPOS.1,    0.018
-C Contact - Edge Contactor[MAIN][0]::388
-            38,    XPOS.5,    ZNEG.3,    0.0075
-            39,    XPOS.5,    ZNEG.4,    0.015
-            40,    XPOS.5,    ZNEG.5,    0.03
-C Contact - Edge Contactor[MAIN][0]::387
-            41,    XPOS.6,    YNEG.10,    0.02
-C Contact - Edge Contactor[MAIN][0]::386
-            42,    XPOS.10,    YPOS.6,    0.02
-C Contact - Edge Contactor[MAIN][0]::387
-            43,    XPOS.11,    YNEG.15,    0.02
-C Contact - Edge Contactor[MAIN][0]::386
-            44,    XPOS.15,    YPOS.11,    0.02
-C Contact - Edge Contactor[MAIN][0]::387
-            45,    XPOS.16,    YNEG.20,    0.02
-C Contact - Edge Contactor[MAIN][0]::386
-            46,    XPOS.20,    YPOS.16,    0.02
-C Contact - Edge Contactor[MAIN][0]::387
-            47,    XPOS.21,    YNEG.25,    0.021
-C Contact - Edge Contactor[MAIN][0]::389
-            48,    XPOS.21,    ZPOS.3,    0.0075
-            49,    XPOS.21,    ZPOS.4,    0.015
-            50,    XPOS.21,    ZPOS.5,    0.03
-            51,    XPOS.22,    ZPOS.10,    0.015
-            52,    XPOS.23,    ZPOS.15,    0.015
-            53,    XPOS.24,    ZPOS.20,    0.015
-C Contact - Edge Contactor[MAIN][0]::386
-            54,    XPOS.25,    YPOS.21,    0.021
-C Contact - Edge Contactor[MAIN][0]::389
-            55,    XPOS.25,    ZPOS.23,    0.0075
-            56,    XPOS.25,    ZPOS.24,    0.015
-            57,    XPOS.25,    ZPOS.25,    0.03
-C Contact - Edge Contactor[MAIN][0]::387
-            58,    YNEG.1,    ZNEG.21,    0.009
-            59,    YNEG.2,    ZNEG.22,    0.01
-            60,    YNEG.3,    ZNEG.23,    0.01
-            61,    YNEG.4,    ZNEG.24,    0.01
-            62,    YNEG.5,    ZNEG.25,    0.01
-            63,    YNEG.21,    ZPOS.1,    0.012
-            64,    YNEG.22,    ZPOS.2,    0.01
-            65,    YNEG.23,    ZPOS.3,    0.01
-            66,    YNEG.24,    ZPOS.4,    0.01
-            67,    YNEG.25,    ZPOS.5,    0.009
-C Contact - Edge Contactor[MAIN][0]::386
-            68,    YPOS.1,    ZNEG.5,    0.012
-            69,    YPOS.2,    ZNEG.4,    0.01
-            70,    YPOS.3,    ZNEG.3,    0.01
-            71,    YPOS.4,    ZNEG.2,    0.01
-            72,    YPOS.5,    ZNEG.1,    0.011
-            73,    YPOS.21,    ZPOS.25,    0.009
-            74,    YPOS.22,    ZPOS.24,    0.01
-            75,    YPOS.23,    ZPOS.23,    0.01
-            76,    YPOS.24,    ZPOS.22,    0.01
-            77,    YPOS.25,    ZPOS.21,    0.01
-HEADER NODE DATA, MOTOR
-            1,    20.,    43.23762
-HEADER NODE DATA, MRW
-            1,    20.,    321.7725
 HEADER NODE DATA, SPACE
             -1,    -270.42,    -1.0
 HEADER NODE DATA, STRUCTURE
 HEADER CONDUCTOR DATA, STRUCTURE
-            1,    XNEG.1,    XNEG.2,    1.5317
-            2,    XNEG.1,    XNEG.6,    0.382925
-            3,    XNEG.2,    XNEG.3,    1.5317
-            4,    XNEG.2,    XNEG.7,    0.382925
-            5,    XNEG.3,    XNEG.4,    1.5317
-            6,    XNEG.3,    XNEG.8,    0.382925
-            7,    XNEG.4,    XNEG.5,    1.5317
-            8,    XNEG.4,    XNEG.9,    0.382925
-            9,    XNEG.5,    XNEG.10,    0.382925
-            10,    XNEG.6,    XNEG.7,    1.5317
-            11,    XNEG.6,    XNEG.11,    0.382925
-            12,    XNEG.7,    XNEG.8,    1.5317
-            13,    XNEG.7,    XNEG.12,    0.382925
-            14,    XNEG.8,    XNEG.9,    1.5317
-            15,    XNEG.8,    XNEG.13,    0.382925
-            16,    XNEG.9,    XNEG.10,    1.5317
-            17,    XNEG.9,    XNEG.14,    0.382925
-            18,    XNEG.10,    XNEG.15,    0.382925
-            19,    XNEG.11,    XNEG.12,    1.5317
-            20,    XNEG.11,    XNEG.16,    0.382925
-            21,    XNEG.12,    XNEG.13,    1.5317
-            22,    XNEG.12,    XNEG.17,    0.382925
-            23,    XNEG.13,    XNEG.14,    1.5317
-            24,    XNEG.13,    XNEG.18,    0.382925
-            25,    XNEG.14,    XNEG.15,    1.5317
-            26,    XNEG.14,    XNEG.19,    0.382925
-            27,    XNEG.15,    XNEG.20,    0.382925
-            28,    XNEG.16,    XNEG.17,    1.5317
-            29,    XNEG.16,    XNEG.21,    0.382925
-            30,    XNEG.17,    XNEG.18,    1.5317
-            31,    XNEG.17,    XNEG.22,    0.382925
-            32,    XNEG.18,    XNEG.19,    1.5317
-            33,    XNEG.18,    XNEG.23,    0.382925
-            34,    XNEG.19,    XNEG.20,    1.5317
-            35,    XNEG.19,    XNEG.24,    0.382925
-            36,    XNEG.20,    XNEG.25,    0.382925
-            37,    XNEG.21,    XNEG.22,    1.5317
-            38,    XNEG.22,    XNEG.23,    1.5317
-            39,    XNEG.23,    XNEG.24,    1.5317
-            40,    XNEG.24,    XNEG.25,    1.5317
-            41,    XPOS.1,    XPOS.2,    1.5317
-            42,    XPOS.1,    XPOS.6,    0.382925
-            43,    XPOS.2,    XPOS.3,    1.5317
-            44,    XPOS.2,    XPOS.7,    0.382925
-            45,    XPOS.3,    XPOS.4,    1.5317
-            46,    XPOS.3,    XPOS.8,    0.382925
-            47,    XPOS.4,    XPOS.5,    1.5317
-            48,    XPOS.4,    XPOS.9,    0.382925
-            49,    XPOS.5,    XPOS.10,    0.382925
-            50,    XPOS.6,    XPOS.7,    1.5317
-            51,    XPOS.6,    XPOS.11,    0.382925
-            52,    XPOS.7,    XPOS.8,    1.5317
-            53,    XPOS.7,    XPOS.12,    0.382925
-            54,    XPOS.8,    XPOS.9,    1.5317
-            55,    XPOS.8,    XPOS.13,    0.382925
-            56,    XPOS.9,    XPOS.10,    1.5317
-            57,    XPOS.9,    XPOS.14,    0.382925
-            58,    XPOS.10,    XPOS.15,    0.382925
-            59,    XPOS.11,    XPOS.12,    1.5317
-            60,    XPOS.11,    XPOS.16,    0.382925
-            61,    XPOS.12,    XPOS.13,    1.5317
-            62,    XPOS.12,    XPOS.17,    0.382925
-            63,    XPOS.13,    XPOS.14,    1.5317
-            64,    XPOS.13,    XPOS.18,    0.382925
-            65,    XPOS.14,    XPOS.15,    1.5317
-            66,    XPOS.14,    XPOS.19,    0.382925
-            67,    XPOS.15,    XPOS.20,    0.382925
-            68,    XPOS.16,    XPOS.17,    1.5317
-            69,    XPOS.16,    XPOS.21,    0.382925
-            70,    XPOS.17,    XPOS.18,    1.5317
-            71,    XPOS.17,    XPOS.22,    0.382925
-            72,    XPOS.18,    XPOS.19,    1.5317
-            73,    XPOS.18,    XPOS.23,    0.382925
-            74,    XPOS.19,    XPOS.20,    1.5317
-            75,    XPOS.19,    XPOS.24,    0.382925
-            76,    XPOS.20,    XPOS.25,    0.382925
-            77,    XPOS.21,    XPOS.22,    1.5317
-            78,    XPOS.22,    XPOS.23,    1.5317
-            79,    XPOS.23,    XPOS.24,    1.5317
-            80,    XPOS.24,    XPOS.25,    1.5317
-            81,    YNEG.1,    YNEG.2,    1.5317
-            82,    YNEG.1,    YNEG.6,    0.382925
-            83,    YNEG.2,    YNEG.3,    1.5317
-            84,    YNEG.2,    YNEG.7,    0.382925
-            85,    YNEG.3,    YNEG.4,    1.5317
-            86,    YNEG.3,    YNEG.8,    0.382925
-            87,    YNEG.4,    YNEG.5,    1.5317
-            88,    YNEG.4,    YNEG.9,    0.382925
-            89,    YNEG.5,    YNEG.10,    0.382925
-            90,    YNEG.6,    YNEG.7,    1.5317
-            91,    YNEG.6,    YNEG.11,    0.382925
-            92,    YNEG.7,    YNEG.8,    1.5317
-            93,    YNEG.7,    YNEG.12,    0.382925
-            94,    YNEG.8,    YNEG.9,    1.5317
-            95,    YNEG.8,    YNEG.13,    0.382925
-            96,    YNEG.9,    YNEG.10,    1.5317
-            97,    YNEG.9,    YNEG.14,    0.382925
-            98,    YNEG.10,    YNEG.15,    0.382925
-            99,    YNEG.11,    YNEG.12,    1.5317
-            100,    YNEG.11,    YNEG.16,    0.382925
-            101,    YNEG.12,    YNEG.13,    1.5317
-            102,    YNEG.12,    YNEG.17,    0.382925
-            103,    YNEG.13,    YNEG.14,    1.5317
-            104,    YNEG.13,    YNEG.18,    0.382925
-            105,    YNEG.14,    YNEG.15,    1.5317
-            106,    YNEG.14,    YNEG.19,    0.382925
-            107,    YNEG.15,    YNEG.20,    0.382925
-            108,    YNEG.16,    YNEG.17,    1.5317
-            109,    YNEG.16,    YNEG.21,    0.382925
-            110,    YNEG.17,    YNEG.18,    1.5317
-            111,    YNEG.17,    YNEG.22,    0.382925
-            112,    YNEG.18,    YNEG.19,    1.5317
-            113,    YNEG.18,    YNEG.23,    0.382925
-            114,    YNEG.19,    YNEG.20,    1.5317
-            115,    YNEG.19,    YNEG.24,    0.382925
-            116,    YNEG.20,    YNEG.25,    0.382925
-            117,    YNEG.21,    YNEG.22,    1.5317
-            118,    YNEG.22,    YNEG.23,    1.5317
-            119,    YNEG.23,    YNEG.24,    1.5317
-            120,    YNEG.24,    YNEG.25,    1.5317
-            121,    YPOS.1,    YPOS.2,    1.5317
-            122,    YPOS.1,    YPOS.6,    0.382925
-            123,    YPOS.2,    YPOS.3,    1.5317
-            124,    YPOS.2,    YPOS.7,    0.382925
-            125,    YPOS.3,    YPOS.4,    1.5317
-            126,    YPOS.3,    YPOS.8,    0.382925
-            127,    YPOS.4,    YPOS.5,    1.5317
-            128,    YPOS.4,    YPOS.9,    0.382925
-            129,    YPOS.5,    YPOS.10,    0.382925
-            130,    YPOS.6,    YPOS.7,    1.5317
-            131,    YPOS.6,    YPOS.11,    0.382925
-            132,    YPOS.7,    YPOS.8,    1.5317
-            133,    YPOS.7,    YPOS.12,    0.382925
-            134,    YPOS.8,    YPOS.9,    1.5317
-            135,    YPOS.8,    YPOS.13,    0.382925
-            136,    YPOS.9,    YPOS.10,    1.5317
-            137,    YPOS.9,    YPOS.14,    0.382925
-            138,    YPOS.10,    YPOS.15,    0.382925
-            139,    YPOS.11,    YPOS.12,    1.5317
-            140,    YPOS.11,    YPOS.16,    0.382925
-            141,    YPOS.12,    YPOS.13,    1.5317
-            142,    YPOS.12,    YPOS.17,    0.382925
-            143,    YPOS.13,    YPOS.14,    1.5317
-            144,    YPOS.13,    YPOS.18,    0.382925
-            145,    YPOS.14,    YPOS.15,    1.5317
-            146,    YPOS.14,    YPOS.19,    0.382925
-            147,    YPOS.15,    YPOS.20,    0.382925
-            148,    YPOS.16,    YPOS.17,    1.5317
-            149,    YPOS.16,    YPOS.21,    0.382925
-            150,    YPOS.17,    YPOS.18,    1.5317
-            151,    YPOS.17,    YPOS.22,    0.382925
-            152,    YPOS.18,    YPOS.19,    1.5317
-            153,    YPOS.18,    YPOS.23,    0.382925
-            154,    YPOS.19,    YPOS.20,    1.5317
-            155,    YPOS.19,    YPOS.24,    0.382925
-            156,    YPOS.20,    YPOS.25,    0.382925
-            157,    YPOS.21,    YPOS.22,    1.5317
-            158,    YPOS.22,    YPOS.23,    1.5317
-            159,    YPOS.23,    YPOS.24,    1.5317
-            160,    YPOS.24,    YPOS.25,    1.5317
-            161,    ZNEG.1,    ZNEG.2,    0.76585
-            162,    ZNEG.1,    ZNEG.6,    0.76585
-            163,    ZNEG.2,    ZNEG.3,    0.76585
-            164,    ZNEG.2,    ZNEG.7,    0.76585
-            165,    ZNEG.3,    ZNEG.4,    0.76585
-            166,    ZNEG.3,    ZNEG.8,    0.76585
-            167,    ZNEG.4,    ZNEG.5,    0.76585
-            168,    ZNEG.4,    ZNEG.9,    0.76585
-            169,    ZNEG.5,    ZNEG.10,    0.76585
-            170,    ZNEG.6,    ZNEG.7,    0.76585
-            171,    ZNEG.6,    ZNEG.11,    0.76585
-            172,    ZNEG.7,    ZNEG.8,    0.76585
-            173,    ZNEG.7,    ZNEG.12,    0.76585
-            174,    ZNEG.8,    ZNEG.9,    0.76585
-            175,    ZNEG.8,    ZNEG.13,    0.76585
-            176,    ZNEG.9,    ZNEG.10,    0.76585
-            177,    ZNEG.9,    ZNEG.14,    0.76585
-            178,    ZNEG.10,    ZNEG.15,    0.76585
-            179,    ZNEG.11,    ZNEG.12,    0.76585
-            180,    ZNEG.11,    ZNEG.16,    0.76585
-            181,    ZNEG.12,    ZNEG.13,    0.76585
-            182,    ZNEG.12,    ZNEG.17,    0.76585
-            183,    ZNEG.13,    ZNEG.14,    0.76585
-            184,    ZNEG.13,    ZNEG.18,    0.76585
-            185,    ZNEG.14,    ZNEG.15,    0.76585
-            186,    ZNEG.14,    ZNEG.19,    0.76585
-            187,    ZNEG.15,    ZNEG.20,    0.76585
-            188,    ZNEG.16,    ZNEG.17,    0.76585
-            189,    ZNEG.16,    ZNEG.21,    0.76585
-            190,    ZNEG.17,    ZNEG.18,    0.76585
-            191,    ZNEG.17,    ZNEG.22,    0.76585
-            192,    ZNEG.18,    ZNEG.19,    0.76585
-            193,    ZNEG.18,    ZNEG.23,    0.76585
-            194,    ZNEG.19,    ZNEG.20,    0.76585
-            195,    ZNEG.19,    ZNEG.24,    0.76585
-            196,    ZNEG.20,    ZNEG.25,    0.76585
-            197,    ZNEG.21,    ZNEG.22,    0.76585
-            198,    ZNEG.22,    ZNEG.23,    0.76585
-            199,    ZNEG.23,    ZNEG.24,    0.76585
-            200,    ZNEG.24,    ZNEG.25,    0.76585
-            201,    ZPOS.1,    ZPOS.2,    0.76585
-            202,    ZPOS.1,    ZPOS.6,    0.76585
-            203,    ZPOS.2,    ZPOS.3,    0.76585
-            204,    ZPOS.2,    ZPOS.7,    0.76585
-            205,    ZPOS.3,    ZPOS.4,    0.76585
-            206,    ZPOS.3,    ZPOS.8,    0.76585
-            207,    ZPOS.4,    ZPOS.5,    0.76585
-            208,    ZPOS.4,    ZPOS.9,    0.76585
-            209,    ZPOS.5,    ZPOS.10,    0.76585
-            210,    ZPOS.6,    ZPOS.7,    0.76585
-            211,    ZPOS.6,    ZPOS.11,    0.76585
-            212,    ZPOS.7,    ZPOS.8,    0.76585
-            213,    ZPOS.7,    ZPOS.12,    0.76585
-            214,    ZPOS.8,    ZPOS.9,    0.76585
-            215,    ZPOS.8,    ZPOS.13,    0.76585
-            216,    ZPOS.9,    ZPOS.10,    0.76585
-            217,    ZPOS.9,    ZPOS.14,    0.76585
-            218,    ZPOS.10,    ZPOS.15,    0.76585
-            219,    ZPOS.11,    ZPOS.12,    0.76585
-            220,    ZPOS.11,    ZPOS.16,    0.76585
-            221,    ZPOS.12,    ZPOS.13,    0.76585
-            222,    ZPOS.12,    ZPOS.17,    0.76585
-            223,    ZPOS.13,    ZPOS.14,    0.76585
-            224,    ZPOS.13,    ZPOS.18,    0.76585
-            225,    ZPOS.14,    ZPOS.15,    0.76585
-            226,    ZPOS.14,    ZPOS.19,    0.76585
-            227,    ZPOS.15,    ZPOS.20,    0.76585
-            228,    ZPOS.16,    ZPOS.17,    0.76585
-            229,    ZPOS.16,    ZPOS.21,    0.76585
-            230,    ZPOS.17,    ZPOS.18,    0.76585
-            231,    ZPOS.17,    ZPOS.22,    0.76585
-            232,    ZPOS.18,    ZPOS.19,    0.76585
-            233,    ZPOS.18,    ZPOS.23,    0.76585
-            234,    ZPOS.19,    ZPOS.20,    0.76585
-            235,    ZPOS.19,    ZPOS.24,    0.76585
-            236,    ZPOS.20,    ZPOS.25,    0.76585
-            237,    ZPOS.21,    ZPOS.22,    0.76585
-            238,    ZPOS.22,    ZPOS.23,    0.76585
-            239,    ZPOS.23,    ZPOS.24,    0.76585
-            240,    ZPOS.24,    ZPOS.25,    0.76585
+            1,    XNEG.1,    XNEG.2,    1.67
+            2,    XNEG.1,    XNEG.6,    0.4175
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E
+            3,    XNEG.1,    ZNEG.1,    0.012825
+            4,    XNEG.2,    XNEG.3,    1.67
+            5,    XNEG.2,    XNEG.7,    0.4175
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E
+            6,    XNEG.2,    ZNEG.6,    0.01425
+            7,    XNEG.3,    XNEG.4,    1.67
+            8,    XNEG.3,    XNEG.8,    0.4175
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E
+            9,    XNEG.3,    ZNEG.11,    0.01425
+            10,    XNEG.4,    XNEG.5,    1.67
+            11,    XNEG.4,    XNEG.9,    0.4175
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E
+            12,    XNEG.4,    ZNEG.16,    0.01425
+            13,    XNEG.5,    XNEG.10,    0.4175
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E
+            14,    XNEG.5,    ZNEG.21,    0.01425
+            15,    XNEG.6,    XNEG.7,    1.67
+            16,    XNEG.6,    XNEG.11,    0.4175
+            17,    XNEG.7,    XNEG.8,    1.67
+            18,    XNEG.7,    XNEG.12,    0.4175
+            19,    XNEG.8,    XNEG.9,    1.67
+            20,    XNEG.8,    XNEG.13,    0.4175
+            21,    XNEG.9,    XNEG.10,    1.67
+            22,    XNEG.9,    XNEG.14,    0.4175
+            23,    XNEG.10,    XNEG.15,    0.4175
+            24,    XNEG.11,    XNEG.12,    1.67
+            25,    XNEG.11,    XNEG.16,    0.4175
+            26,    XNEG.12,    XNEG.13,    1.67
+            27,    XNEG.12,    XNEG.17,    0.4175
+            28,    XNEG.13,    XNEG.14,    1.67
+            29,    XNEG.13,    XNEG.18,    0.4175
+            30,    XNEG.14,    XNEG.15,    1.67
+            31,    XNEG.14,    XNEG.19,    0.4175
+            32,    XNEG.15,    XNEG.20,    0.4175
+            33,    XNEG.16,    XNEG.17,    1.67
+            34,    XNEG.16,    XNEG.21,    0.4175
+            35,    XNEG.17,    XNEG.18,    1.67
+            36,    XNEG.17,    XNEG.22,    0.4175
+            37,    XNEG.18,    XNEG.19,    1.67
+            38,    XNEG.18,    XNEG.23,    0.4175
+            39,    XNEG.19,    XNEG.20,    1.67
+            40,    XNEG.19,    XNEG.24,    0.4175
+            41,    XNEG.20,    XNEG.25,    0.4175
+            42,    XNEG.21,    XNEG.22,    1.67
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16D
+            43,    XNEG.21,    ZPOS.21,    0.012825
+            44,    XNEG.22,    XNEG.23,    1.67
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16D
+            45,    XNEG.22,    ZPOS.16,    0.01425
+            46,    XNEG.23,    XNEG.24,    1.67
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16D
+            47,    XNEG.23,    ZPOS.11,    0.01425
+            48,    XNEG.24,    XNEG.25,    1.67
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16D
+            49,    XNEG.24,    ZPOS.6,    0.01425
+            50,    XNEG.25,    ZPOS.1,    0.012825
+            51,    XPOS.1,    XPOS.2,    1.67
+            52,    XPOS.1,    XPOS.6,    0.4175
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E
+            53,    XPOS.1,    ZNEG.25,    0.015675
+            54,    XPOS.2,    XPOS.3,    1.67
+            55,    XPOS.2,    XPOS.7,    0.4175
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E
+            56,    XPOS.2,    ZNEG.20,    0.01425
+            57,    XPOS.3,    XPOS.4,    1.67
+            58,    XPOS.3,    XPOS.8,    0.4175
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E
+            59,    XPOS.3,    ZNEG.15,    0.01425
+            60,    XPOS.4,    XPOS.5,    1.67
+            61,    XPOS.4,    XPOS.9,    0.4175
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E
+            62,    XPOS.4,    ZNEG.10,    0.01425
+            63,    XPOS.5,    XPOS.10,    0.4175
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E
+            64,    XPOS.5,    ZNEG.5,    0.015675
+            65,    XPOS.6,    XPOS.7,    1.67
+            66,    XPOS.6,    XPOS.11,    0.4175
+            67,    XPOS.7,    XPOS.8,    1.67
+            68,    XPOS.7,    XPOS.12,    0.4175
+            69,    XPOS.8,    XPOS.9,    1.67
+            70,    XPOS.8,    XPOS.13,    0.4175
+            71,    XPOS.9,    XPOS.10,    1.67
+            72,    XPOS.9,    XPOS.14,    0.4175
+            73,    XPOS.10,    XPOS.15,    0.4175
+            74,    XPOS.11,    XPOS.12,    1.67
+            75,    XPOS.11,    XPOS.16,    0.4175
+            76,    XPOS.12,    XPOS.13,    1.67
+            77,    XPOS.12,    XPOS.17,    0.4175
+            78,    XPOS.13,    XPOS.14,    1.67
+            79,    XPOS.13,    XPOS.18,    0.4175
+            80,    XPOS.14,    XPOS.15,    1.67
+            81,    XPOS.14,    XPOS.19,    0.4175
+            82,    XPOS.15,    XPOS.20,    0.4175
+            83,    XPOS.16,    XPOS.17,    1.67
+            84,    XPOS.16,    XPOS.21,    0.4175
+            85,    XPOS.17,    XPOS.18,    1.67
+            86,    XPOS.17,    XPOS.22,    0.4175
+            87,    XPOS.18,    XPOS.19,    1.67
+            88,    XPOS.18,    XPOS.23,    0.4175
+            89,    XPOS.19,    XPOS.20,    1.67
+            90,    XPOS.19,    XPOS.24,    0.4175
+            91,    XPOS.20,    XPOS.25,    0.4175
+            92,    XPOS.21,    XPOS.22,    1.67
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16D
+            93,    XPOS.21,    ZPOS.5,    0.015675
+            94,    XPOS.22,    XPOS.23,    1.67
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16D
+            95,    XPOS.22,    ZPOS.10,    0.01425
+            96,    XPOS.23,    XPOS.24,    1.67
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16D
+            97,    XPOS.23,    ZPOS.15,    0.01425
+            98,    XPOS.24,    XPOS.25,    1.67
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16D
+            99,    XPOS.24,    ZPOS.20,    0.01425
+            100,    XPOS.25,    ZPOS.25,    0.01425
+            101,    YNEG.1,    YNEG.2,    1.67
+            102,    YNEG.1,    YNEG.6,    0.4175
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E
+            103,    YNEG.1,    ZNEG.21,    0.01425
+            104,    YNEG.2,    YNEG.3,    1.67
+            105,    YNEG.2,    YNEG.7,    0.4175
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E
+            106,    YNEG.2,    ZNEG.22,    0.01425
+            107,    YNEG.3,    YNEG.4,    1.67
+            108,    YNEG.3,    YNEG.8,    0.4175
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E
+            109,    YNEG.3,    ZNEG.23,    0.01425
+            110,    YNEG.4,    YNEG.5,    1.67
+            111,    YNEG.4,    YNEG.9,    0.4175
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E
+            112,    YNEG.4,    ZNEG.24,    0.01425
+            113,    YNEG.5,    YNEG.10,    0.4175
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E
+            114,    YNEG.5,    ZNEG.25,    0.012825
+            115,    YNEG.6,    YNEG.7,    1.67
+            116,    YNEG.6,    YNEG.11,    0.4175
+            117,    YNEG.7,    YNEG.8,    1.67
+            118,    YNEG.7,    YNEG.12,    0.4175
+            119,    YNEG.8,    YNEG.9,    1.67
+            120,    YNEG.8,    YNEG.13,    0.4175
+            121,    YNEG.9,    YNEG.10,    1.67
+            122,    YNEG.9,    YNEG.14,    0.4175
+            123,    YNEG.10,    YNEG.15,    0.4175
+            124,    YNEG.11,    YNEG.12,    1.67
+            125,    YNEG.11,    YNEG.16,    0.4175
+            126,    YNEG.12,    YNEG.13,    1.67
+            127,    YNEG.12,    YNEG.17,    0.4175
+            128,    YNEG.13,    YNEG.14,    1.67
+            129,    YNEG.13,    YNEG.18,    0.4175
+            130,    YNEG.14,    YNEG.15,    1.67
+            131,    YNEG.14,    YNEG.19,    0.4175
+            132,    YNEG.15,    YNEG.20,    0.4175
+            133,    YNEG.16,    YNEG.17,    1.67
+            134,    YNEG.16,    YNEG.21,    0.4175
+            135,    YNEG.17,    YNEG.18,    1.67
+            136,    YNEG.17,    YNEG.22,    0.4175
+            137,    YNEG.18,    YNEG.19,    1.67
+            138,    YNEG.18,    YNEG.23,    0.4175
+            139,    YNEG.19,    YNEG.20,    1.67
+            140,    YNEG.19,    YNEG.24,    0.4175
+            141,    YNEG.20,    YNEG.25,    0.4175
+            142,    YNEG.21,    YNEG.22,    1.67
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16D
+            143,    YNEG.21,    ZPOS.1,    0.015675
+            144,    YNEG.22,    YNEG.23,    1.67
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16D
+            145,    YNEG.22,    ZPOS.2,    0.01425
+            146,    YNEG.23,    YNEG.24,    1.67
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16D
+            147,    YNEG.23,    ZPOS.3,    0.01425
+            148,    YNEG.24,    YNEG.25,    1.67
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16D
+            149,    YNEG.24,    ZPOS.4,    0.01425
+            150,    YNEG.25,    ZPOS.5,    0.012825
+            151,    YPOS.1,    YPOS.2,    1.67
+            152,    YPOS.1,    YPOS.6,    0.4175
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E
+            153,    YPOS.1,    ZNEG.5,    0.012825
+            154,    YPOS.2,    YPOS.3,    1.67
+            155,    YPOS.2,    YPOS.7,    0.4175
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E
+            156,    YPOS.2,    ZNEG.4,    0.01425
+            157,    YPOS.3,    YPOS.4,    1.67
+            158,    YPOS.3,    YPOS.8,    0.4175
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E
+            159,    YPOS.3,    ZNEG.3,    0.01425
+            160,    YPOS.4,    YPOS.5,    1.67
+            161,    YPOS.4,    YPOS.9,    0.4175
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E
+            162,    YPOS.4,    ZNEG.2,    0.01425
+            163,    YPOS.5,    YPOS.10,    0.4175
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E
+            164,    YPOS.5,    ZNEG.1,    0.015675
+            165,    YPOS.6,    YPOS.7,    1.67
+            166,    YPOS.6,    YPOS.11,    0.4175
+            167,    YPOS.7,    YPOS.8,    1.67
+            168,    YPOS.7,    YPOS.12,    0.4175
+            169,    YPOS.8,    YPOS.9,    1.67
+            170,    YPOS.8,    YPOS.13,    0.4175
+            171,    YPOS.9,    YPOS.10,    1.67
+            172,    YPOS.9,    YPOS.14,    0.4175
+            173,    YPOS.10,    YPOS.15,    0.4175
+            174,    YPOS.11,    YPOS.12,    1.67
+            175,    YPOS.11,    YPOS.16,    0.4175
+            176,    YPOS.12,    YPOS.13,    1.67
+            177,    YPOS.12,    YPOS.17,    0.4175
+            178,    YPOS.13,    YPOS.14,    1.67
+            179,    YPOS.13,    YPOS.18,    0.4175
+            180,    YPOS.14,    YPOS.15,    1.67
+            181,    YPOS.14,    YPOS.19,    0.4175
+            182,    YPOS.15,    YPOS.20,    0.4175
+            183,    YPOS.16,    YPOS.17,    1.67
+            184,    YPOS.16,    YPOS.21,    0.4175
+            185,    YPOS.17,    YPOS.18,    1.67
+            186,    YPOS.17,    YPOS.22,    0.4175
+            187,    YPOS.18,    YPOS.19,    1.67
+            188,    YPOS.18,    YPOS.23,    0.4175
+            189,    YPOS.19,    YPOS.20,    1.67
+            190,    YPOS.19,    YPOS.24,    0.4175
+            191,    YPOS.20,    YPOS.25,    0.4175
+            192,    YPOS.21,    YPOS.22,    1.67
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16D
+            193,    YPOS.21,    ZPOS.25,    0.01425
+            194,    YPOS.22,    YPOS.23,    1.67
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16D
+            195,    YPOS.22,    ZPOS.24,    0.01425
+            196,    YPOS.23,    YPOS.24,    1.67
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16D
+            197,    YPOS.23,    ZPOS.23,    0.01425
+            198,    YPOS.24,    YPOS.25,    1.67
+C Contact - Edge Contactor[STRUCTURE][0][Frame]::16D
+            199,    YPOS.24,    ZPOS.22,    0.01425
+            200,    YPOS.25,    ZPOS.21,    0.015675
+            201,    ZNEG.1,    ZNEG.2,    0.835
+            202,    ZNEG.1,    ZNEG.6,    0.835
+            203,    ZNEG.2,    ZNEG.3,    0.835
+            204,    ZNEG.2,    ZNEG.7,    0.835
+            205,    ZNEG.3,    ZNEG.4,    0.835
+            206,    ZNEG.3,    ZNEG.8,    0.835
+            207,    ZNEG.4,    ZNEG.5,    0.835
+            208,    ZNEG.4,    ZNEG.9,    0.835
+            209,    ZNEG.5,    ZNEG.10,    0.835
+            210,    ZNEG.6,    ZNEG.7,    0.835
+            211,    ZNEG.6,    ZNEG.11,    0.835
+            212,    ZNEG.7,    ZNEG.8,    0.835
+            213,    ZNEG.7,    ZNEG.12,    0.835
+            214,    ZNEG.8,    ZNEG.9,    0.835
+            215,    ZNEG.8,    ZNEG.13,    0.835
+            216,    ZNEG.9,    ZNEG.10,    0.835
+            217,    ZNEG.9,    ZNEG.14,    0.835
+            218,    ZNEG.10,    ZNEG.15,    0.835
+            219,    ZNEG.11,    ZNEG.12,    0.835
+            220,    ZNEG.11,    ZNEG.16,    0.835
+            221,    ZNEG.12,    ZNEG.13,    0.835
+            222,    ZNEG.12,    ZNEG.17,    0.835
+            223,    ZNEG.13,    ZNEG.14,    0.835
+            224,    ZNEG.13,    ZNEG.18,    0.835
+            225,    ZNEG.14,    ZNEG.15,    0.835
+            226,    ZNEG.14,    ZNEG.19,    0.835
+            227,    ZNEG.15,    ZNEG.20,    0.835
+            228,    ZNEG.16,    ZNEG.17,    0.835
+            229,    ZNEG.16,    ZNEG.21,    0.835
+            230,    ZNEG.17,    ZNEG.18,    0.835
+            231,    ZNEG.17,    ZNEG.22,    0.835
+            232,    ZNEG.18,    ZNEG.19,    0.835
+            233,    ZNEG.18,    ZNEG.23,    0.835
+            234,    ZNEG.19,    ZNEG.20,    0.835
+            235,    ZNEG.19,    ZNEG.24,    0.835
+            236,    ZNEG.20,    ZNEG.25,    0.835
+            237,    ZNEG.21,    ZNEG.22,    0.835
+            238,    ZNEG.22,    ZNEG.23,    0.835
+            239,    ZNEG.23,    ZNEG.24,    0.835
+            240,    ZNEG.24,    ZNEG.25,    0.835
+            241,    ZPOS.1,    ZPOS.2,    0.835
+            242,    ZPOS.1,    ZPOS.6,    0.835
+            243,    ZPOS.2,    ZPOS.3,    0.835
+            244,    ZPOS.2,    ZPOS.7,    0.835
+            245,    ZPOS.3,    ZPOS.4,    0.835
+            246,    ZPOS.3,    ZPOS.8,    0.835
+            247,    ZPOS.4,    ZPOS.5,    0.835
+            248,    ZPOS.4,    ZPOS.9,    0.835
+            249,    ZPOS.5,    ZPOS.10,    0.835
+            250,    ZPOS.6,    ZPOS.7,    0.835
+            251,    ZPOS.6,    ZPOS.11,    0.835
+            252,    ZPOS.7,    ZPOS.8,    0.835
+            253,    ZPOS.7,    ZPOS.12,    0.835
+            254,    ZPOS.8,    ZPOS.9,    0.835
+            255,    ZPOS.8,    ZPOS.13,    0.835
+            256,    ZPOS.9,    ZPOS.10,    0.835
+            257,    ZPOS.9,    ZPOS.14,    0.835
+            258,    ZPOS.10,    ZPOS.15,    0.835
+            259,    ZPOS.11,    ZPOS.12,    0.835
+            260,    ZPOS.11,    ZPOS.16,    0.835
+            261,    ZPOS.12,    ZPOS.13,    0.835
+            262,    ZPOS.12,    ZPOS.17,    0.835
+            263,    ZPOS.13,    ZPOS.14,    0.835
+            264,    ZPOS.13,    ZPOS.18,    0.835
+            265,    ZPOS.14,    ZPOS.15,    0.835
+            266,    ZPOS.14,    ZPOS.19,    0.835
+            267,    ZPOS.15,    ZPOS.20,    0.835
+            268,    ZPOS.16,    ZPOS.17,    0.835
+            269,    ZPOS.16,    ZPOS.21,    0.835
+            270,    ZPOS.17,    ZPOS.18,    0.835
+            271,    ZPOS.17,    ZPOS.22,    0.835
+            272,    ZPOS.18,    ZPOS.19,    0.835
+            273,    ZPOS.18,    ZPOS.23,    0.835
+            274,    ZPOS.19,    ZPOS.20,    0.835
+            275,    ZPOS.19,    ZPOS.24,    0.835
+            276,    ZPOS.20,    ZPOS.25,    0.835
+            277,    ZPOS.21,    ZPOS.22,    0.835
+            278,    ZPOS.22,    ZPOS.23,    0.835
+            279,    ZPOS.23,    ZPOS.24,    0.835
+            280,    ZPOS.24,    ZPOS.25,    0.835
 HEADER NODE DATA, XNEG
-            1,    20.,    9.60836
-            2,    20.,    9.60836
-            3,    20.,    9.60836
-            4,    20.,    9.60836
-            5,    20.,    9.60836
-            6,    20.,    9.60836
-            7,    20.,    9.60836
-            8,    20.,    9.60836
-            9,    20.,    9.60836
-            10,    20.,    9.60836
-            11,    20.,    9.60836
-            12,    20.,    9.60836
-            13,    20.,    9.60836
-            14,    20.,    9.60836
-            15,    20.,    9.60836
-            16,    20.,    9.60836
-            17,    20.,    9.60836
-            18,    20.,    9.60836
-            19,    20.,    9.60836
-            20,    20.,    9.60836
-            21,    20.,    9.60836
-            22,    20.,    9.60836
-            23,    20.,    9.60836
-            24,    20.,    9.60836
-            25,    20.,    9.60836
+            1,    20.,    9.6768
+            2,    20.,    9.6768
+            3,    20.,    9.6768
+            4,    20.,    9.6768
+            5,    20.,    9.6768
+            6,    20.,    9.6768
+            7,    20.,    9.6768
+            8,    20.,    9.6768
+            9,    20.,    9.6768
+            10,    20.,    9.6768
+            11,    20.,    9.6768
+            12,    20.,    9.6768
+            13,    20.,    9.6768
+            14,    20.,    9.6768
+            15,    20.,    9.6768
+            16,    20.,    9.6768
+            17,    20.,    9.6768
+            18,    20.,    9.6768
+            19,    20.,    9.6768
+            20,    20.,    9.6768
+            21,    20.,    9.6768
+            22,    20.,    9.6768
+            23,    20.,    9.6768
+            24,    20.,    9.6768
+            25,    20.,    9.6768
 HEADER NODE DATA, XPOS
-            1,    20.,    9.60836
-            2,    20.,    9.60836
-            3,    20.,    9.60836
-            4,    20.,    9.60836
-            5,    20.,    9.60836
-            6,    20.,    9.60836
-            7,    20.,    9.60836
-            8,    20.,    9.60836
-            9,    20.,    9.60836
-            10,    20.,    9.60836
-            11,    20.,    9.60836
-            12,    20.,    9.60836
-            13,    20.,    9.60836
-            14,    20.,    9.60836
-            15,    20.,    9.60836
-            16,    20.,    9.60836
-            17,    20.,    9.60836
-            18,    20.,    9.60836
-            19,    20.,    9.60836
-            20,    20.,    9.60836
-            21,    20.,    9.60836
-            22,    20.,    9.60836
-            23,    20.,    9.60836
-            24,    20.,    9.60836
-            25,    20.,    9.60836
+            1,    20.,    9.6768
+            2,    20.,    9.6768
+            3,    20.,    9.6768
+            4,    20.,    9.6768
+            5,    20.,    9.6768
+            6,    20.,    9.6768
+            7,    20.,    9.6768
+            8,    20.,    9.6768
+            9,    20.,    9.6768
+            10,    20.,    9.6768
+            11,    20.,    9.6768
+            12,    20.,    9.6768
+            13,    20.,    9.6768
+            14,    20.,    9.6768
+            15,    20.,    9.6768
+            16,    20.,    9.6768
+            17,    20.,    9.6768
+            18,    20.,    9.6768
+            19,    20.,    9.6768
+            20,    20.,    9.6768
+            21,    20.,    9.6768
+            22,    20.,    9.6768
+            23,    20.,    9.6768
+            24,    20.,    9.6768
+            25,    20.,    9.6768
 HEADER NODE DATA, YNEG
-            1,    20.,    9.60836
-            2,    20.,    9.60836
-            3,    20.,    9.60836
-            4,    20.,    9.60836
-            5,    20.,    9.60836
-            6,    20.,    9.60836
-            7,    20.,    9.60836
-            8,    20.,    9.60836
-            9,    20.,    9.60836
-            10,    20.,    9.60836
-            11,    20.,    9.60836
-            12,    20.,    9.60836
-            13,    20.,    9.60836
-            14,    20.,    9.60836
-            15,    20.,    9.60836
-            16,    20.,    9.60836
-            17,    20.,    9.60836
-            18,    20.,    9.60836
-            19,    20.,    9.60836
-            20,    20.,    9.60836
-            21,    20.,    9.60836
-            22,    20.,    9.60836
-            23,    20.,    9.60836
-            24,    20.,    9.60836
-            25,    20.,    9.60836
+            1,    20.,    9.6768
+            2,    20.,    9.6768
+            3,    20.,    9.6768
+            4,    20.,    9.6768
+            5,    20.,    9.6768
+            6,    20.,    9.6768
+            7,    20.,    9.6768
+            8,    20.,    9.6768
+            9,    20.,    9.6768
+            10,    20.,    9.6768
+            11,    20.,    9.6768
+            12,    20.,    9.6768
+            13,    20.,    9.6768
+            14,    20.,    9.6768
+            15,    20.,    9.6768
+            16,    20.,    9.6768
+            17,    20.,    9.6768
+            18,    20.,    9.6768
+            19,    20.,    9.6768
+            20,    20.,    9.6768
+            21,    20.,    9.6768
+            22,    20.,    9.6768
+            23,    20.,    9.6768
+            24,    20.,    9.6768
+            25,    20.,    9.6768
 HEADER NODE DATA, YPOS
-            1,    20.,    9.60836
-            2,    20.,    9.60836
-            3,    20.,    9.60836
-            4,    20.,    9.60836
-            5,    20.,    9.60836
-            6,    20.,    9.60836
-            7,    20.,    9.60836
-            8,    20.,    9.60836
-            9,    20.,    9.60836
-            10,    20.,    9.60836
-            11,    20.,    9.60836
-            12,    20.,    9.60836
-            13,    20.,    9.60836
-            14,    20.,    9.60836
-            15,    20.,    9.60836
-            16,    20.,    9.60836
-            17,    20.,    9.60836
-            18,    20.,    9.60836
-            19,    20.,    9.60836
-            20,    20.,    9.60836
-            21,    20.,    9.60836
-            22,    20.,    9.60836
-            23,    20.,    9.60836
-            24,    20.,    9.60836
-            25,    20.,    9.60836
+            1,    20.,    9.6768
+            2,    20.,    9.6768
+            3,    20.,    9.6768
+            4,    20.,    9.6768
+            5,    20.,    9.6768
+            6,    20.,    9.6768
+            7,    20.,    9.6768
+            8,    20.,    9.6768
+            9,    20.,    9.6768
+            10,    20.,    9.6768
+            11,    20.,    9.6768
+            12,    20.,    9.6768
+            13,    20.,    9.6768
+            14,    20.,    9.6768
+            15,    20.,    9.6768
+            16,    20.,    9.6768
+            17,    20.,    9.6768
+            18,    20.,    9.6768
+            19,    20.,    9.6768
+            20,    20.,    9.6768
+            21,    20.,    9.6768
+            22,    20.,    9.6768
+            23,    20.,    9.6768
+            24,    20.,    9.6768
+            25,    20.,    9.6768
 HEADER NODE DATA, ZNEG
-            1,    20.,    4.80418
-            2,    20.,    4.80418
-            3,    20.,    4.80418
-            4,    20.,    4.80418
-            5,    20.,    4.80418
-            6,    20.,    4.80418
-            7,    20.,    4.80418
-            8,    20.,    4.80418
-            9,    20.,    4.80418
-            10,    20.,    4.80418
-            11,    20.,    4.80418
-            12,    20.,    4.80418
-            13,    20.,    4.80418
-            14,    20.,    4.80418
-            15,    20.,    4.80418
-            16,    20.,    4.80418
-            17,    20.,    4.80418
-            18,    20.,    4.80418
-            19,    20.,    4.80418
-            20,    20.,    4.80418
-            21,    20.,    4.80418
-            22,    20.,    4.80418
-            23,    20.,    4.80418
-            24,    20.,    4.80418
-            25,    20.,    4.80418
+            1,    20.,    4.8384
+            2,    20.,    4.8384
+            3,    20.,    4.8384
+            4,    20.,    4.8384
+            5,    20.,    4.8384
+            6,    20.,    4.8384
+            7,    20.,    4.8384
+            8,    20.,    4.8384
+            9,    20.,    4.8384
+            10,    20.,    4.8384
+            11,    20.,    4.8384
+            12,    20.,    4.8384
+            13,    20.,    4.8384
+            14,    20.,    4.8384
+            15,    20.,    4.8384
+            16,    20.,    4.8384
+            17,    20.,    4.8384
+            18,    20.,    4.8384
+            19,    20.,    4.8384
+            20,    20.,    4.8384
+            21,    20.,    4.8384
+            22,    20.,    4.8384
+            23,    20.,    4.8384
+            24,    20.,    4.8384
+            25,    20.,    4.8384
 HEADER NODE DATA, ZPOS
-            1,    20.,    4.80418
-            2,    20.,    4.80418
-            3,    20.,    4.80418
-            4,    20.,    4.80418
-            5,    20.,    4.80418
-            6,    20.,    4.80418
-            7,    20.,    4.80418
-            8,    20.,    4.80418
-            9,    20.,    4.80418
-            10,    20.,    4.80418
-            11,    20.,    4.80418
-            12,    20.,    4.80418
-            13,    20.,    4.80418
-            14,    20.,    4.80418
-            15,    20.,    4.80418
-            16,    20.,    4.80418
-            17,    20.,    4.80418
-            18,    20.,    4.80418
-            19,    20.,    4.80418
-            20,    20.,    4.80418
-            21,    20.,    4.80418
-            22,    20.,    4.80418
-            23,    20.,    4.80418
-            24,    20.,    4.80418
-            25,    20.,    4.80418
+            1,    20.,    4.8384
+            2,    20.,    4.8384
+            3,    20.,    4.8384
+            4,    20.,    4.8384
+            5,    20.,    4.8384
+            6,    20.,    4.8384
+            7,    20.,    4.8384
+            8,    20.,    4.8384
+            9,    20.,    4.8384
+            10,    20.,    4.8384
+            11,    20.,    4.8384
+            12,    20.,    4.8384
+            13,    20.,    4.8384
+            14,    20.,    4.8384
+            15,    20.,    4.8384
+            16,    20.,    4.8384
+            17,    20.,    4.8384
+            18,    20.,    4.8384
+            19,    20.,    4.8384
+            20,    20.,    4.8384
+            21,    20.,    4.8384
+            22,    20.,    4.8384
+            23,    20.,    4.8384
+            24,    20.,    4.8384
+            25,    20.,    4.8384
 HEADER SUBROUTINE
       SUBROUTINE TDHTR
 C     This routine is to hold heaters at their midpoint temps

@@ -1,7 +1,5 @@
 Units: m^2
       INACTIVE.1 0.1
-         MOTOR.1 0.0072
-           MRW.1 0.0100531
           XNEG.1 0.0008
           XNEG.2 0.0008
           XNEG.3 0.0008

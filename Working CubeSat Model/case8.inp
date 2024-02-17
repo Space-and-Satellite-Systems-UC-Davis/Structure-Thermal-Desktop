@@ -8,7 +8,7 @@ HEADER OPTIONS
     SAVE = case8.sav
     MLINE = 100000 $ Limits headers output
 
-TITLE CubeSat.dwg - 7 Orbit
+TITLE CUBESAT.dwg - 7 Orbit
 HEADER OPERATION DATA
       CALL TDPREBL   $ Place Before BUILD, Code in Subroutine data
 BUILD ALL

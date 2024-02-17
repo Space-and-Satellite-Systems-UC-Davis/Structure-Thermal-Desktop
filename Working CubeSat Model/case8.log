@@ -1,15 +1,17 @@
-[ AutoCAD - Thu Jan 18 15:45:02 2024  ]----------------------------------------
+[ AutoCAD - Fri Feb 16 18:24:43 2024  ]----------------------------------------
 No duplicate nodes or insulation nodalization warnings found
 
+XREF Name: Frame
+    Origin: 0.000000, 0.000000, 0.000000
+    X Axis: 1.000000, 0.000000, 0.000000
+    Y Axis: 0.000000, 1.000000, 0.000000
+    Z Axis: 0.000000, 0.000000, 1.000000
+
 Calculating SINDA/FLUINT data
-Calculating Thermal Analyzer Input took 0.15 sec
+Calculating Thermal Analyzer Input took 0.24 sec
 
 Outputting SINDA/FLUINT data
-Outputting data for submodel COMPONENT_1...
 Outputting data for submodel GLOBAL...
-Outputting data for submodel MAIN...
-Outputting data for submodel MOTOR...
-Outputting data for submodel MRW...
 Outputting data for submodel SPACE...
 Outputting data for submodel STRUCTURE...
 Outputting data for submodel XNEG...
@@ -18,25 +20,22 @@ Outputting data for submodel YNEG...
 Outputting data for submodel YPOS...
 Outputting data for submodel ZNEG...
 Outputting data for submodel ZPOS...
-    Number of nodes:      153
-    Number of conductors: 317
+    Number of nodes:      151
+    Number of conductors: 280
     
-Total Nodal Mass = 2.255796 kg
+Total Nodal Mass = 1.350000 kg
 
 
 *** RADCAD RAYTRACE HEATING RATES RUN START for database EXTERNAL_HR-Surv_Rotation_Test-rcoptics_open_v1.3 (2).rch
-Creating new database named EXTERNAL_HR-Surv_Rotation_Test-rcoptics_open_v1.3 (2).rch
-Running with 8 calculation threads
-Start and End position calc already done
-Total Elapsed time for heating rate calculations = 2.29 sec
+Database already exists, checking to see if the model has changed...
 Outputting SINDA/FLUINT heating rate data to files:
     C9A0.hra for arrays and C9A0.hrl for logic...
-Total Elapsed time for heating rate calculations and output = 2.69 sec
+Restart was successful. No calculations were performed.
 
 
 *** RADCAD RAYTRACE RADK RUN START for database EXTERNAL_RDK-rcoptics_open_v1.3 (2).rck
 Database already exists, checking to see if the model has changed...
-File C9A1.k not found, will regenerate
+Ints not the same(at 2): 21 20
 Outputting SINDA data to C9A1.k
 Restart was successful. No calculations were performed.
     150 calculation nodes
@@ -49,20 +48,27 @@ Restart was successful. No calculations were performed.
 
 *** RADCAD RAYTRACE RADK RUN START for database INTERNAL_RDK-rcoptics_open_v1.3 (2).rck
 Database already exists, checking to see if the model has changed...
-File C9A2.k not found, will regenerate
-Outputting SINDA data to C9A2.k
-Restart was successful. No calculations were performed.
-    152 calculation nodes
-    7919 radks were output, 3557 radks were filtered out
+Not same amount of geometry inputs
+    New Model[6], Last Run[8]
+Deleting old database named INTERNAL_RDK-rcoptics_open_v1.3 (2).rck
+Creating new database named INTERNAL_RDK-rcoptics_open_v1.3 (2).rck
+Running with 8 calculation threads
+Time to calculate radk = 0.34 sec
+Outputting SINDA/FLUINT radks to file C9A2.k...
+Total elapsed time for calculations and output = 0.77 sec
+    150 calculation nodes
+    9631 radks were output, 1544 radks were filtered out
     0 nodes(0%) have bij sum + bij inactive < .9
     5000 average number of rays per node shot
+    3 nodes(2%)  have weighted error > 25
+        This can be lowered by shooting more rays
      
     No overlapping surfaces greater than 10.0% found in INTERNAL_RDK
 
 *** Running SINDA model named C:\Users\rpkar\Documents\GitHub\Structure-Thermal-Desktop\Working CubeSat Model\case8.inp
 Successful completion of processor
 From C:\Users\rpkar\Documents\GitHub\Structure-Thermal-Desktop\Working CubeSat Model\messages_case8.log
-     TIMEN  =    37800.00      The ASTAP execution time is:    6.70766580000009       seconds
-Time to run SINDA = 12.68 sec
+     TIMEN  =    37800.00      The ASTAP execution time is:    7.21974339999724       seconds
+Time to run SINDA = 21.51 sec
 
-Case Set Solved::Elapsed time = 16.85 sec
+Case Set Solved::Elapsed time = 24.74 sec

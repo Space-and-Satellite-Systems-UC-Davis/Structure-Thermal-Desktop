@@ -17,8 +17,8 @@
 
              P R E P R O C E S S O R  E X E C U T I O N
 
-             VERSION ................... CR23.2N   
-             MODIFICATION DATE ......... 02NOV2023 
+             VERSION ................... CR24.1N   
+             MODIFICATION DATE ......... 29NOV2023 
 
                             SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     1
 
@@ -31,10 +31,12 @@
    INPUT               OUTPUT = case8.out                                                               ROOT                            
    INPUT               SAVE = case8.sav                                                                 ROOT                            
    INPUT               MLINE = 100000 $ Limits headers output                                           ROOT                            
-   INPUT           TITLE CubeSat.dwg - 7 Orbit                                                          ROOT                            
-   INPUT           C    SINDA Data generated with Thermal Desktop 23.2 Patch 3                          ROOT                            
-   INPUT           C    Generated on Thu Jan 18 15:45:02 2024                                           ROOT                            
-   INPUT           C    From file: CubeSat.dwg                                                          ROOT                            
+   INPUT           TITLE CUBESAT.dwg - 7 Orbit                                                          ROOT                            
+   INPUT           C    SINDA Data generated with Thermal Desktop 24.1 Patch 0                          ROOT                            
+   INPUT           C    Installed Sinda: Sinda/Fluint 24.1 patch level 0                                ROOT                            
+   INPUT           C    Generated on Fri Feb 16 18:24:43 2024                                           ROOT                            
+   INPUT           C    From file: CUBESAT.dwg                                                          ROOT                            
+   INPUT           C    XREF name: Frame file: .\Frame.dwg                                              ROOT                            
    INPUT           C    Case Set: 7 Orbit                                                               ROOT                            
    INPUT           C    Radiation Groups: External HR, External RDK, Internal RDK                       ROOT                            
    INPUT           C    Running Steady and 90min (10800s) Transient States                              ROOT                            
@@ -49,7 +51,7 @@
    INPUT           C    TDUNITS,   Angle      = Degrees                                                 ROOT                            
    INPUT           C    TDUNITS,   Volt       = volt                                                    ROOT                            
    INPUT           C    TDUNITS,   Current    = amp                                                     ROOT                            
-   INPUT           C    DWG name:      CubeSat.dwg                                                      ROOT                            
+   INPUT           C    DWG name:      CUBESAT.dwg                                                      ROOT                            
    INPUT           C    Thermophysical Property Database: ThermalDataFilled.tdp                         ROOT                            
    INPUT           C    Optical Property Database:        optical properties\rcoptics_open_v1.3 (2)     ROOT                            
    INPUT           C    Computer name: RYANLAPTOP                                                       ROOT                            
@@ -86,7 +88,7 @@
 
                             SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     2
 
- MODEL = SINDA                                                                  CubeSat.dwg - 7 Orbit
+ MODEL = SINDA                                                                  CUBESAT.dwg - 7 Orbit
  MODEL NAME CHECK
 
  CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
@@ -94,10 +96,6 @@
 
   LIST OF HEADER CARDS IN NODE DATA - CHECKING MODEL NAMES AGAINST BUILD CARDS
 
-HEADER NODE DATA, COMPONENT_1
-HEADER NODE DATA, MAIN
-HEADER NODE DATA, MOTOR
-HEADER NODE DATA, MRW
 HEADER NODE DATA, SPACE
 HEADER NODE DATA, STRUCTURE
 HEADER NODE DATA, XNEG
@@ -110,7 +108,7 @@ HEADER NODE DATA, C9A0
 
                             SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     3
 
- MODEL = SINDA                                                                  CubeSat.dwg - 7 Orbit
+ MODEL = SINDA                                                                  CUBESAT.dwg - 7 Orbit
  CONSTANTS DATA BLOCK
 
  CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
@@ -164,7 +162,7 @@ HEADER NODE DATA, C9A0
 
                             SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     4
 
- MODEL = SINDA                                                                  CubeSat.dwg - 7 Orbit
+ MODEL = SINDA                                                                  CUBESAT.dwg - 7 Orbit
  ARRAY DATA BLOCK
 
  CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
@@ -175,7 +173,7 @@ HEADER NODE DATA, C9A0
 
                             SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     5
 
- MODEL = SINDA                                                                  CubeSat.dwg - 7 Orbit
+ MODEL = SINDA                                                                  CUBESAT.dwg - 7 Orbit
  CHARACTER ARRAY DATA BLOCK
 
  CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
@@ -216,559 +214,519 @@ HEADER NODE DATA, C9A0
 
                             SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     6
 
- MODEL = SINDA                                                                  CubeSat.dwg - 7 Orbit
+ MODEL = SINDA                                                                  CUBESAT.dwg - 7 Orbit
  NODE DATA BLOCK
 
  CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
 
-   INPUT           HEADER NODE DATA, COMPONENT_1                                                        COMPONENT_1                     
-   INPUT           HEADER NODE DATA, MAIN                                                               MAIN                            
-   INPUT           HEADER NODE DATA, MOTOR                                                              MOTOR                           
-   INPUT                       1,    20.,    43.23762                                                   MOTOR                           
-   INPUT           HEADER NODE DATA, MRW                                                                MRW                             
-   INPUT                       1,    20.,    321.7725                                                   MRW                             
    INPUT           HEADER NODE DATA, SPACE                                                              SPACE                           
    INPUT                       -1,    -270.42,    -1.0                                                  SPACE                           
    INPUT           HEADER NODE DATA, STRUCTURE                                                          STRUCTURE                       
    INPUT           HEADER NODE DATA, XNEG                                                               XNEG                            
-   INPUT                       1,    20.,    9.60836                                                    XNEG                            
-   INPUT                       2,    20.,    9.60836                                                    XNEG                            
-   INPUT                       3,    20.,    9.60836                                                    XNEG                            
-   INPUT                       4,    20.,    9.60836                                                    XNEG                            
-   INPUT                       5,    20.,    9.60836                                                    XNEG                            
-   INPUT                       6,    20.,    9.60836                                                    XNEG                            
-   INPUT                       7,    20.,    9.60836                                                    XNEG                            
-   INPUT                       8,    20.,    9.60836                                                    XNEG                            
-   INPUT                       9,    20.,    9.60836                                                    XNEG                            
-   INPUT                       10,    20.,    9.60836                                                   XNEG                            
-   INPUT                       11,    20.,    9.60836                                                   XNEG                            
-   INPUT                       12,    20.,    9.60836                                                   XNEG                            
-   INPUT                       13,    20.,    9.60836                                                   XNEG                            
-   INPUT                       14,    20.,    9.60836                                                   XNEG                            
-   INPUT                       15,    20.,    9.60836                                                   XNEG                            
-   INPUT                       16,    20.,    9.60836                                                   XNEG                            
-   INPUT                       17,    20.,    9.60836                                                   XNEG                            
-   INPUT                       18,    20.,    9.60836                                                   XNEG                            
-   INPUT                       19,    20.,    9.60836                                                   XNEG                            
-   INPUT                       20,    20.,    9.60836                                                   XNEG                            
-   INPUT                       21,    20.,    9.60836                                                   XNEG                            
-   INPUT                       22,    20.,    9.60836                                                   XNEG                            
-   INPUT                       23,    20.,    9.60836                                                   XNEG                            
-   INPUT                       24,    20.,    9.60836                                                   XNEG                            
-   INPUT                       25,    20.,    9.60836                                                   XNEG                            
+   INPUT                       1,    20.,    9.6768                                                     XNEG                            
+   INPUT                       2,    20.,    9.6768                                                     XNEG                            
+   INPUT                       3,    20.,    9.6768                                                     XNEG                            
+   INPUT                       4,    20.,    9.6768                                                     XNEG                            
+   INPUT                       5,    20.,    9.6768                                                     XNEG                            
+   INPUT                       6,    20.,    9.6768                                                     XNEG                            
+   INPUT                       7,    20.,    9.6768                                                     XNEG                            
+   INPUT                       8,    20.,    9.6768                                                     XNEG                            
+   INPUT                       9,    20.,    9.6768                                                     XNEG                            
+   INPUT                       10,    20.,    9.6768                                                    XNEG                            
+   INPUT                       11,    20.,    9.6768                                                    XNEG                            
+   INPUT                       12,    20.,    9.6768                                                    XNEG                            
+   INPUT                       13,    20.,    9.6768                                                    XNEG                            
+   INPUT                       14,    20.,    9.6768                                                    XNEG                            
+   INPUT                       15,    20.,    9.6768                                                    XNEG                            
+   INPUT                       16,    20.,    9.6768                                                    XNEG                            
+   INPUT                       17,    20.,    9.6768                                                    XNEG                            
+   INPUT                       18,    20.,    9.6768                                                    XNEG                            
+   INPUT                       19,    20.,    9.6768                                                    XNEG                            
+   INPUT                       20,    20.,    9.6768                                                    XNEG                            
+   INPUT                       21,    20.,    9.6768                                                    XNEG                            
+   INPUT                       22,    20.,    9.6768                                                    XNEG                            
+   INPUT                       23,    20.,    9.6768                                                    XNEG                            
+   INPUT                       24,    20.,    9.6768                                                    XNEG                            
+   INPUT                       25,    20.,    9.6768                                                    XNEG                            
    INPUT           HEADER NODE DATA, XPOS                                                               XPOS                            
-   INPUT                       1,    20.,    9.60836                                                    XPOS                            
-   INPUT                       2,    20.,    9.60836                                                    XPOS                            
-   INPUT                       3,    20.,    9.60836                                                    XPOS                            
-   INPUT                       4,    20.,    9.60836                                                    XPOS                            
-   INPUT                       5,    20.,    9.60836                                                    XPOS                            
-   INPUT                       6,    20.,    9.60836                                                    XPOS                            
-   INPUT                       7,    20.,    9.60836                                                    XPOS                            
-   INPUT                       8,    20.,    9.60836                                                    XPOS                            
-   INPUT                       9,    20.,    9.60836                                                    XPOS                            
-   INPUT                       10,    20.,    9.60836                                                   XPOS                            
-   INPUT                       11,    20.,    9.60836                                                   XPOS                            
-   INPUT                       12,    20.,    9.60836                                                   XPOS                            
-   INPUT                       13,    20.,    9.60836                                                   XPOS                            
-   INPUT                       14,    20.,    9.60836                                                   XPOS                            
-   INPUT                       15,    20.,    9.60836                                                   XPOS                            
-   INPUT                       16,    20.,    9.60836                                                   XPOS                            
-   INPUT                       17,    20.,    9.60836                                                   XPOS                            
-   INPUT                       18,    20.,    9.60836                                                   XPOS                            
-   INPUT                       19,    20.,    9.60836                                                   XPOS                            
-   INPUT                       20,    20.,    9.60836                                                   XPOS                            
-   INPUT                       21,    20.,    9.60836                                                   XPOS                            
-   INPUT                       22,    20.,    9.60836                                                   XPOS                            
-   INPUT                       23,    20.,    9.60836                                                   XPOS                            
-   INPUT                       24,    20.,    9.60836                                                   XPOS                            
-   INPUT                       25,    20.,    9.60836                                                   XPOS                            
+   INPUT                       1,    20.,    9.6768                                                     XPOS                            
+   INPUT                       2,    20.,    9.6768                                                     XPOS                            
+   INPUT                       3,    20.,    9.6768                                                     XPOS                            
+   INPUT                       4,    20.,    9.6768                                                     XPOS                            
+   INPUT                       5,    20.,    9.6768                                                     XPOS                            
+   INPUT                       6,    20.,    9.6768                                                     XPOS                            
+   INPUT                       7,    20.,    9.6768                                                     XPOS                            
+   INPUT                       8,    20.,    9.6768                                                     XPOS                            
+   INPUT                       9,    20.,    9.6768                                                     XPOS                            
+   INPUT                       10,    20.,    9.6768                                                    XPOS                            
+   INPUT                       11,    20.,    9.6768                                                    XPOS                            
+   INPUT                       12,    20.,    9.6768                                                    XPOS                            
+   INPUT                       13,    20.,    9.6768                                                    XPOS                            
+   INPUT                       14,    20.,    9.6768                                                    XPOS                            
+   INPUT                       15,    20.,    9.6768                                                    XPOS                            
+   INPUT                       16,    20.,    9.6768                                                    XPOS                            
+   INPUT                       17,    20.,    9.6768                                                    XPOS                            
+   INPUT                       18,    20.,    9.6768                                                    XPOS                            
+   INPUT                       19,    20.,    9.6768                                                    XPOS                            
+   INPUT                       20,    20.,    9.6768                                                    XPOS                            
+   INPUT                       21,    20.,    9.6768                                                    XPOS                            
+   INPUT                       22,    20.,    9.6768                                                    XPOS                            
+   INPUT                       23,    20.,    9.6768                                                    XPOS                            
+   INPUT                       24,    20.,    9.6768                                                    XPOS                            
+   INPUT                       25,    20.,    9.6768                                                    XPOS                            
    INPUT           HEADER NODE DATA, YNEG                                                               YNEG                            
-   INPUT                       1,    20.,    9.60836                                                    YNEG                            
-   INPUT                       2,    20.,    9.60836                                                    YNEG                            
-   INPUT                       3,    20.,    9.60836                                                    YNEG                            
-   INPUT                       4,    20.,    9.60836                                                    YNEG                            
-   INPUT                       5,    20.,    9.60836                                                    YNEG                            
-   INPUT                       6,    20.,    9.60836                                                    YNEG                            
-   INPUT                       7,    20.,    9.60836                                                    YNEG                            
-   INPUT                       8,    20.,    9.60836                                                    YNEG                            
-   INPUT                       9,    20.,    9.60836                                                    YNEG                            
-   INPUT                       10,    20.,    9.60836                                                   YNEG                            
-   INPUT                       11,    20.,    9.60836                                                   YNEG                            
-   INPUT                       12,    20.,    9.60836                                                   YNEG                            
-   INPUT                       13,    20.,    9.60836                                                   YNEG                            
-   INPUT                       14,    20.,    9.60836                                                   YNEG                            
-   INPUT                       15,    20.,    9.60836                                                   YNEG                            
-   INPUT                       16,    20.,    9.60836                                                   YNEG                            
-   INPUT                       17,    20.,    9.60836                                                   YNEG                            
-   INPUT                       18,    20.,    9.60836                                                   YNEG                            
-   INPUT                       19,    20.,    9.60836                                                   YNEG                            
-   INPUT                       20,    20.,    9.60836                                                   YNEG                            
-   INPUT                       21,    20.,    9.60836                                                   YNEG                            
-   INPUT                       22,    20.,    9.60836                                                   YNEG                            
-   INPUT                       23,    20.,    9.60836                                                   YNEG                            
-   INPUT                       24,    20.,    9.60836                                                   YNEG                            
-   INPUT                       25,    20.,    9.60836                                                   YNEG                            
+   INPUT                       1,    20.,    9.6768                                                     YNEG                            
+   INPUT                       2,    20.,    9.6768                                                     YNEG                            
+   INPUT                       3,    20.,    9.6768                                                     YNEG                            
+   INPUT                       4,    20.,    9.6768                                                     YNEG                            
+   INPUT                       5,    20.,    9.6768                                                     YNEG                            
+   INPUT                       6,    20.,    9.6768                                                     YNEG                            
+   INPUT                       7,    20.,    9.6768                                                     YNEG                            
+   INPUT                       8,    20.,    9.6768                                                     YNEG                            
+   INPUT                       9,    20.,    9.6768                                                     YNEG                            
+   INPUT                       10,    20.,    9.6768                                                    YNEG                            
+   INPUT                       11,    20.,    9.6768                                                    YNEG                            
+   INPUT                       12,    20.,    9.6768                                                    YNEG                            
+   INPUT                       13,    20.,    9.6768                                                    YNEG                            
+   INPUT                       14,    20.,    9.6768                                                    YNEG                            
+   INPUT                       15,    20.,    9.6768                                                    YNEG                            
+   INPUT                       16,    20.,    9.6768                                                    YNEG                            
+   INPUT                       17,    20.,    9.6768                                                    YNEG                            
+   INPUT                       18,    20.,    9.6768                                                    YNEG                            
+   INPUT                       19,    20.,    9.6768                                                    YNEG                            
+   INPUT                       20,    20.,    9.6768                                                    YNEG                            
+   INPUT                       21,    20.,    9.6768                                                    YNEG                            
+   INPUT                       22,    20.,    9.6768                                                    YNEG                            
+   INPUT                       23,    20.,    9.6768                                                    YNEG                            
+   INPUT                       24,    20.,    9.6768                                                    YNEG                            
+   INPUT                       25,    20.,    9.6768                                                    YNEG                            
    INPUT           HEADER NODE DATA, YPOS                                                               YPOS                            
-   INPUT                       1,    20.,    9.60836                                                    YPOS                            
-   INPUT                       2,    20.,    9.60836                                                    YPOS                            
-   INPUT                       3,    20.,    9.60836                                                    YPOS                            
-   INPUT                       4,    20.,    9.60836                                                    YPOS                            
-   INPUT                       5,    20.,    9.60836                                                    YPOS                            
-   INPUT                       6,    20.,    9.60836                                                    YPOS                            
-   INPUT                       7,    20.,    9.60836                                                    YPOS                            
-   INPUT                       8,    20.,    9.60836                                                    YPOS                            
-   INPUT                       9,    20.,    9.60836                                                    YPOS                            
-   INPUT                       10,    20.,    9.60836                                                   YPOS                            
-   INPUT                       11,    20.,    9.60836                                                   YPOS                            
-   INPUT                       12,    20.,    9.60836                                                   YPOS                            
-   INPUT                       13,    20.,    9.60836                                                   YPOS                            
-   INPUT                       14,    20.,    9.60836                                                   YPOS                            
-   INPUT                       15,    20.,    9.60836                                                   YPOS                            
-   INPUT                       16,    20.,    9.60836                                                   YPOS                            
-   INPUT                       17,    20.,    9.60836                                                   YPOS                            
-   INPUT                       18,    20.,    9.60836                                                   YPOS                            
-   INPUT                       19,    20.,    9.60836                                                   YPOS                            
-   INPUT                       20,    20.,    9.60836                                                   YPOS                            
-   INPUT                       21,    20.,    9.60836                                                   YPOS                            
-   INPUT                       22,    20.,    9.60836                                                   YPOS                            
-   INPUT                       23,    20.,    9.60836                                                   YPOS                            
-   INPUT                       24,    20.,    9.60836                                                   YPOS                            
-   INPUT                       25,    20.,    9.60836                                                   YPOS                            
+   INPUT                       1,    20.,    9.6768                                                     YPOS                            
+   INPUT                       2,    20.,    9.6768                                                     YPOS                            
+   INPUT                       3,    20.,    9.6768                                                     YPOS                            
+   INPUT                       4,    20.,    9.6768                                                     YPOS                            
+   INPUT                       5,    20.,    9.6768                                                     YPOS                            
+   INPUT                       6,    20.,    9.6768                                                     YPOS                            
+   INPUT                       7,    20.,    9.6768                                                     YPOS                            
+   INPUT                       8,    20.,    9.6768                                                     YPOS                            
+   INPUT                       9,    20.,    9.6768                                                     YPOS                            
+   INPUT                       10,    20.,    9.6768                                                    YPOS                            
+   INPUT                       11,    20.,    9.6768                                                    YPOS                            
+   INPUT                       12,    20.,    9.6768                                                    YPOS                            
+   INPUT                       13,    20.,    9.6768                                                    YPOS                            
+   INPUT                       14,    20.,    9.6768                                                    YPOS                            
+   INPUT                       15,    20.,    9.6768                                                    YPOS                            
+   INPUT                       16,    20.,    9.6768                                                    YPOS                            
+   INPUT                       17,    20.,    9.6768                                                    YPOS                            
+   INPUT                       18,    20.,    9.6768                                                    YPOS                            
+   INPUT                       19,    20.,    9.6768                                                    YPOS                            
+   INPUT                       20,    20.,    9.6768                                                    YPOS                            
+   INPUT                       21,    20.,    9.6768                                                    YPOS                            
+   INPUT                       22,    20.,    9.6768                                                    YPOS                            
+   INPUT                       23,    20.,    9.6768                                                    YPOS                            
+   INPUT                       24,    20.,    9.6768                                                    YPOS                            
+   INPUT                       25,    20.,    9.6768                                                    YPOS                            
    INPUT           HEADER NODE DATA, ZNEG                                                               ZNEG                            
-   INPUT                       1,    20.,    4.80418                                                    ZNEG                            
-   INPUT                       2,    20.,    4.80418                                                    ZNEG                            
-   INPUT                       3,    20.,    4.80418                                                    ZNEG                            
-   INPUT                       4,    20.,    4.80418                                                    ZNEG                            
-   INPUT                       5,    20.,    4.80418                                                    ZNEG                            
-   INPUT                       6,    20.,    4.80418                                                    ZNEG                            
-   INPUT                       7,    20.,    4.80418                                                    ZNEG                            
-   INPUT                       8,    20.,    4.80418                                                    ZNEG                            
-   INPUT                       9,    20.,    4.80418                                                    ZNEG                            
-   INPUT                       10,    20.,    4.80418                                                   ZNEG                            
-   INPUT                       11,    20.,    4.80418                                                   ZNEG                            
-   INPUT                       12,    20.,    4.80418                                                   ZNEG                            
-   INPUT                       13,    20.,    4.80418                                                   ZNEG                            
-   INPUT                       14,    20.,    4.80418                                                   ZNEG                            
-   INPUT                       15,    20.,    4.80418                                                   ZNEG                            
-   INPUT                       16,    20.,    4.80418                                                   ZNEG                            
-   INPUT                       17,    20.,    4.80418                                                   ZNEG                            
-   INPUT                       18,    20.,    4.80418                                                   ZNEG                            
-   INPUT                       19,    20.,    4.80418                                                   ZNEG                            
-   INPUT                       20,    20.,    4.80418                                                   ZNEG                            
-   INPUT                       21,    20.,    4.80418                                                   ZNEG                            
-   INPUT                       22,    20.,    4.80418                                                   ZNEG                            
-   INPUT                       23,    20.,    4.80418                                                   ZNEG                            
-   INPUT                       24,    20.,    4.80418                                                   ZNEG                            
-   INPUT                       25,    20.,    4.80418                                                   ZNEG                            
+   INPUT                       1,    20.,    4.8384                                                     ZNEG                            
+   INPUT                       2,    20.,    4.8384                                                     ZNEG                            
+   INPUT                       3,    20.,    4.8384                                                     ZNEG                            
+   INPUT                       4,    20.,    4.8384                                                     ZNEG                            
+   INPUT                       5,    20.,    4.8384                                                     ZNEG                            
+   INPUT                       6,    20.,    4.8384                                                     ZNEG                            
+   INPUT                       7,    20.,    4.8384                                                     ZNEG                            
+   INPUT                       8,    20.,    4.8384                                                     ZNEG                            
+   INPUT                       9,    20.,    4.8384                                                     ZNEG                            
+   INPUT                       10,    20.,    4.8384                                                    ZNEG                            
+   INPUT                       11,    20.,    4.8384                                                    ZNEG                            
+   INPUT                       12,    20.,    4.8384                                                    ZNEG                            
+   INPUT                       13,    20.,    4.8384                                                    ZNEG                            
+   INPUT                       14,    20.,    4.8384                                                    ZNEG                            
+   INPUT                       15,    20.,    4.8384                                                    ZNEG                            
+   INPUT                       16,    20.,    4.8384                                                    ZNEG                            
+   INPUT                       17,    20.,    4.8384                                                    ZNEG                            
+   INPUT                       18,    20.,    4.8384                                                    ZNEG                            
+   INPUT                       19,    20.,    4.8384                                                    ZNEG                            
+   INPUT                       20,    20.,    4.8384                                                    ZNEG                            
+   INPUT                       21,    20.,    4.8384                                                    ZNEG                            
+   INPUT                       22,    20.,    4.8384                                                    ZNEG                            
+   INPUT                       23,    20.,    4.8384                                                    ZNEG                            
+   INPUT                       24,    20.,    4.8384                                                    ZNEG                            
+   INPUT                       25,    20.,    4.8384                                                    ZNEG                            
    INPUT           HEADER NODE DATA, ZPOS                                                               ZPOS                            
-   INPUT                       1,    20.,    4.80418                                                    ZPOS                            
-   INPUT                       2,    20.,    4.80418                                                    ZPOS                            
-   INPUT                       3,    20.,    4.80418                                                    ZPOS                            
-   INPUT                       4,    20.,    4.80418                                                    ZPOS                            
-   INPUT                       5,    20.,    4.80418                                                    ZPOS                            
-   INPUT                       6,    20.,    4.80418                                                    ZPOS                            
-   INPUT                       7,    20.,    4.80418                                                    ZPOS                            
-   INPUT                       8,    20.,    4.80418                                                    ZPOS                            
-   INPUT                       9,    20.,    4.80418                                                    ZPOS                            
-   INPUT                       10,    20.,    4.80418                                                   ZPOS                            
-   INPUT                       11,    20.,    4.80418                                                   ZPOS                            
-   INPUT                       12,    20.,    4.80418                                                   ZPOS                            
-   INPUT                       13,    20.,    4.80418                                                   ZPOS                            
-   INPUT                       14,    20.,    4.80418                                                   ZPOS                            
-   INPUT                       15,    20.,    4.80418                                                   ZPOS                            
-   INPUT                       16,    20.,    4.80418                                                   ZPOS                            
-   INPUT                       17,    20.,    4.80418                                                   ZPOS                            
-   INPUT                       18,    20.,    4.80418                                                   ZPOS                            
-   INPUT                       19,    20.,    4.80418                                                   ZPOS                            
-   INPUT                       20,    20.,    4.80418                                                   ZPOS                            
-   INPUT                       21,    20.,    4.80418                                                   ZPOS                            
-   INPUT                       22,    20.,    4.80418                                                   ZPOS                            
-   INPUT                       23,    20.,    4.80418                                                   ZPOS                            
-   INPUT                       24,    20.,    4.80418                                                   ZPOS                            
-   INPUT                       25,    20.,    4.80418                                                   ZPOS                            
+   INPUT                       1,    20.,    4.8384                                                     ZPOS                            
+   INPUT                       2,    20.,    4.8384                                                     ZPOS                            
+   INPUT                       3,    20.,    4.8384                                                     ZPOS                            
+   INPUT                       4,    20.,    4.8384                                                     ZPOS                            
+   INPUT                       5,    20.,    4.8384                                                     ZPOS                            
+   INPUT                       6,    20.,    4.8384                                                     ZPOS                            
+   INPUT                       7,    20.,    4.8384                                                     ZPOS                            
+   INPUT                       8,    20.,    4.8384                                                     ZPOS                            
+   INPUT                       9,    20.,    4.8384                                                     ZPOS                            
+   INPUT                       10,    20.,    4.8384                                                    ZPOS                            
+   INPUT                       11,    20.,    4.8384                                                    ZPOS                            
+   INPUT                       12,    20.,    4.8384                                                    ZPOS                            
+   INPUT                       13,    20.,    4.8384                                                    ZPOS                            
+   INPUT                       14,    20.,    4.8384                                                    ZPOS                            
+   INPUT                       15,    20.,    4.8384                                                    ZPOS                            
+   INPUT                       16,    20.,    4.8384                                                    ZPOS                            
+   INPUT                       17,    20.,    4.8384                                                    ZPOS                            
+   INPUT                       18,    20.,    4.8384                                                    ZPOS                            
+   INPUT                       19,    20.,    4.8384                                                    ZPOS                            
+   INPUT                       20,    20.,    4.8384                                                    ZPOS                            
+   INPUT                       21,    20.,    4.8384                                                    ZPOS                            
+   INPUT                       22,    20.,    4.8384                                                    ZPOS                            
+   INPUT                       23,    20.,    4.8384                                                    ZPOS                            
+   INPUT                       24,    20.,    4.8384                                                    ZPOS                            
+   INPUT                       25,    20.,    4.8384                                                    ZPOS                            
    INPUT           HEADER NODE DATA, C9A0                                                               C9A0                            
    INPUT           HEADER NODE DATA,C9A1                                                                C9A1                            
    INPUT           HEADER NODE DATA,C9A2                                                                C9A2                            
 
                             SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     7
 
- MODEL = SINDA                                                                  CubeSat.dwg - 7 Orbit
+ MODEL = SINDA                                                                  CUBESAT.dwg - 7 Orbit
  CONDUCTOR DATA BLOCK
 
  CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
 
-   INPUT           HEADER CONDUCTOR DATA, MAIN                                                          MAIN                            
-   INPUT                       1,    MOTOR.1,    MRW.1,    30.                                          MAIN                            
-   INPUT           C Contact - Edge Contactor[MAIN][0]::386                                             MAIN                            
-   INPUT                       2,    XNEG.1,    YPOS.5,    0.019                                        MAIN                            
-   INPUT           C Contact - Edge Contactor[MAIN][0]::388                                             MAIN                            
-   INPUT                       3,    XNEG.1,    ZNEG.1,    0.03                                         MAIN                            
-   INPUT                       4,    XNEG.1,    ZNEG.2,    0.015                                        MAIN                            
-   INPUT                       5,    XNEG.1,    ZNEG.3,    0.0075                                       MAIN                            
-   INPUT                       6,    XNEG.2,    ZNEG.6,    0.015                                        MAIN                            
-   INPUT                       7,    XNEG.3,    ZNEG.11,    0.015                                       MAIN                            
-   INPUT                       8,    XNEG.4,    ZNEG.16,    0.015                                       MAIN                            
-   INPUT           C Contact - Edge Contactor[MAIN][0]::387                                             MAIN                            
-   INPUT                       9,    XNEG.5,    YNEG.1,    0.021                                        MAIN                            
-   INPUT           C Contact - Edge Contactor[MAIN][0]::388                                             MAIN                            
-   INPUT                       10,    XNEG.5,    ZNEG.21,    0.03                                       MAIN                            
-   INPUT                       11,    XNEG.5,    ZNEG.22,    0.015                                      MAIN                            
-   INPUT                       12,    XNEG.5,    ZNEG.23,    0.0075                                     MAIN                            
-   INPUT           C Contact - Edge Contactor[MAIN][0]::386                                             MAIN                            
-   INPUT                       13,    XNEG.6,    YPOS.10,    0.02                                       MAIN                            
-   INPUT           C Contact - Edge Contactor[MAIN][0]::387                                             MAIN                            
-   INPUT                       14,    XNEG.10,    YNEG.6,    0.02                                       MAIN                            
-   INPUT           C Contact - Edge Contactor[MAIN][0]::386                                             MAIN                            
-   INPUT                       15,    XNEG.11,    YPOS.15,    0.02                                      MAIN                            
-   INPUT           C Contact - Edge Contactor[MAIN][0]::387                                             MAIN                            
-   INPUT                       16,    XNEG.15,    YNEG.11,    0.02                                      MAIN                            
-   INPUT           C Contact - Edge Contactor[MAIN][0]::386                                             MAIN                            
-   INPUT                       17,    XNEG.16,    YPOS.20,    0.02                                      MAIN                            
-   INPUT           C Contact - Edge Contactor[MAIN][0]::387                                             MAIN                            
-   INPUT                       18,    XNEG.20,    YNEG.16,    0.02                                      MAIN                            
-   INPUT           C Contact - Edge Contactor[MAIN][0]::386                                             MAIN                            
-   INPUT                       19,    XNEG.21,    YPOS.25,    0.02                                      MAIN                            
-   INPUT           C Contact - Edge Contactor[MAIN][0]::389                                             MAIN                            
-   INPUT                       20,    XNEG.21,    ZPOS.21,    0.03                                      MAIN                            
-   INPUT                       21,    XNEG.21,    ZPOS.22,    0.015                                     MAIN                            
-   INPUT                       22,    XNEG.21,    ZPOS.23,    0.0075                                    MAIN                            
-   INPUT                       23,    XNEG.22,    ZPOS.16,    0.015                                     MAIN                            
-   INPUT                       24,    XNEG.23,    ZPOS.11,    0.015                                     MAIN                            
-   INPUT                       25,    XNEG.24,    ZPOS.6,    0.015                                      MAIN                            
-   INPUT           C Contact - Edge Contactor[MAIN][0]::387                                             MAIN                            
-   INPUT                       26,    XNEG.25,    YNEG.21,    0.018                                     MAIN                            
-   INPUT           C Contact - Edge Contactor[MAIN][0]::389                                             MAIN                            
-   INPUT                       27,    XNEG.25,    ZPOS.1,    0.03                                       MAIN                            
-   INPUT                       28,    XNEG.25,    ZPOS.2,    0.015                                      MAIN                            
-   INPUT                       29,    XNEG.25,    ZPOS.3,    0.0075                                     MAIN                            
-   INPUT           C Contact - Edge Contactor[MAIN][0]::387                                             MAIN                            
-   INPUT                       30,    XPOS.1,    YNEG.5,    0.02                                        MAIN                            
-   INPUT           C Contact - Edge Contactor[MAIN][0]::388                                             MAIN                            
-   INPUT                       31,    XPOS.1,    ZNEG.23,    0.0075                                     MAIN                            
-   INPUT                       32,    XPOS.1,    ZNEG.24,    0.015                                      MAIN                            
-   INPUT                       33,    XPOS.1,    ZNEG.25,    0.03                                       MAIN                            
-   INPUT                       34,    XPOS.2,    ZNEG.20,    0.015                                      MAIN                            
-   INPUT                       35,    XPOS.3,    ZNEG.15,    0.015                                      MAIN                            
-   INPUT                       36,    XPOS.4,    ZNEG.10,    0.015                                      MAIN                            
-   INPUT           C Contact - Edge Contactor[MAIN][0]::386                                             MAIN                            
-   INPUT                       37,    XPOS.5,    YPOS.1,    0.018                                       MAIN                            
-   INPUT           C Contact - Edge Contactor[MAIN][0]::388                                             MAIN                            
-   INPUT                       38,    XPOS.5,    ZNEG.3,    0.0075                                      MAIN                            
-   INPUT                       39,    XPOS.5,    ZNEG.4,    0.015                                       MAIN                            
-   INPUT                       40,    XPOS.5,    ZNEG.5,    0.03                                        MAIN                            
-   INPUT           C Contact - Edge Contactor[MAIN][0]::387                                             MAIN                            
-   INPUT                       41,    XPOS.6,    YNEG.10,    0.02                                       MAIN                            
-   INPUT           C Contact - Edge Contactor[MAIN][0]::386                                             MAIN                            
-   INPUT                       42,    XPOS.10,    YPOS.6,    0.02                                       MAIN                            
-   INPUT           C Contact - Edge Contactor[MAIN][0]::387                                             MAIN                            
-   INPUT                       43,    XPOS.11,    YNEG.15,    0.02                                      MAIN                            
-   INPUT           C Contact - Edge Contactor[MAIN][0]::386                                             MAIN                            
-   INPUT                       44,    XPOS.15,    YPOS.11,    0.02                                      MAIN                            
-   INPUT           C Contact - Edge Contactor[MAIN][0]::387                                             MAIN                            
-   INPUT                       45,    XPOS.16,    YNEG.20,    0.02                                      MAIN                            
-   INPUT           C Contact - Edge Contactor[MAIN][0]::386                                             MAIN                            
-   INPUT                       46,    XPOS.20,    YPOS.16,    0.02                                      MAIN                            
-   INPUT           C Contact - Edge Contactor[MAIN][0]::387                                             MAIN                            
-   INPUT                       47,    XPOS.21,    YNEG.25,    0.021                                     MAIN                            
-   INPUT           C Contact - Edge Contactor[MAIN][0]::389                                             MAIN                            
-   INPUT                       48,    XPOS.21,    ZPOS.3,    0.0075                                     MAIN                            
-   INPUT                       49,    XPOS.21,    ZPOS.4,    0.015                                      MAIN                            
-   INPUT                       50,    XPOS.21,    ZPOS.5,    0.03                                       MAIN                            
-   INPUT                       51,    XPOS.22,    ZPOS.10,    0.015                                     MAIN                            
-   INPUT                       52,    XPOS.23,    ZPOS.15,    0.015                                     MAIN                            
-   INPUT                       53,    XPOS.24,    ZPOS.20,    0.015                                     MAIN                            
-   INPUT           C Contact - Edge Contactor[MAIN][0]::386                                             MAIN                            
-   INPUT                       54,    XPOS.25,    YPOS.21,    0.021                                     MAIN                            
-   INPUT           C Contact - Edge Contactor[MAIN][0]::389                                             MAIN                            
-   INPUT                       55,    XPOS.25,    ZPOS.23,    0.0075                                    MAIN                            
-   INPUT                       56,    XPOS.25,    ZPOS.24,    0.015                                     MAIN                            
-   INPUT                       57,    XPOS.25,    ZPOS.25,    0.03                                      MAIN                            
-   INPUT           C Contact - Edge Contactor[MAIN][0]::387                                             MAIN                            
-   INPUT                       58,    YNEG.1,    ZNEG.21,    0.009                                      MAIN                            
-   INPUT                       59,    YNEG.2,    ZNEG.22,    0.01                                       MAIN                            
-   INPUT                       60,    YNEG.3,    ZNEG.23,    0.01                                       MAIN                            
-   INPUT                       61,    YNEG.4,    ZNEG.24,    0.01                                       MAIN                            
-   INPUT                       62,    YNEG.5,    ZNEG.25,    0.01                                       MAIN                            
-   INPUT                       63,    YNEG.21,    ZPOS.1,    0.012                                      MAIN                            
-   INPUT                       64,    YNEG.22,    ZPOS.2,    0.01                                       MAIN                            
-   INPUT                       65,    YNEG.23,    ZPOS.3,    0.01                                       MAIN                            
-   INPUT                       66,    YNEG.24,    ZPOS.4,    0.01                                       MAIN                            
-   INPUT                       67,    YNEG.25,    ZPOS.5,    0.009                                      MAIN                            
-   INPUT           C Contact - Edge Contactor[MAIN][0]::386                                             MAIN                            
-   INPUT                       68,    YPOS.1,    ZNEG.5,    0.012                                       MAIN                            
-   INPUT                       69,    YPOS.2,    ZNEG.4,    0.01                                        MAIN                            
-   INPUT                       70,    YPOS.3,    ZNEG.3,    0.01                                        MAIN                            
-   INPUT                       71,    YPOS.4,    ZNEG.2,    0.01                                        MAIN                            
-   INPUT                       72,    YPOS.5,    ZNEG.1,    0.011                                       MAIN                            
-   INPUT                       73,    YPOS.21,    ZPOS.25,    0.009                                     MAIN                            
-   INPUT                       74,    YPOS.22,    ZPOS.24,    0.01                                      MAIN                            
-   INPUT                       75,    YPOS.23,    ZPOS.23,    0.01                                      MAIN                            
-   INPUT                       76,    YPOS.24,    ZPOS.22,    0.01                                      MAIN                            
-   INPUT                       77,    YPOS.25,    ZPOS.21,    0.01                                      MAIN                            
    INPUT           HEADER CONDUCTOR DATA, STRUCTURE                                                     STRUCTURE                       
-   INPUT                       1,    XNEG.1,    XNEG.2,    1.5317                                       STRUCTURE                       
-   INPUT                       2,    XNEG.1,    XNEG.6,    0.382925                                     STRUCTURE                       
-   INPUT                       3,    XNEG.2,    XNEG.3,    1.5317                                       STRUCTURE                       
-   INPUT                       4,    XNEG.2,    XNEG.7,    0.382925                                     STRUCTURE                       
-   INPUT                       5,    XNEG.3,    XNEG.4,    1.5317                                       STRUCTURE                       
-   INPUT                       6,    XNEG.3,    XNEG.8,    0.382925                                     STRUCTURE                       
-   INPUT                       7,    XNEG.4,    XNEG.5,    1.5317                                       STRUCTURE                       
-   INPUT                       8,    XNEG.4,    XNEG.9,    0.382925                                     STRUCTURE                       
-   INPUT                       9,    XNEG.5,    XNEG.10,    0.382925                                    STRUCTURE                       
-   INPUT                       10,    XNEG.6,    XNEG.7,    1.5317                                      STRUCTURE                       
-   INPUT                       11,    XNEG.6,    XNEG.11,    0.382925                                   STRUCTURE                       
-   INPUT                       12,    XNEG.7,    XNEG.8,    1.5317                                      STRUCTURE                       
-   INPUT                       13,    XNEG.7,    XNEG.12,    0.382925                                   STRUCTURE                       
-   INPUT                       14,    XNEG.8,    XNEG.9,    1.5317                                      STRUCTURE                       
-   INPUT                       15,    XNEG.8,    XNEG.13,    0.382925                                   STRUCTURE                       
-   INPUT                       16,    XNEG.9,    XNEG.10,    1.5317                                     STRUCTURE                       
-   INPUT                       17,    XNEG.9,    XNEG.14,    0.382925                                   STRUCTURE                       
-   INPUT                       18,    XNEG.10,    XNEG.15,    0.382925                                  STRUCTURE                       
-   INPUT                       19,    XNEG.11,    XNEG.12,    1.5317                                    STRUCTURE                       
-   INPUT                       20,    XNEG.11,    XNEG.16,    0.382925                                  STRUCTURE                       
-   INPUT                       21,    XNEG.12,    XNEG.13,    1.5317                                    STRUCTURE                       
-   INPUT                       22,    XNEG.12,    XNEG.17,    0.382925                                  STRUCTURE                       
-   INPUT                       23,    XNEG.13,    XNEG.14,    1.5317                                    STRUCTURE                       
-   INPUT                       24,    XNEG.13,    XNEG.18,    0.382925                                  STRUCTURE                       
-   INPUT                       25,    XNEG.14,    XNEG.15,    1.5317                                    STRUCTURE                       
-   INPUT                       26,    XNEG.14,    XNEG.19,    0.382925                                  STRUCTURE                       
-   INPUT                       27,    XNEG.15,    XNEG.20,    0.382925                                  STRUCTURE                       
-   INPUT                       28,    XNEG.16,    XNEG.17,    1.5317                                    STRUCTURE                       
-   INPUT                       29,    XNEG.16,    XNEG.21,    0.382925                                  STRUCTURE                       
-   INPUT                       30,    XNEG.17,    XNEG.18,    1.5317                                    STRUCTURE                       
-   INPUT                       31,    XNEG.17,    XNEG.22,    0.382925                                  STRUCTURE                       
-   INPUT                       32,    XNEG.18,    XNEG.19,    1.5317                                    STRUCTURE                       
-   INPUT                       33,    XNEG.18,    XNEG.23,    0.382925                                  STRUCTURE                       
-   INPUT                       34,    XNEG.19,    XNEG.20,    1.5317                                    STRUCTURE                       
-   INPUT                       35,    XNEG.19,    XNEG.24,    0.382925                                  STRUCTURE                       
-   INPUT                       36,    XNEG.20,    XNEG.25,    0.382925                                  STRUCTURE                       
-   INPUT                       37,    XNEG.21,    XNEG.22,    1.5317                                    STRUCTURE                       
-   INPUT                       38,    XNEG.22,    XNEG.23,    1.5317                                    STRUCTURE                       
-   INPUT                       39,    XNEG.23,    XNEG.24,    1.5317                                    STRUCTURE                       
-   INPUT                       40,    XNEG.24,    XNEG.25,    1.5317                                    STRUCTURE                       
-   INPUT                       41,    XPOS.1,    XPOS.2,    1.5317                                      STRUCTURE                       
-   INPUT                       42,    XPOS.1,    XPOS.6,    0.382925                                    STRUCTURE                       
-   INPUT                       43,    XPOS.2,    XPOS.3,    1.5317                                      STRUCTURE                       
-   INPUT                       44,    XPOS.2,    XPOS.7,    0.382925                                    STRUCTURE                       
-   INPUT                       45,    XPOS.3,    XPOS.4,    1.5317                                      STRUCTURE                       
-   INPUT                       46,    XPOS.3,    XPOS.8,    0.382925                                    STRUCTURE                       
-   INPUT                       47,    XPOS.4,    XPOS.5,    1.5317                                      STRUCTURE                       
-   INPUT                       48,    XPOS.4,    XPOS.9,    0.382925                                    STRUCTURE                       
-   INPUT                       49,    XPOS.5,    XPOS.10,    0.382925                                   STRUCTURE                       
-   INPUT                       50,    XPOS.6,    XPOS.7,    1.5317                                      STRUCTURE                       
-   INPUT                       51,    XPOS.6,    XPOS.11,    0.382925                                   STRUCTURE                       
-   INPUT                       52,    XPOS.7,    XPOS.8,    1.5317                                      STRUCTURE                       
-   INPUT                       53,    XPOS.7,    XPOS.12,    0.382925                                   STRUCTURE                       
-   INPUT                       54,    XPOS.8,    XPOS.9,    1.5317                                      STRUCTURE                       
-   INPUT                       55,    XPOS.8,    XPOS.13,    0.382925                                   STRUCTURE                       
-   INPUT                       56,    XPOS.9,    XPOS.10,    1.5317                                     STRUCTURE                       
-   INPUT                       57,    XPOS.9,    XPOS.14,    0.382925                                   STRUCTURE                       
-   INPUT                       58,    XPOS.10,    XPOS.15,    0.382925                                  STRUCTURE                       
-   INPUT                       59,    XPOS.11,    XPOS.12,    1.5317                                    STRUCTURE                       
-   INPUT                       60,    XPOS.11,    XPOS.16,    0.382925                                  STRUCTURE                       
-   INPUT                       61,    XPOS.12,    XPOS.13,    1.5317                                    STRUCTURE                       
-   INPUT                       62,    XPOS.12,    XPOS.17,    0.382925                                  STRUCTURE                       
-   INPUT                       63,    XPOS.13,    XPOS.14,    1.5317                                    STRUCTURE                       
-   INPUT                       64,    XPOS.13,    XPOS.18,    0.382925                                  STRUCTURE                       
-   INPUT                       65,    XPOS.14,    XPOS.15,    1.5317                                    STRUCTURE                       
-   INPUT                       66,    XPOS.14,    XPOS.19,    0.382925                                  STRUCTURE                       
-   INPUT                       67,    XPOS.15,    XPOS.20,    0.382925                                  STRUCTURE                       
-   INPUT                       68,    XPOS.16,    XPOS.17,    1.5317                                    STRUCTURE                       
-   INPUT                       69,    XPOS.16,    XPOS.21,    0.382925                                  STRUCTURE                       
-   INPUT                       70,    XPOS.17,    XPOS.18,    1.5317                                    STRUCTURE                       
-   INPUT                       71,    XPOS.17,    XPOS.22,    0.382925                                  STRUCTURE                       
-   INPUT                       72,    XPOS.18,    XPOS.19,    1.5317                                    STRUCTURE                       
-   INPUT                       73,    XPOS.18,    XPOS.23,    0.382925                                  STRUCTURE                       
-   INPUT                       74,    XPOS.19,    XPOS.20,    1.5317                                    STRUCTURE                       
-   INPUT                       75,    XPOS.19,    XPOS.24,    0.382925                                  STRUCTURE                       
-   INPUT                       76,    XPOS.20,    XPOS.25,    0.382925                                  STRUCTURE                       
-   INPUT                       77,    XPOS.21,    XPOS.22,    1.5317                                    STRUCTURE                       
-   INPUT                       78,    XPOS.22,    XPOS.23,    1.5317                                    STRUCTURE                       
-   INPUT                       79,    XPOS.23,    XPOS.24,    1.5317                                    STRUCTURE                       
-   INPUT                       80,    XPOS.24,    XPOS.25,    1.5317                                    STRUCTURE                       
-   INPUT                       81,    YNEG.1,    YNEG.2,    1.5317                                      STRUCTURE                       
-   INPUT                       82,    YNEG.1,    YNEG.6,    0.382925                                    STRUCTURE                       
-   INPUT                       83,    YNEG.2,    YNEG.3,    1.5317                                      STRUCTURE                       
-   INPUT                       84,    YNEG.2,    YNEG.7,    0.382925                                    STRUCTURE                       
-   INPUT                       85,    YNEG.3,    YNEG.4,    1.5317                                      STRUCTURE                       
-   INPUT                       86,    YNEG.3,    YNEG.8,    0.382925                                    STRUCTURE                       
-   INPUT                       87,    YNEG.4,    YNEG.5,    1.5317                                      STRUCTURE                       
-   INPUT                       88,    YNEG.4,    YNEG.9,    0.382925                                    STRUCTURE                       
-   INPUT                       89,    YNEG.5,    YNEG.10,    0.382925                                   STRUCTURE                       
-   INPUT                       90,    YNEG.6,    YNEG.7,    1.5317                                      STRUCTURE                       
-   INPUT                       91,    YNEG.6,    YNEG.11,    0.382925                                   STRUCTURE                       
-   INPUT                       92,    YNEG.7,    YNEG.8,    1.5317                                      STRUCTURE                       
-   INPUT                       93,    YNEG.7,    YNEG.12,    0.382925                                   STRUCTURE                       
-   INPUT                       94,    YNEG.8,    YNEG.9,    1.5317                                      STRUCTURE                       
-   INPUT                       95,    YNEG.8,    YNEG.13,    0.382925                                   STRUCTURE                       
-   INPUT                       96,    YNEG.9,    YNEG.10,    1.5317                                     STRUCTURE                       
-   INPUT                       97,    YNEG.9,    YNEG.14,    0.382925                                   STRUCTURE                       
-   INPUT                       98,    YNEG.10,    YNEG.15,    0.382925                                  STRUCTURE                       
-   INPUT                       99,    YNEG.11,    YNEG.12,    1.5317                                    STRUCTURE                       
-   INPUT                       100,    YNEG.11,    YNEG.16,    0.382925                                 STRUCTURE                       
-   INPUT                       101,    YNEG.12,    YNEG.13,    1.5317                                   STRUCTURE                       
-   INPUT                       102,    YNEG.12,    YNEG.17,    0.382925                                 STRUCTURE                       
-   INPUT                       103,    YNEG.13,    YNEG.14,    1.5317                                   STRUCTURE                       
-   INPUT                       104,    YNEG.13,    YNEG.18,    0.382925                                 STRUCTURE                       
-   INPUT                       105,    YNEG.14,    YNEG.15,    1.5317                                   STRUCTURE                       
-   INPUT                       106,    YNEG.14,    YNEG.19,    0.382925                                 STRUCTURE                       
-   INPUT                       107,    YNEG.15,    YNEG.20,    0.382925                                 STRUCTURE                       
-   INPUT                       108,    YNEG.16,    YNEG.17,    1.5317                                   STRUCTURE                       
-   INPUT                       109,    YNEG.16,    YNEG.21,    0.382925                                 STRUCTURE                       
-   INPUT                       110,    YNEG.17,    YNEG.18,    1.5317                                   STRUCTURE                       
-   INPUT                       111,    YNEG.17,    YNEG.22,    0.382925                                 STRUCTURE                       
-   INPUT                       112,    YNEG.18,    YNEG.19,    1.5317                                   STRUCTURE                       
-   INPUT                       113,    YNEG.18,    YNEG.23,    0.382925                                 STRUCTURE                       
-   INPUT                       114,    YNEG.19,    YNEG.20,    1.5317                                   STRUCTURE                       
-   INPUT                       115,    YNEG.19,    YNEG.24,    0.382925                                 STRUCTURE                       
-   INPUT                       116,    YNEG.20,    YNEG.25,    0.382925                                 STRUCTURE                       
-   INPUT                       117,    YNEG.21,    YNEG.22,    1.5317                                   STRUCTURE                       
-   INPUT                       118,    YNEG.22,    YNEG.23,    1.5317                                   STRUCTURE                       
-   INPUT                       119,    YNEG.23,    YNEG.24,    1.5317                                   STRUCTURE                       
-   INPUT                       120,    YNEG.24,    YNEG.25,    1.5317                                   STRUCTURE                       
-   INPUT                       121,    YPOS.1,    YPOS.2,    1.5317                                     STRUCTURE                       
-   INPUT                       122,    YPOS.1,    YPOS.6,    0.382925                                   STRUCTURE                       
-   INPUT                       123,    YPOS.2,    YPOS.3,    1.5317                                     STRUCTURE                       
-   INPUT                       124,    YPOS.2,    YPOS.7,    0.382925                                   STRUCTURE                       
-   INPUT                       125,    YPOS.3,    YPOS.4,    1.5317                                     STRUCTURE                       
-   INPUT                       126,    YPOS.3,    YPOS.8,    0.382925                                   STRUCTURE                       
-   INPUT                       127,    YPOS.4,    YPOS.5,    1.5317                                     STRUCTURE                       
-   INPUT                       128,    YPOS.4,    YPOS.9,    0.382925                                   STRUCTURE                       
-   INPUT                       129,    YPOS.5,    YPOS.10,    0.382925                                  STRUCTURE                       
-   INPUT                       130,    YPOS.6,    YPOS.7,    1.5317                                     STRUCTURE                       
-   INPUT                       131,    YPOS.6,    YPOS.11,    0.382925                                  STRUCTURE                       
-   INPUT                       132,    YPOS.7,    YPOS.8,    1.5317                                     STRUCTURE                       
-   INPUT                       133,    YPOS.7,    YPOS.12,    0.382925                                  STRUCTURE                       
-   INPUT                       134,    YPOS.8,    YPOS.9,    1.5317                                     STRUCTURE                       
-   INPUT                       135,    YPOS.8,    YPOS.13,    0.382925                                  STRUCTURE                       
-   INPUT                       136,    YPOS.9,    YPOS.10,    1.5317                                    STRUCTURE                       
-   INPUT                       137,    YPOS.9,    YPOS.14,    0.382925                                  STRUCTURE                       
-   INPUT                       138,    YPOS.10,    YPOS.15,    0.382925                                 STRUCTURE                       
-   INPUT                       139,    YPOS.11,    YPOS.12,    1.5317                                   STRUCTURE                       
-   INPUT                       140,    YPOS.11,    YPOS.16,    0.382925                                 STRUCTURE                       
-   INPUT                       141,    YPOS.12,    YPOS.13,    1.5317                                   STRUCTURE                       
-   INPUT                       142,    YPOS.12,    YPOS.17,    0.382925                                 STRUCTURE                       
-   INPUT                       143,    YPOS.13,    YPOS.14,    1.5317                                   STRUCTURE                       
-   INPUT                       144,    YPOS.13,    YPOS.18,    0.382925                                 STRUCTURE                       
-   INPUT                       145,    YPOS.14,    YPOS.15,    1.5317                                   STRUCTURE                       
-   INPUT                       146,    YPOS.14,    YPOS.19,    0.382925                                 STRUCTURE                       
-   INPUT                       147,    YPOS.15,    YPOS.20,    0.382925                                 STRUCTURE                       
-   INPUT                       148,    YPOS.16,    YPOS.17,    1.5317                                   STRUCTURE                       
-   INPUT                       149,    YPOS.16,    YPOS.21,    0.382925                                 STRUCTURE                       
-   INPUT                       150,    YPOS.17,    YPOS.18,    1.5317                                   STRUCTURE                       
-   INPUT                       151,    YPOS.17,    YPOS.22,    0.382925                                 STRUCTURE                       
-   INPUT                       152,    YPOS.18,    YPOS.19,    1.5317                                   STRUCTURE                       
-   INPUT                       153,    YPOS.18,    YPOS.23,    0.382925                                 STRUCTURE                       
-   INPUT                       154,    YPOS.19,    YPOS.20,    1.5317                                   STRUCTURE                       
-   INPUT                       155,    YPOS.19,    YPOS.24,    0.382925                                 STRUCTURE                       
-   INPUT                       156,    YPOS.20,    YPOS.25,    0.382925                                 STRUCTURE                       
-   INPUT                       157,    YPOS.21,    YPOS.22,    1.5317                                   STRUCTURE                       
-   INPUT                       158,    YPOS.22,    YPOS.23,    1.5317                                   STRUCTURE                       
-   INPUT                       159,    YPOS.23,    YPOS.24,    1.5317                                   STRUCTURE                       
-   INPUT                       160,    YPOS.24,    YPOS.25,    1.5317                                   STRUCTURE                       
-   INPUT                       161,    ZNEG.1,    ZNEG.2,    0.76585                                    STRUCTURE                       
-   INPUT                       162,    ZNEG.1,    ZNEG.6,    0.76585                                    STRUCTURE                       
-   INPUT                       163,    ZNEG.2,    ZNEG.3,    0.76585                                    STRUCTURE                       
-   INPUT                       164,    ZNEG.2,    ZNEG.7,    0.76585                                    STRUCTURE                       
-   INPUT                       165,    ZNEG.3,    ZNEG.4,    0.76585                                    STRUCTURE                       
-   INPUT                       166,    ZNEG.3,    ZNEG.8,    0.76585                                    STRUCTURE                       
-   INPUT                       167,    ZNEG.4,    ZNEG.5,    0.76585                                    STRUCTURE                       
-   INPUT                       168,    ZNEG.4,    ZNEG.9,    0.76585                                    STRUCTURE                       
-   INPUT                       169,    ZNEG.5,    ZNEG.10,    0.76585                                   STRUCTURE                       
-   INPUT                       170,    ZNEG.6,    ZNEG.7,    0.76585                                    STRUCTURE                       
-   INPUT                       171,    ZNEG.6,    ZNEG.11,    0.76585                                   STRUCTURE                       
-   INPUT                       172,    ZNEG.7,    ZNEG.8,    0.76585                                    STRUCTURE                       
-   INPUT                       173,    ZNEG.7,    ZNEG.12,    0.76585                                   STRUCTURE                       
-   INPUT                       174,    ZNEG.8,    ZNEG.9,    0.76585                                    STRUCTURE                       
-   INPUT                       175,    ZNEG.8,    ZNEG.13,    0.76585                                   STRUCTURE                       
-   INPUT                       176,    ZNEG.9,    ZNEG.10,    0.76585                                   STRUCTURE                       
-   INPUT                       177,    ZNEG.9,    ZNEG.14,    0.76585                                   STRUCTURE                       
-   INPUT                       178,    ZNEG.10,    ZNEG.15,    0.76585                                  STRUCTURE                       
-   INPUT                       179,    ZNEG.11,    ZNEG.12,    0.76585                                  STRUCTURE                       
-   INPUT                       180,    ZNEG.11,    ZNEG.16,    0.76585                                  STRUCTURE                       
-   INPUT                       181,    ZNEG.12,    ZNEG.13,    0.76585                                  STRUCTURE                       
-   INPUT                       182,    ZNEG.12,    ZNEG.17,    0.76585                                  STRUCTURE                       
-   INPUT                       183,    ZNEG.13,    ZNEG.14,    0.76585                                  STRUCTURE                       
-   INPUT                       184,    ZNEG.13,    ZNEG.18,    0.76585                                  STRUCTURE                       
-   INPUT                       185,    ZNEG.14,    ZNEG.15,    0.76585                                  STRUCTURE                       
-   INPUT                       186,    ZNEG.14,    ZNEG.19,    0.76585                                  STRUCTURE                       
-   INPUT                       187,    ZNEG.15,    ZNEG.20,    0.76585                                  STRUCTURE                       
-   INPUT                       188,    ZNEG.16,    ZNEG.17,    0.76585                                  STRUCTURE                       
-   INPUT                       189,    ZNEG.16,    ZNEG.21,    0.76585                                  STRUCTURE                       
-   INPUT                       190,    ZNEG.17,    ZNEG.18,    0.76585                                  STRUCTURE                       
-   INPUT                       191,    ZNEG.17,    ZNEG.22,    0.76585                                  STRUCTURE                       
-   INPUT                       192,    ZNEG.18,    ZNEG.19,    0.76585                                  STRUCTURE                       
-   INPUT                       193,    ZNEG.18,    ZNEG.23,    0.76585                                  STRUCTURE                       
-   INPUT                       194,    ZNEG.19,    ZNEG.20,    0.76585                                  STRUCTURE                       
-   INPUT                       195,    ZNEG.19,    ZNEG.24,    0.76585                                  STRUCTURE                       
-   INPUT                       196,    ZNEG.20,    ZNEG.25,    0.76585                                  STRUCTURE                       
-   INPUT                       197,    ZNEG.21,    ZNEG.22,    0.76585                                  STRUCTURE                       
-   INPUT                       198,    ZNEG.22,    ZNEG.23,    0.76585                                  STRUCTURE                       
-   INPUT                       199,    ZNEG.23,    ZNEG.24,    0.76585                                  STRUCTURE                       
-   INPUT                       200,    ZNEG.24,    ZNEG.25,    0.76585                                  STRUCTURE                       
-   INPUT                       201,    ZPOS.1,    ZPOS.2,    0.76585                                    STRUCTURE                       
-   INPUT                       202,    ZPOS.1,    ZPOS.6,    0.76585                                    STRUCTURE                       
-   INPUT                       203,    ZPOS.2,    ZPOS.3,    0.76585                                    STRUCTURE                       
-   INPUT                       204,    ZPOS.2,    ZPOS.7,    0.76585                                    STRUCTURE                       
-   INPUT                       205,    ZPOS.3,    ZPOS.4,    0.76585                                    STRUCTURE                       
-   INPUT                       206,    ZPOS.3,    ZPOS.8,    0.76585                                    STRUCTURE                       
-   INPUT                       207,    ZPOS.4,    ZPOS.5,    0.76585                                    STRUCTURE                       
-   INPUT                       208,    ZPOS.4,    ZPOS.9,    0.76585                                    STRUCTURE                       
-   INPUT                       209,    ZPOS.5,    ZPOS.10,    0.76585                                   STRUCTURE                       
-   INPUT                       210,    ZPOS.6,    ZPOS.7,    0.76585                                    STRUCTURE                       
-   INPUT                       211,    ZPOS.6,    ZPOS.11,    0.76585                                   STRUCTURE                       
-   INPUT                       212,    ZPOS.7,    ZPOS.8,    0.76585                                    STRUCTURE                       
-   INPUT                       213,    ZPOS.7,    ZPOS.12,    0.76585                                   STRUCTURE                       
-   INPUT                       214,    ZPOS.8,    ZPOS.9,    0.76585                                    STRUCTURE                       
-   INPUT                       215,    ZPOS.8,    ZPOS.13,    0.76585                                   STRUCTURE                       
-   INPUT                       216,    ZPOS.9,    ZPOS.10,    0.76585                                   STRUCTURE                       
-   INPUT                       217,    ZPOS.9,    ZPOS.14,    0.76585                                   STRUCTURE                       
-   INPUT                       218,    ZPOS.10,    ZPOS.15,    0.76585                                  STRUCTURE                       
-   INPUT                       219,    ZPOS.11,    ZPOS.12,    0.76585                                  STRUCTURE                       
-   INPUT                       220,    ZPOS.11,    ZPOS.16,    0.76585                                  STRUCTURE                       
-   INPUT                       221,    ZPOS.12,    ZPOS.13,    0.76585                                  STRUCTURE                       
-   INPUT                       222,    ZPOS.12,    ZPOS.17,    0.76585                                  STRUCTURE                       
-   INPUT                       223,    ZPOS.13,    ZPOS.14,    0.76585                                  STRUCTURE                       
-   INPUT                       224,    ZPOS.13,    ZPOS.18,    0.76585                                  STRUCTURE                       
-   INPUT                       225,    ZPOS.14,    ZPOS.15,    0.76585                                  STRUCTURE                       
-   INPUT                       226,    ZPOS.14,    ZPOS.19,    0.76585                                  STRUCTURE                       
-   INPUT                       227,    ZPOS.15,    ZPOS.20,    0.76585                                  STRUCTURE                       
-   INPUT                       228,    ZPOS.16,    ZPOS.17,    0.76585                                  STRUCTURE                       
-   INPUT                       229,    ZPOS.16,    ZPOS.21,    0.76585                                  STRUCTURE                       
-   INPUT                       230,    ZPOS.17,    ZPOS.18,    0.76585                                  STRUCTURE                       
-   INPUT                       231,    ZPOS.17,    ZPOS.22,    0.76585                                  STRUCTURE                       
-   INPUT                       232,    ZPOS.18,    ZPOS.19,    0.76585                                  STRUCTURE                       
-   INPUT                       233,    ZPOS.18,    ZPOS.23,    0.76585                                  STRUCTURE                       
-   INPUT                       234,    ZPOS.19,    ZPOS.20,    0.76585                                  STRUCTURE                       
-   INPUT                       235,    ZPOS.19,    ZPOS.24,    0.76585                                  STRUCTURE                       
-   INPUT                       236,    ZPOS.20,    ZPOS.25,    0.76585                                  STRUCTURE                       
-   INPUT                       237,    ZPOS.21,    ZPOS.22,    0.76585                                  STRUCTURE                       
-   INPUT                       238,    ZPOS.22,    ZPOS.23,    0.76585                                  STRUCTURE                       
-   INPUT                       239,    ZPOS.23,    ZPOS.24,    0.76585                                  STRUCTURE                       
-   INPUT                       240,    ZPOS.24,    ZPOS.25,    0.76585                                  STRUCTURE                       
+   INPUT                       1,    XNEG.1,    XNEG.2,    1.67                                         STRUCTURE                       
+   INPUT                       2,    XNEG.1,    XNEG.6,    0.4175                                       STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E                                 STRUCTURE                       
+   INPUT                       3,    XNEG.1,    ZNEG.1,    0.012825                                     STRUCTURE                       
+   INPUT                       4,    XNEG.2,    XNEG.3,    1.67                                         STRUCTURE                       
+   INPUT                       5,    XNEG.2,    XNEG.7,    0.4175                                       STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E                                 STRUCTURE                       
+   INPUT                       6,    XNEG.2,    ZNEG.6,    0.01425                                      STRUCTURE                       
+   INPUT                       7,    XNEG.3,    XNEG.4,    1.67                                         STRUCTURE                       
+   INPUT                       8,    XNEG.3,    XNEG.8,    0.4175                                       STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E                                 STRUCTURE                       
+   INPUT                       9,    XNEG.3,    ZNEG.11,    0.01425                                     STRUCTURE                       
+   INPUT                       10,    XNEG.4,    XNEG.5,    1.67                                        STRUCTURE                       
+   INPUT                       11,    XNEG.4,    XNEG.9,    0.4175                                      STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E                                 STRUCTURE                       
+   INPUT                       12,    XNEG.4,    ZNEG.16,    0.01425                                    STRUCTURE                       
+   INPUT                       13,    XNEG.5,    XNEG.10,    0.4175                                     STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E                                 STRUCTURE                       
+   INPUT                       14,    XNEG.5,    ZNEG.21,    0.01425                                    STRUCTURE                       
+   INPUT                       15,    XNEG.6,    XNEG.7,    1.67                                        STRUCTURE                       
+   INPUT                       16,    XNEG.6,    XNEG.11,    0.4175                                     STRUCTURE                       
+   INPUT                       17,    XNEG.7,    XNEG.8,    1.67                                        STRUCTURE                       
+   INPUT                       18,    XNEG.7,    XNEG.12,    0.4175                                     STRUCTURE                       
+   INPUT                       19,    XNEG.8,    XNEG.9,    1.67                                        STRUCTURE                       
+   INPUT                       20,    XNEG.8,    XNEG.13,    0.4175                                     STRUCTURE                       
+   INPUT                       21,    XNEG.9,    XNEG.10,    1.67                                       STRUCTURE                       
+   INPUT                       22,    XNEG.9,    XNEG.14,    0.4175                                     STRUCTURE                       
+   INPUT                       23,    XNEG.10,    XNEG.15,    0.4175                                    STRUCTURE                       
+   INPUT                       24,    XNEG.11,    XNEG.12,    1.67                                      STRUCTURE                       
+   INPUT                       25,    XNEG.11,    XNEG.16,    0.4175                                    STRUCTURE                       
+   INPUT                       26,    XNEG.12,    XNEG.13,    1.67                                      STRUCTURE                       
+   INPUT                       27,    XNEG.12,    XNEG.17,    0.4175                                    STRUCTURE                       
+   INPUT                       28,    XNEG.13,    XNEG.14,    1.67                                      STRUCTURE                       
+   INPUT                       29,    XNEG.13,    XNEG.18,    0.4175                                    STRUCTURE                       
+   INPUT                       30,    XNEG.14,    XNEG.15,    1.67                                      STRUCTURE                       
+   INPUT                       31,    XNEG.14,    XNEG.19,    0.4175                                    STRUCTURE                       
+   INPUT                       32,    XNEG.15,    XNEG.20,    0.4175                                    STRUCTURE                       
+   INPUT                       33,    XNEG.16,    XNEG.17,    1.67                                      STRUCTURE                       
+   INPUT                       34,    XNEG.16,    XNEG.21,    0.4175                                    STRUCTURE                       
+   INPUT                       35,    XNEG.17,    XNEG.18,    1.67                                      STRUCTURE                       
+   INPUT                       36,    XNEG.17,    XNEG.22,    0.4175                                    STRUCTURE                       
+   INPUT                       37,    XNEG.18,    XNEG.19,    1.67                                      STRUCTURE                       
+   INPUT                       38,    XNEG.18,    XNEG.23,    0.4175                                    STRUCTURE                       
+   INPUT                       39,    XNEG.19,    XNEG.20,    1.67                                      STRUCTURE                       
+   INPUT                       40,    XNEG.19,    XNEG.24,    0.4175                                    STRUCTURE                       
+   INPUT                       41,    XNEG.20,    XNEG.25,    0.4175                                    STRUCTURE                       
+   INPUT                       42,    XNEG.21,    XNEG.22,    1.67                                      STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16D                                 STRUCTURE                       
+   INPUT                       43,    XNEG.21,    ZPOS.21,    0.012825                                  STRUCTURE                       
+   INPUT                       44,    XNEG.22,    XNEG.23,    1.67                                      STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16D                                 STRUCTURE                       
+   INPUT                       45,    XNEG.22,    ZPOS.16,    0.01425                                   STRUCTURE                       
+   INPUT                       46,    XNEG.23,    XNEG.24,    1.67                                      STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16D                                 STRUCTURE                       
+   INPUT                       47,    XNEG.23,    ZPOS.11,    0.01425                                   STRUCTURE                       
+   INPUT                       48,    XNEG.24,    XNEG.25,    1.67                                      STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16D                                 STRUCTURE                       
+   INPUT                       49,    XNEG.24,    ZPOS.6,    0.01425                                    STRUCTURE                       
+   INPUT                       50,    XNEG.25,    ZPOS.1,    0.012825                                   STRUCTURE                       
+   INPUT                       51,    XPOS.1,    XPOS.2,    1.67                                        STRUCTURE                       
+   INPUT                       52,    XPOS.1,    XPOS.6,    0.4175                                      STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E                                 STRUCTURE                       
+   INPUT                       53,    XPOS.1,    ZNEG.25,    0.015675                                   STRUCTURE                       
+   INPUT                       54,    XPOS.2,    XPOS.3,    1.67                                        STRUCTURE                       
+   INPUT                       55,    XPOS.2,    XPOS.7,    0.4175                                      STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E                                 STRUCTURE                       
+   INPUT                       56,    XPOS.2,    ZNEG.20,    0.01425                                    STRUCTURE                       
+   INPUT                       57,    XPOS.3,    XPOS.4,    1.67                                        STRUCTURE                       
+   INPUT                       58,    XPOS.3,    XPOS.8,    0.4175                                      STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E                                 STRUCTURE                       
+   INPUT                       59,    XPOS.3,    ZNEG.15,    0.01425                                    STRUCTURE                       
+   INPUT                       60,    XPOS.4,    XPOS.5,    1.67                                        STRUCTURE                       
+   INPUT                       61,    XPOS.4,    XPOS.9,    0.4175                                      STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E                                 STRUCTURE                       
+   INPUT                       62,    XPOS.4,    ZNEG.10,    0.01425                                    STRUCTURE                       
+   INPUT                       63,    XPOS.5,    XPOS.10,    0.4175                                     STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E                                 STRUCTURE                       
+   INPUT                       64,    XPOS.5,    ZNEG.5,    0.015675                                    STRUCTURE                       
+   INPUT                       65,    XPOS.6,    XPOS.7,    1.67                                        STRUCTURE                       
+   INPUT                       66,    XPOS.6,    XPOS.11,    0.4175                                     STRUCTURE                       
+   INPUT                       67,    XPOS.7,    XPOS.8,    1.67                                        STRUCTURE                       
+   INPUT                       68,    XPOS.7,    XPOS.12,    0.4175                                     STRUCTURE                       
+   INPUT                       69,    XPOS.8,    XPOS.9,    1.67                                        STRUCTURE                       
+   INPUT                       70,    XPOS.8,    XPOS.13,    0.4175                                     STRUCTURE                       
+   INPUT                       71,    XPOS.9,    XPOS.10,    1.67                                       STRUCTURE                       
+   INPUT                       72,    XPOS.9,    XPOS.14,    0.4175                                     STRUCTURE                       
+   INPUT                       73,    XPOS.10,    XPOS.15,    0.4175                                    STRUCTURE                       
+   INPUT                       74,    XPOS.11,    XPOS.12,    1.67                                      STRUCTURE                       
+   INPUT                       75,    XPOS.11,    XPOS.16,    0.4175                                    STRUCTURE                       
+   INPUT                       76,    XPOS.12,    XPOS.13,    1.67                                      STRUCTURE                       
+   INPUT                       77,    XPOS.12,    XPOS.17,    0.4175                                    STRUCTURE                       
+   INPUT                       78,    XPOS.13,    XPOS.14,    1.67                                      STRUCTURE                       
+   INPUT                       79,    XPOS.13,    XPOS.18,    0.4175                                    STRUCTURE                       
+   INPUT                       80,    XPOS.14,    XPOS.15,    1.67                                      STRUCTURE                       
+   INPUT                       81,    XPOS.14,    XPOS.19,    0.4175                                    STRUCTURE                       
+   INPUT                       82,    XPOS.15,    XPOS.20,    0.4175                                    STRUCTURE                       
+   INPUT                       83,    XPOS.16,    XPOS.17,    1.67                                      STRUCTURE                       
+   INPUT                       84,    XPOS.16,    XPOS.21,    0.4175                                    STRUCTURE                       
+   INPUT                       85,    XPOS.17,    XPOS.18,    1.67                                      STRUCTURE                       
+   INPUT                       86,    XPOS.17,    XPOS.22,    0.4175                                    STRUCTURE                       
+   INPUT                       87,    XPOS.18,    XPOS.19,    1.67                                      STRUCTURE                       
+   INPUT                       88,    XPOS.18,    XPOS.23,    0.4175                                    STRUCTURE                       
+   INPUT                       89,    XPOS.19,    XPOS.20,    1.67                                      STRUCTURE                       
+   INPUT                       90,    XPOS.19,    XPOS.24,    0.4175                                    STRUCTURE                       
+   INPUT                       91,    XPOS.20,    XPOS.25,    0.4175                                    STRUCTURE                       
+   INPUT                       92,    XPOS.21,    XPOS.22,    1.67                                      STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16D                                 STRUCTURE                       
+   INPUT                       93,    XPOS.21,    ZPOS.5,    0.015675                                   STRUCTURE                       
+   INPUT                       94,    XPOS.22,    XPOS.23,    1.67                                      STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16D                                 STRUCTURE                       
+   INPUT                       95,    XPOS.22,    ZPOS.10,    0.01425                                   STRUCTURE                       
+   INPUT                       96,    XPOS.23,    XPOS.24,    1.67                                      STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16D                                 STRUCTURE                       
+   INPUT                       97,    XPOS.23,    ZPOS.15,    0.01425                                   STRUCTURE                       
+   INPUT                       98,    XPOS.24,    XPOS.25,    1.67                                      STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16D                                 STRUCTURE                       
+   INPUT                       99,    XPOS.24,    ZPOS.20,    0.01425                                   STRUCTURE                       
+   INPUT                       100,    XPOS.25,    ZPOS.25,    0.01425                                  STRUCTURE                       
+   INPUT                       101,    YNEG.1,    YNEG.2,    1.67                                       STRUCTURE                       
+   INPUT                       102,    YNEG.1,    YNEG.6,    0.4175                                     STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E                                 STRUCTURE                       
+   INPUT                       103,    YNEG.1,    ZNEG.21,    0.01425                                   STRUCTURE                       
+   INPUT                       104,    YNEG.2,    YNEG.3,    1.67                                       STRUCTURE                       
+   INPUT                       105,    YNEG.2,    YNEG.7,    0.4175                                     STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E                                 STRUCTURE                       
+   INPUT                       106,    YNEG.2,    ZNEG.22,    0.01425                                   STRUCTURE                       
+   INPUT                       107,    YNEG.3,    YNEG.4,    1.67                                       STRUCTURE                       
+   INPUT                       108,    YNEG.3,    YNEG.8,    0.4175                                     STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E                                 STRUCTURE                       
+   INPUT                       109,    YNEG.3,    ZNEG.23,    0.01425                                   STRUCTURE                       
+   INPUT                       110,    YNEG.4,    YNEG.5,    1.67                                       STRUCTURE                       
+   INPUT                       111,    YNEG.4,    YNEG.9,    0.4175                                     STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E                                 STRUCTURE                       
+   INPUT                       112,    YNEG.4,    ZNEG.24,    0.01425                                   STRUCTURE                       
+   INPUT                       113,    YNEG.5,    YNEG.10,    0.4175                                    STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E                                 STRUCTURE                       
+   INPUT                       114,    YNEG.5,    ZNEG.25,    0.012825                                  STRUCTURE                       
+   INPUT                       115,    YNEG.6,    YNEG.7,    1.67                                       STRUCTURE                       
+   INPUT                       116,    YNEG.6,    YNEG.11,    0.4175                                    STRUCTURE                       
+   INPUT                       117,    YNEG.7,    YNEG.8,    1.67                                       STRUCTURE                       
+   INPUT                       118,    YNEG.7,    YNEG.12,    0.4175                                    STRUCTURE                       
+   INPUT                       119,    YNEG.8,    YNEG.9,    1.67                                       STRUCTURE                       
+   INPUT                       120,    YNEG.8,    YNEG.13,    0.4175                                    STRUCTURE                       
+   INPUT                       121,    YNEG.9,    YNEG.10,    1.67                                      STRUCTURE                       
+   INPUT                       122,    YNEG.9,    YNEG.14,    0.4175                                    STRUCTURE                       
+   INPUT                       123,    YNEG.10,    YNEG.15,    0.4175                                   STRUCTURE                       
+   INPUT                       124,    YNEG.11,    YNEG.12,    1.67                                     STRUCTURE                       
+   INPUT                       125,    YNEG.11,    YNEG.16,    0.4175                                   STRUCTURE                       
+   INPUT                       126,    YNEG.12,    YNEG.13,    1.67                                     STRUCTURE                       
+   INPUT                       127,    YNEG.12,    YNEG.17,    0.4175                                   STRUCTURE                       
+   INPUT                       128,    YNEG.13,    YNEG.14,    1.67                                     STRUCTURE                       
+   INPUT                       129,    YNEG.13,    YNEG.18,    0.4175                                   STRUCTURE                       
+   INPUT                       130,    YNEG.14,    YNEG.15,    1.67                                     STRUCTURE                       
+   INPUT                       131,    YNEG.14,    YNEG.19,    0.4175                                   STRUCTURE                       
+   INPUT                       132,    YNEG.15,    YNEG.20,    0.4175                                   STRUCTURE                       
+   INPUT                       133,    YNEG.16,    YNEG.17,    1.67                                     STRUCTURE                       
+   INPUT                       134,    YNEG.16,    YNEG.21,    0.4175                                   STRUCTURE                       
+   INPUT                       135,    YNEG.17,    YNEG.18,    1.67                                     STRUCTURE                       
+   INPUT                       136,    YNEG.17,    YNEG.22,    0.4175                                   STRUCTURE                       
+   INPUT                       137,    YNEG.18,    YNEG.19,    1.67                                     STRUCTURE                       
+   INPUT                       138,    YNEG.18,    YNEG.23,    0.4175                                   STRUCTURE                       
+   INPUT                       139,    YNEG.19,    YNEG.20,    1.67                                     STRUCTURE                       
+   INPUT                       140,    YNEG.19,    YNEG.24,    0.4175                                   STRUCTURE                       
+   INPUT                       141,    YNEG.20,    YNEG.25,    0.4175                                   STRUCTURE                       
+   INPUT                       142,    YNEG.21,    YNEG.22,    1.67                                     STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16D                                 STRUCTURE                       
+   INPUT                       143,    YNEG.21,    ZPOS.1,    0.015675                                  STRUCTURE                       
+   INPUT                       144,    YNEG.22,    YNEG.23,    1.67                                     STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16D                                 STRUCTURE                       
+   INPUT                       145,    YNEG.22,    ZPOS.2,    0.01425                                   STRUCTURE                       
+   INPUT                       146,    YNEG.23,    YNEG.24,    1.67                                     STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16D                                 STRUCTURE                       
+   INPUT                       147,    YNEG.23,    ZPOS.3,    0.01425                                   STRUCTURE                       
+   INPUT                       148,    YNEG.24,    YNEG.25,    1.67                                     STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16D                                 STRUCTURE                       
+   INPUT                       149,    YNEG.24,    ZPOS.4,    0.01425                                   STRUCTURE                       
+   INPUT                       150,    YNEG.25,    ZPOS.5,    0.012825                                  STRUCTURE                       
+   INPUT                       151,    YPOS.1,    YPOS.2,    1.67                                       STRUCTURE                       
+   INPUT                       152,    YPOS.1,    YPOS.6,    0.4175                                     STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E                                 STRUCTURE                       
+   INPUT                       153,    YPOS.1,    ZNEG.5,    0.012825                                   STRUCTURE                       
+   INPUT                       154,    YPOS.2,    YPOS.3,    1.67                                       STRUCTURE                       
+   INPUT                       155,    YPOS.2,    YPOS.7,    0.4175                                     STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E                                 STRUCTURE                       
+   INPUT                       156,    YPOS.2,    ZNEG.4,    0.01425                                    STRUCTURE                       
+   INPUT                       157,    YPOS.3,    YPOS.4,    1.67                                       STRUCTURE                       
+   INPUT                       158,    YPOS.3,    YPOS.8,    0.4175                                     STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E                                 STRUCTURE                       
+   INPUT                       159,    YPOS.3,    ZNEG.3,    0.01425                                    STRUCTURE                       
+   INPUT                       160,    YPOS.4,    YPOS.5,    1.67                                       STRUCTURE                       
+   INPUT                       161,    YPOS.4,    YPOS.9,    0.4175                                     STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E                                 STRUCTURE                       
+   INPUT                       162,    YPOS.4,    ZNEG.2,    0.01425                                    STRUCTURE                       
+   INPUT                       163,    YPOS.5,    YPOS.10,    0.4175                                    STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16E                                 STRUCTURE                       
+   INPUT                       164,    YPOS.5,    ZNEG.1,    0.015675                                   STRUCTURE                       
+   INPUT                       165,    YPOS.6,    YPOS.7,    1.67                                       STRUCTURE                       
+   INPUT                       166,    YPOS.6,    YPOS.11,    0.4175                                    STRUCTURE                       
+   INPUT                       167,    YPOS.7,    YPOS.8,    1.67                                       STRUCTURE                       
+   INPUT                       168,    YPOS.7,    YPOS.12,    0.4175                                    STRUCTURE                       
+   INPUT                       169,    YPOS.8,    YPOS.9,    1.67                                       STRUCTURE                       
+   INPUT                       170,    YPOS.8,    YPOS.13,    0.4175                                    STRUCTURE                       
+   INPUT                       171,    YPOS.9,    YPOS.10,    1.67                                      STRUCTURE                       
+   INPUT                       172,    YPOS.9,    YPOS.14,    0.4175                                    STRUCTURE                       
+   INPUT                       173,    YPOS.10,    YPOS.15,    0.4175                                   STRUCTURE                       
+   INPUT                       174,    YPOS.11,    YPOS.12,    1.67                                     STRUCTURE                       
+   INPUT                       175,    YPOS.11,    YPOS.16,    0.4175                                   STRUCTURE                       
+   INPUT                       176,    YPOS.12,    YPOS.13,    1.67                                     STRUCTURE                       
+   INPUT                       177,    YPOS.12,    YPOS.17,    0.4175                                   STRUCTURE                       
+   INPUT                       178,    YPOS.13,    YPOS.14,    1.67                                     STRUCTURE                       
+   INPUT                       179,    YPOS.13,    YPOS.18,    0.4175                                   STRUCTURE                       
+   INPUT                       180,    YPOS.14,    YPOS.15,    1.67                                     STRUCTURE                       
+   INPUT                       181,    YPOS.14,    YPOS.19,    0.4175                                   STRUCTURE                       
+   INPUT                       182,    YPOS.15,    YPOS.20,    0.4175                                   STRUCTURE                       
+   INPUT                       183,    YPOS.16,    YPOS.17,    1.67                                     STRUCTURE                       
+   INPUT                       184,    YPOS.16,    YPOS.21,    0.4175                                   STRUCTURE                       
+   INPUT                       185,    YPOS.17,    YPOS.18,    1.67                                     STRUCTURE                       
+   INPUT                       186,    YPOS.17,    YPOS.22,    0.4175                                   STRUCTURE                       
+   INPUT                       187,    YPOS.18,    YPOS.19,    1.67                                     STRUCTURE                       
+   INPUT                       188,    YPOS.18,    YPOS.23,    0.4175                                   STRUCTURE                       
+   INPUT                       189,    YPOS.19,    YPOS.20,    1.67                                     STRUCTURE                       
+   INPUT                       190,    YPOS.19,    YPOS.24,    0.4175                                   STRUCTURE                       
+   INPUT                       191,    YPOS.20,    YPOS.25,    0.4175                                   STRUCTURE                       
+   INPUT                       192,    YPOS.21,    YPOS.22,    1.67                                     STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16D                                 STRUCTURE                       
+   INPUT                       193,    YPOS.21,    ZPOS.25,    0.01425                                  STRUCTURE                       
+   INPUT                       194,    YPOS.22,    YPOS.23,    1.67                                     STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16D                                 STRUCTURE                       
+   INPUT                       195,    YPOS.22,    ZPOS.24,    0.01425                                  STRUCTURE                       
+   INPUT                       196,    YPOS.23,    YPOS.24,    1.67                                     STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16D                                 STRUCTURE                       
+   INPUT                       197,    YPOS.23,    ZPOS.23,    0.01425                                  STRUCTURE                       
+   INPUT                       198,    YPOS.24,    YPOS.25,    1.67                                     STRUCTURE                       
+   INPUT           C Contact - Edge Contactor[STRUCTURE][0][Frame]::16D                                 STRUCTURE                       
+   INPUT                       199,    YPOS.24,    ZPOS.22,    0.01425                                  STRUCTURE                       
+   INPUT                       200,    YPOS.25,    ZPOS.21,    0.015675                                 STRUCTURE                       
+   INPUT                       201,    ZNEG.1,    ZNEG.2,    0.835                                      STRUCTURE                       
+   INPUT                       202,    ZNEG.1,    ZNEG.6,    0.835                                      STRUCTURE                       
+   INPUT                       203,    ZNEG.2,    ZNEG.3,    0.835                                      STRUCTURE                       
+   INPUT                       204,    ZNEG.2,    ZNEG.7,    0.835                                      STRUCTURE                       
+   INPUT                       205,    ZNEG.3,    ZNEG.4,    0.835                                      STRUCTURE                       
+   INPUT                       206,    ZNEG.3,    ZNEG.8,    0.835                                      STRUCTURE                       
+   INPUT                       207,    ZNEG.4,    ZNEG.5,    0.835                                      STRUCTURE                       
+   INPUT                       208,    ZNEG.4,    ZNEG.9,    0.835                                      STRUCTURE                       
+   INPUT                       209,    ZNEG.5,    ZNEG.10,    0.835                                     STRUCTURE                       
+   INPUT                       210,    ZNEG.6,    ZNEG.7,    0.835                                      STRUCTURE                       
+   INPUT                       211,    ZNEG.6,    ZNEG.11,    0.835                                     STRUCTURE                       
+   INPUT                       212,    ZNEG.7,    ZNEG.8,    0.835                                      STRUCTURE                       
+   INPUT                       213,    ZNEG.7,    ZNEG.12,    0.835                                     STRUCTURE                       
+   INPUT                       214,    ZNEG.8,    ZNEG.9,    0.835                                      STRUCTURE                       
+   INPUT                       215,    ZNEG.8,    ZNEG.13,    0.835                                     STRUCTURE                       
+   INPUT                       216,    ZNEG.9,    ZNEG.10,    0.835                                     STRUCTURE                       
+   INPUT                       217,    ZNEG.9,    ZNEG.14,    0.835                                     STRUCTURE                       
+   INPUT                       218,    ZNEG.10,    ZNEG.15,    0.835                                    STRUCTURE                       
+   INPUT                       219,    ZNEG.11,    ZNEG.12,    0.835                                    STRUCTURE                       
+   INPUT                       220,    ZNEG.11,    ZNEG.16,    0.835                                    STRUCTURE                       
+   INPUT                       221,    ZNEG.12,    ZNEG.13,    0.835                                    STRUCTURE                       
+   INPUT                       222,    ZNEG.12,    ZNEG.17,    0.835                                    STRUCTURE                       
+   INPUT                       223,    ZNEG.13,    ZNEG.14,    0.835                                    STRUCTURE                       
+   INPUT                       224,    ZNEG.13,    ZNEG.18,    0.835                                    STRUCTURE                       
+   INPUT                       225,    ZNEG.14,    ZNEG.15,    0.835                                    STRUCTURE                       
+   INPUT                       226,    ZNEG.14,    ZNEG.19,    0.835                                    STRUCTURE                       
+   INPUT                       227,    ZNEG.15,    ZNEG.20,    0.835                                    STRUCTURE                       
+   INPUT                       228,    ZNEG.16,    ZNEG.17,    0.835                                    STRUCTURE                       
+   INPUT                       229,    ZNEG.16,    ZNEG.21,    0.835                                    STRUCTURE                       
+   INPUT                       230,    ZNEG.17,    ZNEG.18,    0.835                                    STRUCTURE                       
+   INPUT                       231,    ZNEG.17,    ZNEG.22,    0.835                                    STRUCTURE                       
+   INPUT                       232,    ZNEG.18,    ZNEG.19,    0.835                                    STRUCTURE                       
+   INPUT                       233,    ZNEG.18,    ZNEG.23,    0.835                                    STRUCTURE                       
+   INPUT                       234,    ZNEG.19,    ZNEG.20,    0.835                                    STRUCTURE                       
+   INPUT                       235,    ZNEG.19,    ZNEG.24,    0.835                                    STRUCTURE                       
+   INPUT                       236,    ZNEG.20,    ZNEG.25,    0.835                                    STRUCTURE                       
+   INPUT                       237,    ZNEG.21,    ZNEG.22,    0.835                                    STRUCTURE                       
+   INPUT                       238,    ZNEG.22,    ZNEG.23,    0.835                                    STRUCTURE                       
+   INPUT                       239,    ZNEG.23,    ZNEG.24,    0.835                                    STRUCTURE                       
+   INPUT                       240,    ZNEG.24,    ZNEG.25,    0.835                                    STRUCTURE                       
+   INPUT                       241,    ZPOS.1,    ZPOS.2,    0.835                                      STRUCTURE                       
+   INPUT                       242,    ZPOS.1,    ZPOS.6,    0.835                                      STRUCTURE                       
+   INPUT                       243,    ZPOS.2,    ZPOS.3,    0.835                                      STRUCTURE                       
+   INPUT                       244,    ZPOS.2,    ZPOS.7,    0.835                                      STRUCTURE                       
+   INPUT                       245,    ZPOS.3,    ZPOS.4,    0.835                                      STRUCTURE                       
+   INPUT                       246,    ZPOS.3,    ZPOS.8,    0.835                                      STRUCTURE                       
+   INPUT                       247,    ZPOS.4,    ZPOS.5,    0.835                                      STRUCTURE                       
+   INPUT                       248,    ZPOS.4,    ZPOS.9,    0.835                                      STRUCTURE                       
+   INPUT                       249,    ZPOS.5,    ZPOS.10,    0.835                                     STRUCTURE                       
+   INPUT                       250,    ZPOS.6,    ZPOS.7,    0.835                                      STRUCTURE                       
+   INPUT                       251,    ZPOS.6,    ZPOS.11,    0.835                                     STRUCTURE                       
+   INPUT                       252,    ZPOS.7,    ZPOS.8,    0.835                                      STRUCTURE                       
+   INPUT                       253,    ZPOS.7,    ZPOS.12,    0.835                                     STRUCTURE                       
+   INPUT                       254,    ZPOS.8,    ZPOS.9,    0.835                                      STRUCTURE                       
+   INPUT                       255,    ZPOS.8,    ZPOS.13,    0.835                                     STRUCTURE                       
+   INPUT                       256,    ZPOS.9,    ZPOS.10,    0.835                                     STRUCTURE                       
+   INPUT                       257,    ZPOS.9,    ZPOS.14,    0.835                                     STRUCTURE                       
+   INPUT                       258,    ZPOS.10,    ZPOS.15,    0.835                                    STRUCTURE                       
+   INPUT                       259,    ZPOS.11,    ZPOS.12,    0.835                                    STRUCTURE                       
+   INPUT                       260,    ZPOS.11,    ZPOS.16,    0.835                                    STRUCTURE                       
+   INPUT                       261,    ZPOS.12,    ZPOS.13,    0.835                                    STRUCTURE                       
+   INPUT                       262,    ZPOS.12,    ZPOS.17,    0.835                                    STRUCTURE                       
+   INPUT                       263,    ZPOS.13,    ZPOS.14,    0.835                                    STRUCTURE                       
+   INPUT                       264,    ZPOS.13,    ZPOS.18,    0.835                                    STRUCTURE                       
+   INPUT                       265,    ZPOS.14,    ZPOS.15,    0.835                                    STRUCTURE                       
+   INPUT                       266,    ZPOS.14,    ZPOS.19,    0.835                                    STRUCTURE                       
+   INPUT                       267,    ZPOS.15,    ZPOS.20,    0.835                                    STRUCTURE                       
+   INPUT                       268,    ZPOS.16,    ZPOS.17,    0.835                                    STRUCTURE                       
+   INPUT                       269,    ZPOS.16,    ZPOS.21,    0.835                                    STRUCTURE                       
+   INPUT                       270,    ZPOS.17,    ZPOS.18,    0.835                                    STRUCTURE                       
+   INPUT                       271,    ZPOS.17,    ZPOS.22,    0.835                                    STRUCTURE                       
+   INPUT                       272,    ZPOS.18,    ZPOS.19,    0.835                                    STRUCTURE                       
+   INPUT                       273,    ZPOS.18,    ZPOS.23,    0.835                                    STRUCTURE                       
+   INPUT                       274,    ZPOS.19,    ZPOS.20,    0.835                                    STRUCTURE                       
+   INPUT                       275,    ZPOS.19,    ZPOS.24,    0.835                                    STRUCTURE                       
+   INPUT                       276,    ZPOS.20,    ZPOS.25,    0.835                                    STRUCTURE                       
+   INPUT                       277,    ZPOS.21,    ZPOS.22,    0.835                                    STRUCTURE                       
+   INPUT                       278,    ZPOS.22,    ZPOS.23,    0.835                                    STRUCTURE                       
+   INPUT                       279,    ZPOS.23,    ZPOS.24,    0.835                                    STRUCTURE                       
+   INPUT                       280,    ZPOS.24,    ZPOS.25,    0.835                                    STRUCTURE                       
 
                             SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     8
 
- MODEL = SINDA                                                                  CubeSat.dwg - 7 Orbit
+ MODEL = SINDA                                                                  CUBESAT.dwg - 7 Orbit
  VARIABLES DATA BLOCK
 
  CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
 
-   INPUT           HEADER VARIABLES0, COMPONENT_1                                                       COMPONENT_1                     
-   INPUT                 MOTOR.Q1 = MOTOR.Q1 + 0.2                                                      COMPONENT_1                     
    INPUT           HEADER VARIABLES0, C9A0                                                              C9A0                            
-   INPUT           F     CALL LOADQ_C9A0_1705621505                                                     C9A0                            
+   INPUT           F     CALL LOADQ_C9A0_1708136684                                                     C9A0                            
 
                             SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     9
 
- MODEL = SINDA                                                                  CubeSat.dwg - 7 Orbit
+ MODEL = SINDA                                                                  CUBESAT.dwg - 7 Orbit
  OPERATIONS BLOCK
 
  CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
 
    INPUT           HEADER OPERATIONS                                                                    GLOBAL                          
    INPUT                 CALL TDPREBL   $ PLACE BEFORE BUILD, CODE IN SUBROUTINE DATA                   GLOBAL                          
-   INPUT           BUILD DEFAULT,COMPONENT_1,MAIN,MOTOR,MRW,SPACE,STRUCTURE,XNEG,XPOS,YNEG,YPOS,ZNE     GLOBAL                          
+   INPUT           BUILD DEFAULT,SPACE,STRUCTURE,XNEG,XPOS,YNEG,YPOS,ZNEG,ZPOS,C9A0,C9A1,C9A2           GLOBAL                          
    INPUT                 CALL TDPOSTBL   $ PLACE AFTER BUILD, CODE IN SUBROUTINE DATA                   GLOBAL                          
    INPUT                 CALL TDHTR $ HOLD HEATER TEMPS FOR STEADY STATE                                GLOBAL                          
    INPUT                 CALL STEADY                                                                    GLOBAL                          
@@ -779,7 +737,7 @@ HEADER NODE DATA, C9A0
 
                             SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    10
 
- MODEL = SINDA                                                                  CubeSat.dwg - 7 Orbit
+ MODEL = SINDA                                                                  CUBESAT.dwg - 7 Orbit
  OUTPUT DATA BLOCK
 
  CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
@@ -798,7 +756,7 @@ HEADER NODE DATA, C9A0
 
                             SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    11
 
- MODEL = SINDA                                                                  CubeSat.dwg - 7 Orbit
+ MODEL = SINDA                                                                  CUBESAT.dwg - 7 Orbit
  SUBROUTINE DATA BLOCK
 
  CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
@@ -833,7 +791,7 @@ HEADER NODE DATA, C9A0
    INPUT           F     RETURN                                                                         GLOBAL                          
    INPUT           F     END                                                                            GLOBAL                          
    INPUT           C INSERT C9A0.hra                                                                    GLOBAL                          
-   INPUT           F     RECURSIVE SUBROUTINE LOADQ_C9A0_1705621505                                     GLOBAL                          
+   INPUT           F     RECURSIVE SUBROUTINE LOADQ_C9A0_1708136684                                     GLOBAL                          
    INPUT           F     USE BINARY_READER_MOD                                                          GLOBAL                          
    INPUT                 CALL COMMON                                                                    GLOBAL                          
    INPUT           F     INTEGER NVAR__TD                                                               GLOBAL                          

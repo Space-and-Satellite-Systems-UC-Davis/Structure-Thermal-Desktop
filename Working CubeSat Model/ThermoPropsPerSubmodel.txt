@@ -1,7 +1,3 @@
-MOTOR
-        Aluminum 6061-T6
-MRW
-        Free-Cutting Brass, UNS CS36000
 XNEG
         Aluminum 6061-T6
 XPOS
